@@ -1,0 +1,26 @@
+nav {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500; }
+  nav .ppml-brand div {
+    font-size: 1.10em; }
+  nav .ppml-brand div ~ div {
+    font-size: 0.75em;
+    margin-top: -5px; }
+
+.terminal-card {
+  background-color: #F5F1E6;
+  font-family: "PT Mono", monospace; }
+  .terminal-card > div {
+    padding: 10px 10px 40px 10px; }
+  .terminal-card p {
+    font-size: 1.50em;
+    margin-bottom: 5px; }
+    .terminal-card p.command::before {
+      content: "$"; }
+  .terminal-card .card-title span ~ span {
+    padding-left: 4px;
+    color: #FBE5B3; }
+  .terminal-card .card-title span:first-child {
+    color: #DEACAB; }
+  .terminal-card .card-title span:last-child {
+    color: #556A5B; }
