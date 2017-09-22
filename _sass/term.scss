@@ -1,0 +1,41 @@
+.terminal-card {
+    background-color: #F5F1E6;
+    font-family: "PT Mono", monospace;
+
+    & > div {
+	padding: 10px 10px 40px 10px;
+    }
+
+    p {
+	font-size: 1.50em;
+	margin-bottom: 5px;
+	
+	&.command {
+	    &::before {
+		content: "$";
+	    }
+	}
+
+	&.output {
+	    
+	}
+    }
+
+    .card-title {
+	span {
+	    & ~ span {
+		padding-left: 4px;
+    		color: #FBE5B3;
+	    }
+	
+	    &:first-child {
+		color: #DEACAB;
+	    }
+
+
+	    &:last-child {
+		color: #556A5B;
+	    }
+	}
+    }
+}
