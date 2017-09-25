@@ -16,7 +16,9 @@ nav {
     font-size: 1.50em;
     margin-bottom: 5px; }
     .terminal-card p.command::before {
-      content: "$"; }
+      content: "$ "; }
+    .terminal-card p.output {
+      font-style: italic; }
   .terminal-card .card-title span ~ span {
     padding-left: 4px;
     color: #FBE5B3; }
