@@ -7,7 +7,9 @@
 
   <body>
 
-    {% include nav.html %}
+    {% capture active %}{{ page.path | basename }}{% endcapture %}
+    
+    {% include nav.html active=active %}
 
     {{ content }}
 
