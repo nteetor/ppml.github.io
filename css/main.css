@@ -8,7 +8,7 @@ nav {
     margin-top: -5px; }
 
 .terminal-card {
-  background-color: #F5F1E6;
+  background-color: #F5F1E6 !important;
   font-family: "PT Mono", monospace; }
   .terminal-card > div {
     padding: 10px 10px 40px 10px; }
