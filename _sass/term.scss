@@ -12,11 +12,12 @@
 	
 	&.command {
 	    &::before {
-		content: "$";
+		content: "$ ";
 	    }
 	}
 
 	&.output {
+	    font-style: italic;
 	    
 	}
     }
