@@ -1,0 +1,26 @@
+---
+---
+<div class="row">
+  {% if page.description %}
+  <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+    
+    {% for desc in page.description %}
+    <p>
+      {{ desc }}
+    </p>
+    {% endfor %}
+    
+  </div>
+  <div class="col col-12 col-sm-9 col-md-8 col-lg-7">
+
+    {{ content }}
+    
+  </div>
+  {% else %}
+  <div class="col col-12">
+
+    {{ content }}
+    
+  </div>  
+  {% endif %}
+</div>

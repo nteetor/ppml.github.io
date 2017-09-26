@@ -12,7 +12,7 @@ module Jekyll
       body = lines.join("\n")
 
       # Render "terminal"
-      "<div class=\"terminal-card card m-3\">" + 
+      "<div class=\"terminal-card card m-0\">" + 
         "<div class=\"card-body flow-text\">" +
         "<div class=\"card-title\">" +
         "<span class=\"fas fa-circle\"></span>" +

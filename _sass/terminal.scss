@@ -1,6 +1,7 @@
 .terminal-card {
-    background-color: #F5F1E6;
     font-family: "PT Mono", monospace;
+    border: none;
+    background-color: #F5F1E6;
 
     & > div {
 	padding: 10px 10px 40px 10px;
