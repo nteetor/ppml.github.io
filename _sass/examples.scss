@@ -1,0 +1,9 @@
+@import "terminal";
+
+.example {
+    p {
+	&:last-child {
+	    margin-bottom: 0;
+	}
+    }
+}

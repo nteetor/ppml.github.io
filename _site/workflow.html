@@ -85,13 +85,105 @@
     <div class="container">
   <div class="row">
     <div class="col">
-      <h4>Working with GitHub</h4>
+      <h4 class="display-4">
+	Working with GitHub,
+	<small class="text-muted">git, and the command line</small>
+      </h4>
     </div>
   </div>
 
   
   
-  <div class="row">
+  <div class="example row">
+  
+  <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+    
+    
+    <p>
+      Once you are satisfied with changes you need to add them. Adding changes is like putting thoughts down onto paper. Sending a blank letter does not do much.
+    </p>
+    
+    <p>
+      Changes may be added per file, per line, or all at once.
+    </p>
+    
+    
+  </div>
+  <div class="col col-12 col-sm-9 col-md-8 col-lg-7">
+
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p class="command text-truncate">git status</p>
+<p class="output text-truncate">On branch master</p>
+<p class="output text-truncate">Your branch is up-to-date with 'origin/master'.</p>
+<p class="output text-truncate">Changes not staged for commit:</p>
+<p class="output text-truncate">(use "git add &lt;file>..." to update what will be committed)</p>
+<p class="output text-truncate">(use "git checkout -- &lt;file>..." to discard changes in working directory)</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">modified:   R/thoughts.R</p>
+<p class="command text-truncate">git add R/thoughts.R</p>
+<p class="command text-truncate">git status</p>
+<p class="output text-truncate">On branch master</p>
+<p class="output text-truncate">Your branch is up-to-date with 'origin/master'.</p>
+<p class="output text-truncate">Changes to be committed:</p>
+<p class="output text-truncate">(use "git reset HEAD &lt;file>..." to unstage)</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">modified:   R/thoughts.R</p><p class="output">$</p></div></div>
+
+<div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p class="command text-truncate">git add --all</p>
+<p class="output text-truncate">usage: git [--version] [--help] [-C &lt;path>] [-c name=value]</p>
+<p class="output text-truncate">[--exec-path[=&lt;path>]] [--html-path] [--man-path] [--info-path]</p>
+<p class="output text-truncate">[-p | --paginate | --no-pager] [--no-replace-objects] [--bare]</p>
+<p class="output text-truncate">[--git-dir=&lt;path>] [--work-tree=&lt;path>] [--namespace=&lt;name>]</p>
+<p class="output text-truncate">&lt;command> [&lt;args>]</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">These are common Git commands used in various situations:</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">start a working area (see also: git help tutorial)</p>
+<p class="output text-truncate">clone      Clone a repository into a new directory</p>
+<p class="output text-truncate">init       Create an empty Git repository or reinitialize an existing one</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">work on the current change (see also: git help everyday)</p>
+<p class="output text-truncate">add        Add file contents to the index</p>
+<p class="output text-truncate">mv         Move or rename a file, a directory, or a symlink</p>
+<p class="output text-truncate">reset      Reset current HEAD to the specified state</p>
+<p class="output text-truncate">rm         Remove files from the working tree and from the index</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">examine the history and state (see also: git help revisions)</p>
+<p class="output text-truncate">bisect     Use binary search to find the commit that introduced a bug</p>
+<p class="output text-truncate">grep       Print lines matching a pattern</p>
+<p class="output text-truncate">log        Show commit logs</p>
+<p class="output text-truncate">show       Show various types of objects</p>
+<p class="output text-truncate">status     Show the working tree status</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">grow, mark and tweak your common history</p>
+<p class="output text-truncate">branch     List, create, or delete branches</p>
+<p class="output text-truncate">checkout   Switch branches or restore working tree files</p>
+<p class="output text-truncate">commit     Record changes to the repository</p>
+<p class="output text-truncate">diff       Show changes between commits, commit and working tree, etc</p>
+<p class="output text-truncate">merge      Join two or more development histories together</p>
+<p class="output text-truncate">rebase     Reapply commits on top of another base tip</p>
+<p class="output text-truncate">tag        Create, list, delete or verify a tag object signed with GPG</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">collaborate (see also: git help workflows)</p>
+<p class="output text-truncate">fetch      Download objects and refs from another repository</p>
+<p class="output text-truncate">pull       Fetch from and integrate with another repository or a local branch</p>
+<p class="output text-truncate">push       Update remote refs along with associated objects</p>
+<p class="output text-truncate"></p>
+<p class="output text-truncate">'git help -a' and 'git help -g' list available subcommands and some</p>
+<p class="output text-truncate">concept guides. See 'git help &lt;command>' or 'git help &lt;concept>'</p>
+<p class="output text-truncate">to read about a specific subcommand or concept.</p><p class="output">$</p></div></div>
+
+    
+  </div>
+  
+</div>
+
+  
+  <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
+  
+  
+  <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
     
@@ -108,9 +200,9 @@
   </div>
   <div class="col col-12 col-sm-9 col-md-8 col-lg-7">
 
-    <div class="terminal-card card m-0"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p class="command">git commit -m "[your message]"</p>
-<p class="output"></p></div></div>
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p class="command text-truncate">git commit -m "[your message]"</p>
+<p class="output text-truncate"></p><p class="output">$</p></div></div>
 
     
   </div>
@@ -121,7 +213,7 @@
   <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
   
   
-  <div class="row">
+  <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
     
@@ -134,9 +226,9 @@
   </div>
   <div class="col col-12 col-sm-9 col-md-8 col-lg-7">
 
-    <div class="terminal-card card m-0"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p class="command">git config --global user.name</p>
-<p class="command">git config --global user.email</p></div></div>
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p class="command text-truncate">git config --global user.name</p>
+<p class="command text-truncate">git config --global user.email</p><p class="output">$</p></div></div>
 
     
   </div>
@@ -147,7 +239,7 @@
   <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
   
   
-  <div class="row">
+  <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
     
@@ -160,10 +252,10 @@
   </div>
   <div class="col col-12 col-sm-9 col-md-8 col-lg-7">
 
-    <div class="terminal-card card m-0"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p class="command">git --help</p>
-<p class="output">usage git: ...</p>
-<p class="output">...</p></div></div>
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p class="command text-truncate">git --help</p>
+<p class="output text-truncate">usage git: ...</p>
+<p class="output text-truncate">...</p><p class="output">$</p></div></div>
 
     
   </div>

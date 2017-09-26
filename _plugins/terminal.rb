@@ -7,12 +7,14 @@ module Jekyll
 
     def render(context)
       lines = super.split("\n")
-      lines = lines.map { |el| el.gsub(/^\s*\$\s*(.*)$/, "<p class=\"command\">\\1</p>") }
-      lines = lines.map { |el| el.gsub(/^\s*>\s*(.*)$/, "<p class=\"output\">\\1</p>") }
+      lines = lines.map { |el| el.gsub("<", "&lt;") }
+      lines = lines.map { |el| el.gsub("(?!^)>", "&rt;") }
+      lines = lines.map { |el| el.gsub(/^\s*\$\s*(.*)$/, "<p class=\"command text-truncate\">\\1</p>") }
+      lines = lines.map { |el| el.gsub(/^\s*>\s*(.*)$/, "<p class=\"output text-truncate\">\\1</p>") }
       body = lines.join("\n")
 
       # Render "terminal"
-      "<div class=\"terminal-card card m-0\">" + 
+      "<div class=\"terminal-card card\">" + 
         "<div class=\"card-body flow-text\">" +
         "<div class=\"card-title\">" +
         "<span class=\"fas fa-circle\"></span>" +
@@ -20,6 +22,7 @@ module Jekyll
 	"<span class=\"fas fa-circle\"></span>" +
         "</div>" +
         "#{body}" +
+        "<p class=\"output\">$</p>" + 
         "</div>" +
         "</div>"
     end

@@ -1,14 +1,19 @@
 .terminal-card {
+    margin: 0 0 0 0;
     font-family: "PT Mono", monospace;
     border: none;
     background-color: #F5F1E6;
 
     & > div {
-	padding: 10px 10px 40px 10px;
+	padding: 10px 10px 10px 10px;
+    }
+
+    & ~ .terminal-card {
+	margin-top: 16px;
     }
 
     p {
-	font-size: 1.50em;
+	font-size: 1.25em;
 	margin-bottom: 5px;
 	
 	&.command {
@@ -18,15 +23,14 @@
 	}
 
 	&.output {
-	    font-style: italic;
-	    
+
 	}
     }
 
     .card-title {
 	span {
 	    & ~ span {
-		padding-left: 4px;
+		padding-left: 7px;
     		color: #FBE5B3;
 	    }
 	
@@ -36,7 +40,7 @@
 
 
 	    &:last-child {
-		color: #556A5B;
+		color: #67A77A; //#556A5B;
 	    }
 	}
     }
