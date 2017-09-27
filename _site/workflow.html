@@ -41,20 +41,32 @@
     
     
     <nav class="navbar navbar-expand navbar-light bg-light">
-  <a class="navbar-brand ppml-brand d-none d-sm-inline" href="/">
+  <a class="navbar-brand d-none d-sm-inline" href="/">
     <div class="mb-0">Prevention Policy</div>
     <div class="text-uppercase">Modeling Lab</div>
   </a>
-  <a class="navbar-brand ppml-brand d-inline d-sm-none" href="/">
+  <a class="navbar-brand d-inline d-sm-none" href="/">
     PPML
   </a>
   <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item ">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/">
+	  <span class="d-none d-sm-inline">
+	    Home
+	  </span>
+	  <span class="d-inline d-sm-none fas fa-home fa-fw fa-lg">
+	  </span>
+	</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="/projects">Projects</a>
+	<a class="nav-link" href="/projects">
+	  <span class="d-none d-sm-inline">
+            Projects
+	  </span>
+	  <span class="d-inline d-sm-none fas fa-folder fa-fw fa-lg">
+	  </span>
+	</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -85,7 +97,7 @@
     <div class="container">
   <div class="row">
     <div class="col">
-      <h4 class="display-4">
+      <h4 class="display-4 mb-0">
 	Working with GitHub,
 	<small class="text-muted">git, and the command line</small>
       </h4>
@@ -94,9 +106,14 @@
 
   
   
+  <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
   <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+
+    
+    <h3 class="mb-3">git add; indicating files to commit</h3>
+    
     
     
     <p>
@@ -145,11 +162,13 @@ Changes to be committed:
 
   
   <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-  
-  
   <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+
+    
+    <h3 class="mb-3">git commit; readying files for a push</h3>
+    
     
     
     <p>
@@ -157,7 +176,11 @@ Changes to be committed:
     </p>
     
     <p>
-      When you commit changes it is as though you are stamping and sealing your letter's envelope. You have declared the letter complete (git add --all) and now there is only one additional step to sending the letter on its way
+      When you commit changes it is as though you are stamping and sealing your letter's envelope. You have declared the letter complete (git add --all) and now there is only one additional step to sending the letter on its way.
+    </p>
+    
+    <p>
+      Adding a message to a commit is important. This will allow others to quickly understand or give context to your changes. Always remember that future you is one of those others! You may want to find a particular change and commit messages will allow you to quickly skim weeks worth of work.
     </p>
     
     
@@ -175,11 +198,13 @@ Changes to be committed:
 
   
   <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-  
-  
   <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+
+    
+    <h3 class="mb-3">git config; housekeeping</h3>
+    
     
     
     <p>
@@ -192,7 +217,18 @@ Changes to be committed:
 
     <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
 <p>git config --global user.name</p>
+<pre>
+[user name]
+</pre>
 <p>git config --global user.email</p>
+<pre>
+[user email]
+</pre>
+<p></p></div></div>
+
+<div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p>git config --global user.name [user name]</p>
+<p>git config --global user.email [user email]</p>
 <p></p></div></div>
 
     
@@ -202,15 +238,21 @@ Changes to be committed:
 
   
   <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-  
-  
   <div class="example row">
   
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+
+    
+    <h3 class="mb-3">git help; common subcommands</h3>
+    
     
     
     <p>
-      Need to double check what that git command was?
+      There are many git subcommands, they are the "add", "push", or "pull" you find after the initial "git". While memorizing much-used subcommands like "add" or "pull" is useful, you can always refer the git help summary for a list of common subcommands.
+    </p>
+    
+    <p>
+      Notice at the end of the summary a "help" subcommand is mentioned. This subcommand can be used to learn more a particular subcommand.
     </p>
     
     
@@ -270,7 +312,6 @@ specific subcommand or concept.
   
 </div>
 
-  
   
 
 </div>

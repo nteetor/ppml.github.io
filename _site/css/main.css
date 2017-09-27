@@ -10,13 +10,16 @@ h5 {
   font-family: "Josefin Slab", serif; }
 
 nav {
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 500; }
-  nav .ppml-brand div {
+  nav .navbar-brand div {
     font-size: 1.10em; }
-  nav .ppml-brand div ~ div {
+  nav .navbar-brand div ~ div {
     font-size: 0.75em;
     margin-top: -5px; }
+  nav .nav-link {
+    min-width: 50px; }
 
 .terminal-card {
   margin: 0 0 0 0;

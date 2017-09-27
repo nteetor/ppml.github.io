@@ -1,9 +1,21 @@
 ---
 layout: example
 type: git
+heading: git config; housekeeping
 description: Check that your username and email are configured.
 ---
 {% terminal %}
 $ git config --global user.name
+```
+[user name]
+```
 $ git config --global user.email
+```
+[user email]
+```
+{% endterminal %}
+
+{% terminal %}
+$ git config --global user.name [user name]
+$ git config --global user.email [user email]
 {% endterminal %}

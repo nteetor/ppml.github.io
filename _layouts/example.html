@@ -3,6 +3,10 @@
 <div class="example row">
   {% if page.description %}
   <div class="col col-12 col-sm-3 col-md-4 col-lg-5 mb-3 mb-sm-0">
+
+    {% if page.heading %}
+    <h3 class="mb-3">{{ page.heading }}</h3>
+    {% endif %}
     
     {% for desc in page.description %}
     <p>
