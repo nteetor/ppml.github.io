@@ -27,7 +27,11 @@ nav {
 	}
     }
 
-    .nav-link {
-	min-width: 50px;
+    .navbar-nav {
+	&:first-child {
+	    .nav-link {
+		min-width: 50px;
+	    }
+	}
     }
 }
