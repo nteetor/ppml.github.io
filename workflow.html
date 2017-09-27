@@ -12,8 +12,8 @@ layout: default
   </div>
 
   {% assign git_examples = site.examples | where: "type", "git" %}
-  {% for git in git_examples %}
-  {{ git }}
+  {% for example in git_examples %}
+  {{ example }}
   {% if forloop.last == false %}
   {% divider %}
   {% endif %}

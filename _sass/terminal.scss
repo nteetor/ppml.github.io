@@ -1,6 +1,7 @@
 .terminal-card {
     margin: 0 0 0 0;
     font-family: "PT Mono", monospace;
+    font-size: 1.25rem;
     border: none;
     background-color: #F5F1E6;
 
@@ -12,23 +13,24 @@
 	margin-top: 16px;
     }
 
+    pre {
+	margin-bottom: 5px;
+	font-family: inherit;
+	font-size: inherit;
+    }
+
     p {
-	font-size: 1.25em;
 	margin-bottom: 5px;
 	
-	&.command {
-	    &::before {
-		content: "$ ";
-	    }
-	}
-
-	&.output {
-
+	&::before {
+	    content: "$ ";
 	}
     }
 
     .card-title {
 	span {
+	    font-size: 1rem;
+	    
 	    & ~ span {
 		padding-left: 7px;
     		color: #FBE5B3;

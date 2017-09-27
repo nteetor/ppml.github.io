@@ -21,24 +21,30 @@ nav {
 .terminal-card {
   margin: 0 0 0 0;
   font-family: "PT Mono", monospace;
+  font-size: 1.25rem;
   border: none;
   background-color: #F5F1E6; }
   .terminal-card > div {
     padding: 10px 10px 10px 10px; }
   .terminal-card ~ .terminal-card {
     margin-top: 16px; }
+  .terminal-card pre {
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-size: inherit; }
   .terminal-card p {
-    font-size: 1.25em;
     margin-bottom: 5px; }
-    .terminal-card p.command::before {
+    .terminal-card p::before {
       content: "$ "; }
-  .terminal-card .card-title span ~ span {
-    padding-left: 7px;
-    color: #FBE5B3; }
-  .terminal-card .card-title span:first-child {
-    color: #DEACAB; }
-  .terminal-card .card-title span:last-child {
-    color: #67A77A; }
+  .terminal-card .card-title span {
+    font-size: 1rem; }
+    .terminal-card .card-title span ~ span {
+      padding-left: 7px;
+      color: #FBE5B3; }
+    .terminal-card .card-title span:first-child {
+      color: #DEACAB; }
+    .terminal-card .card-title span:last-child {
+      color: #67A77A; }
 
 .example p:last-child {
   margin-bottom: 0; }
