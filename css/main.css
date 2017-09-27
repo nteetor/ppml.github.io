@@ -18,7 +18,7 @@ nav {
   nav .navbar-brand div ~ div {
     font-size: 0.75em;
     margin-top: -5px; }
-  nav .nav-link {
+  nav .navbar-nav:first-child .nav-link {
     min-width: 50px; }
 
 .terminal-card {
