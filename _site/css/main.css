@@ -49,5 +49,59 @@ nav {
     .terminal-card .card-title span:last-child {
       color: #67A77A; }
 
+.project-prompt .list-group-item {
+  cursor: pointer; }
+  .project-prompt .list-group-item ~ .list-group-item {
+    border-bottom-width: 0; }
+.project-prompt .list-group-item-action:hover {
+  background-color: #DCE6F5; }
+.project-prompt .new-directory-icon {
+  color: #E9F5FB; }
+.project-prompt .existing-directory-icon {
+  color: #F1D791; }
+.project-prompt .version-control-icon {
+  color: #B98D5A; }
+.project-prompt .card-header:first-child {
+  padding: 8px 20px 8px 20px;
+  line-height: 8px;
+  font-size: 0.75em;
+  background-color: #E1E2E5; }
+.project-prompt .card-header ~ .card-header {
+  font-weight: 500;
+  background-color: #F3F4F4;
+  border: 0; }
+.project-prompt .card-footer {
+  height: 49px;
+  background-color: #F3F4F4; }
+.project-prompt .option-title {
+  font-weight: 500; }
+.project-prompt .project-type {
+  font-size: 0.75em; }
+
+.project-type .list-group-item {
+  cursor: pointer; }
+  .project-type .list-group-item ~ .list-group-item {
+    border-bottom-width: 0; }
+.project-type .list-group-item-action:hover {
+  background-color: #DCE6F5; }
+.project-type .new-directory-icon {
+  color: #E9F5FB; }
+.project-type .r-package-icon {
+  color: #92A3B5; }
+.project-type .card-header:first-child {
+  padding: 8px 20px 8px 20px;
+  line-height: 8px;
+  font-size: 0.75em;
+  background-color: #E1E2E5; }
+.project-type .card-header ~ .card-header {
+  font-weight: 500;
+  background-color: #F3F4F4;
+  border: 0; }
+.project-type .card-footer {
+  height: 49px;
+  background-color: #F3F4F4; }
+.project-type .option-title {
+  font-weight: 500; }
+
 .example p:last-child {
   margin-bottom: 0; }

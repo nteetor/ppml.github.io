@@ -17,4 +17,21 @@ layout: default
   {{ example }}
   {% endfor %}
 
+  {% divider %}
+
+  <div class="row">
+    <div class="col">
+      <h4 class="display-4 mb-0">
+	Getting started with RStudio projects,
+	<small class="text-muted">version control, and R packages</small>
+      </h4>
+    </div>
+  </div>
+
+  {% assign rstudio_examples = site.examples | where: "type", "rstudio" %}
+  {% for example in rstudio_examples %}
+  {% divider %}
+  {{ example }}
+  {% endfor %}
+
 </div>
