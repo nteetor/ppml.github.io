@@ -9,9 +9,9 @@
     {% endif %}
     
     {% for desc in page.description %}
-    <p>
-      {{ desc }}
-    </p>
+
+    {{ desc | markdownify }}
+
     {% endfor %}
     
   </div>
