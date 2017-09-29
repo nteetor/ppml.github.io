@@ -24,24 +24,26 @@ description:
   </div>
   <div class="card-header">
     <div class="row no-gutters">
-      <div class="col-1 align-middle">
-	Back
+      <div class="col-1 justify-content-center">
+	<span class="shrink">
+	  Back
+	</span>
       </div>
-      <div class="col-10 pl-2">
+      <div class="col-10">
 	Project Type
       </div>
     </div>
   </div>
-  <div class="list-group list-group-flush">
-    <a class="list-group-item list-group-item-action">
+  <div class="list-group list-group-flush" role="tab-list">
+    <a class="list-group-item list-group-item-action active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
       <div class="row align-items-center no-gutters">
-	<div class="col-1">
-	  <span class="new-directory-icon">
+	<div class="col-11">
+	  <span class="new-directory-icon mr-2">
 	    <span class="fas fa-hexagon fa-sm fa-rotate-90 fa-fw"></span>
 	  </span>
-	</div>
-	<div class="col-10">
-	  New Project
+	  <span>
+	    New Project
+	  </span>
 	</div>
 	<div class="col-1 d-flex flex-row justify-content-end">
 	  <span class="fa fa-chevron-right fa-fw text-secondary">
@@ -49,15 +51,15 @@ description:
 	</div>
       </div>
     </a>
-    <a class="list-group-item list-group-item-action"">
+    <a class="list-group-item list-group-item-action" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
       <div class="row align-items-center no-gutters">
-	<div class="col-1">
-	  <span class="r-package-icon">
+	<div class="col-11">
+	  <span class="r-package-icon mr-2">
 	    <span class="fas fa-hexagon fa-sm fa-rotate-90 fa-fw"></span>
 	  </span>
-	</div>
-	<div class="col-10">
-	  R Package
+	  <span>
+	    R Package
+	  </span>
 	</div>
 	<div class="col-1 d-flex flex-row justify-content-end">
 	  <span class="fa fa-chevron-right fa-fw text-secondary">
@@ -67,9 +69,7 @@ description:
     </a>
     <a class="list-group-item flex-column">
       <div class="row align-items-center no-gutters">
-	<div class="col-1">
-	</div>
-	<div class="col-10">
+	<div class="col-11">
 	  ...
 	</div>
 	<div class="col-1 d-flex flex-row justify-content-end">
@@ -80,9 +80,7 @@ description:
     </a>
     <a class="list-group-item flex-column">
       <div class="row align-items-center no-gutters">
-	<div class="col-1">
-	</div>
-	<div class="col-10">
+	<div class="col-11">
 	  ...
 	</div>
 	<div class="col-1 d-flex flex-row justify-content-end">

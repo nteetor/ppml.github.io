@@ -1,11 +1,15 @@
-// hover color #DCE6F5
-
 .project-prompt {
     .list-group-item {
 	cursor: pointer;
 
 	& ~ .list-group-item {
 	    border-bottom-width: 0;
+	}
+
+	&.active {
+	    color: inherit;
+	    background-color: #DCE6F5;
+	    border-color: #DCE6F5;
 	}
     }
 
@@ -14,9 +18,9 @@
 	    background-color: #DCE6F5;
 	}
     }
-
+    
     .new-directory-icon {
-	color: #E9F5FB; //#D9E9F7;
+	color: #E9F5FB;
     }
 
     .existing-directory-icon {
@@ -43,7 +47,7 @@
     }
 
     .card-footer {
-	height: 49px;
+	height: (49 / 2)px;
 	background-color: #F3F4F4;
     }
 
@@ -59,10 +63,15 @@
 .project-type {
     .list-group-item {
 	cursor: pointer;
-//	padding: 6px 20px 6px 20px;
 
 	& ~ .list-group-item {
 	    border-bottom-width: 0;
+	}
+
+	&.active {
+	    color: inherit;
+	    background-color: #DCE6F5;
+	    border-color: #DCE6F5;
 	}
     }
 
@@ -96,11 +105,15 @@
     }
 
     .card-footer {
-	height: 49px;
+	height: (49 / 2)px;
 	background-color: #F3F4F4;
     }
 
     .option-title {
 	font-weight: 500;
+    }
+
+    .shrink {
+	font-size: 0.75em;
     }
 }

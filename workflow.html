@@ -1,37 +1,28 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h4 class="display-4 mb-0">
-	Working with GitHub,
-	<small class="text-muted">git, and the command line</small>
-      </h4>
-    </div>
+<div class="row">
+  <div class="col">
+    
+    {% title %}
+    Working with GitHub, git, and the command line
+    {% endtitle %}
+    
+    {% assign git_examples = site.examples | where: "type", "git" %}
+    {% for example in git_examples %}
+    {{ example }}
+    {% divider %}
+    {% endfor %}
+
+    {% title %}
+    Getting started with RStudio projects, version control, and R packages
+    {% endtitle %}
+    
+    {% assign rstudio_examples = site.examples | where: "type", "rstudio" %}
+    {% for example in rstudio_examples %}
+    {{ example }}
+    {% divider %}
+    {% endfor %}
+    
   </div>
-
-  {% assign git_examples = site.examples | where: "type", "git" %}
-  {% for example in git_examples %}
-  {% divider %}
-  {{ example }}
-  {% endfor %}
-
-  {% divider %}
-
-  <div class="row">
-    <div class="col">
-      <h4 class="display-4 mb-0">
-	Getting started with RStudio projects,
-	<small class="text-muted">version control, and R packages</small>
-      </h4>
-    </div>
-  </div>
-
-  {% assign rstudio_examples = site.examples | where: "type", "rstudio" %}
-  {% for example in rstudio_examples %}
-  {% divider %}
-  {{ example }}
-  {% endfor %}
-
 </div>
