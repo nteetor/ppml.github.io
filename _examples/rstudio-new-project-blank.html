@@ -1,0 +1,71 @@
+---
+layout: example
+type: rstudio
+index: 3
+heading: New blank project
+description:
+  - This is the final step when creating a new blank project. Most of the
+    controls on this screen are self-explanatory. However, click around to learn
+    more about recommended naming conventions or why that checkbox is supposed
+    to be selected.
+  - 
+  - Project names follow file name conventions. Please separate words with
+    dashes and avoid using other symbols. Local folders and projects should be
+    named after their corresponding GitHub repository whenever possible.
+  - Where you store a project on your computer is up to you. You might consider
+    creating a high-level `git/` folder to store all your projects which have a
+    corresponding GitHub repository.
+  - This checkbox ought to be selected by default, but please double-check that
+    it is. Your new project folder will be created with all the files necessary
+    for git.
+---
+<div class="create-rstudio-project project-type card">
+  <div class="card-header">
+    New Project
+  </div>
+  <div class="card-header">
+    <div class="row no-gutters">
+      <div class="col-1 justify-content-center">
+	<span class="shrink">
+	  Back
+	</span>
+      </div>
+      <div class="col-10">
+	Create New Project
+      </div>
+    </div>
+  </div>
+  <div class="card-body row pl-0 pt-0 pr-0 pt-1 pb-5 m-0 bg-light nav">
+    <div class="col col-2 d-flex justify-content-center">
+      <span class="new-directory-icon mt-3">
+	<span class="fas fa-hexagon fa-5x fa-rotate-90"></span>
+      </span>
+    </div>
+    <div class="col col-10 pl-0" role="tab-list">
+      <div class="mt-1 mb-0">
+	Directory name:
+      </div>
+      <div class="m-0">
+	<div class="fake-input w-75 border border-dark bg-white" data-target="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+	</div>
+      </div>
+      <div class="mt-1 mb-0">
+	Create project as a subdirectory of:
+      </div>
+      <div class="m-0">
+	<div class="fake-input w-75 border border-dark bg-white" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+	</div>
+      </div>
+      <div class="mt-1 mb-1">
+	<span class="far fa-check-square fa-fw" data-target="#{{ page.id | basename }}-4" data-toggle="tab" role="tab"></span>
+	Create a git repository
+      </div>
+      <div>
+	<span class="far fa-square fa-fw"></span>
+	Use packrat with this project
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+  </div>
+</div>

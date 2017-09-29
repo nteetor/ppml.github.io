@@ -15,8 +15,10 @@
       {% for desc in page.description offset:1 %}
       
       <div class="tab-pane fade{% if forloop.first == true %} show active{% endif %}" id="{{ page.id | basename }}-{{ forloop.index }}" role="tabpanel">
-	
-	{{ desc | markdownify }}
+
+	{% for d in desc %}
+	{{ d | markdownify }}
+	{% endfor %}
 	
       </div>
     

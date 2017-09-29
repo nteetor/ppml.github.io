@@ -8,7 +8,7 @@ layout: default
     Working with GitHub, git, and the command line
     {% endtitle %}
     
-    {% assign git_examples = site.examples | where: "type", "git" %}
+    {% assign git_examples = site.examples | where: "type", "git"  %}
     {% for example in git_examples %}
     {{ example }}
     {% divider %}
@@ -18,7 +18,7 @@ layout: default
     Getting started with RStudio projects, version control, and R packages
     {% endtitle %}
     
-    {% assign rstudio_examples = site.examples | where: "type", "rstudio" %}
+    {% assign rstudio_examples = site.examples | where: "type", "rstudio" | sort: "index" %}
     {% for example in rstudio_examples %}
     {{ example }}
     {% divider %}

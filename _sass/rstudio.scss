@@ -1,3 +1,23 @@
+.create-rstudio-project {
+    .fake-input {
+	cursor: pointer;
+	height: 24px;
+    }
+
+    .fa-check-square {
+	&::before {
+	    cursor: pointer;
+	    background-color: white;
+	}
+    }
+    
+    .fa-square {
+	&::before {
+	    background-color: white;
+	}
+    }
+}
+
 .project-prompt {
     .list-group-item {
 	cursor: pointer;
