@@ -49,6 +49,15 @@ nav {
     .terminal-card .card-title span:last-child {
       color: #67A77A; }
 
+.create-rstudio-project .fake-input {
+  cursor: pointer;
+  height: 24px; }
+.create-rstudio-project .fa-check-square::before {
+  cursor: pointer;
+  background-color: white; }
+.create-rstudio-project .fa-square::before {
+  background-color: white; }
+
 .project-prompt .list-group-item {
   cursor: pointer; }
   .project-prompt .list-group-item ~ .list-group-item {
