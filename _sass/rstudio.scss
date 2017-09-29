@@ -1,24 +1,5 @@
-.create-rstudio-project {
-    .fake-input {
-	cursor: pointer;
-	height: 24px;
-    }
-
-    .fa-check-square {
-	&::before {
-	    cursor: pointer;
-	    background-color: white;
-	}
-    }
-    
-    .fa-square {
-	&::before {
-	    background-color: white;
-	}
-    }
-}
-
-.project-prompt {
+.rstudio-new-project {
+    /* modified bootstrap classes */
     .list-group-item {
 	cursor: pointer;
 
@@ -38,7 +19,28 @@
 	    background-color: #DCE6F5;
 	}
     }
+
+    .card-header {
+	&:first-child {
+	    padding: 8px 20px 8px 20px;
+	    line-height: 8px;
+	    font-size: 0.75em;
+	    background-color: #E1E2E5;
+	}
+
+	& ~ .card-header {
+	    font-weight: 500;
+	    background-color: #F3F4F4;
+	    border: 0;
+	}
+    }
     
+    .card-footer {
+	height: (49 / 2)px;
+	background-color: #F3F4F4;
+    }
+
+    /* icons */
     .new-directory-icon {
 	color: #E9F5FB;
     }
@@ -50,90 +52,40 @@
     .version-control-icon {
 	color: #B98D5A;
     }
-    
-    .card-header {
-	&:first-child {
-	    padding: 8px 20px 8px 20px;
-	    line-height: 8px;
-	    font-size: 0.75em;
-	    background-color: #E1E2E5;
-	}
-
-	& ~ .card-header {
-	    font-weight: 500;
-	    background-color: #F3F4F4;
-	    border: 0;
-	}
-    }
-
-    .card-footer {
-	height: (49 / 2)px;
-	background-color: #F3F4F4;
-    }
-
-    .option-title {
-	font-weight: 500;
-    }
-
-    .project-type {
-	font-size: 0.75em;
-    }
-}
-
-.project-type {
-    .list-group-item {
-	cursor: pointer;
-
-	& ~ .list-group-item {
-	    border-bottom-width: 0;
-	}
-
-	&.active {
-	    color: inherit;
-	    background-color: #DCE6F5;
-	    border-color: #DCE6F5;
-	}
-    }
-
-    .list-group-item-action {
-	&:hover {
-	    background-color: #DCE6F5;
-	}
-    }
-
-    .new-directory-icon {
-	color: #E9F5FB;
-    }
 
     .r-package-icon {
 	color: #92A3B5;
     }
     
-    .card-header {
-	&:first-child {
-	    padding: 8px 20px 8px 20px;
-	    line-height: 8px;
-	    font-size: 0.75em;
-	    background-color: #E1E2E5;
-	}
-
-	& ~ .card-header {
-	    font-weight: 500;
-	    background-color: #F3F4F4;
-	    border: 0;
-	}
-    }
-
-    .card-footer {
-	height: (49 / 2)px;
-	background-color: #F3F4F4;
-    }
-
+    /* misc */
     .option-title {
 	font-weight: 500;
+    }
+    
+    .project-type {
+	font-size: 0.75em;
+    }
+    
+    .fake-input {
+	cursor: pointer;
+	height: 24px;
     }
 
     .shrink {
 	font-size: 0.75em;
+    }
+
+    /* font-awesome adjustments */
+    .fa-check-square {
+	&::before {
+	    cursor: pointer;
+	    background-color: white;
+	}
+    }
+    
+    .fa-square {
+	&::before {
+	    background-color: white;
+	}
     }
 }
