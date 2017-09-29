@@ -49,78 +49,55 @@ nav {
     .terminal-card .card-title span:last-child {
       color: #67A77A; }
 
-.create-rstudio-project .fake-input {
-  cursor: pointer;
-  height: 24px; }
-.create-rstudio-project .fa-check-square::before {
-  cursor: pointer;
-  background-color: white; }
-.create-rstudio-project .fa-square::before {
-  background-color: white; }
-
-.project-prompt .list-group-item {
-  cursor: pointer; }
-  .project-prompt .list-group-item ~ .list-group-item {
-    border-bottom-width: 0; }
-  .project-prompt .list-group-item.active {
-    color: inherit;
-    background-color: #DCE6F5;
-    border-color: #DCE6F5; }
-.project-prompt .list-group-item-action:hover {
-  background-color: #DCE6F5; }
-.project-prompt .new-directory-icon {
-  color: #E9F5FB; }
-.project-prompt .existing-directory-icon {
-  color: #F1D791; }
-.project-prompt .version-control-icon {
-  color: #B98D5A; }
-.project-prompt .card-header:first-child {
-  padding: 8px 20px 8px 20px;
-  line-height: 8px;
-  font-size: 0.75em;
-  background-color: #E1E2E5; }
-.project-prompt .card-header ~ .card-header {
-  font-weight: 500;
-  background-color: #F3F4F4;
-  border: 0; }
-.project-prompt .card-footer {
-  height: 24.5 px;
-  background-color: #F3F4F4; }
-.project-prompt .option-title {
-  font-weight: 500; }
-.project-prompt .project-type {
-  font-size: 0.75em; }
-
-.project-type .list-group-item {
-  cursor: pointer; }
-  .project-type .list-group-item ~ .list-group-item {
-    border-bottom-width: 0; }
-  .project-type .list-group-item.active {
-    color: inherit;
-    background-color: #DCE6F5;
-    border-color: #DCE6F5; }
-.project-type .list-group-item-action:hover {
-  background-color: #DCE6F5; }
-.project-type .new-directory-icon {
-  color: #E9F5FB; }
-.project-type .r-package-icon {
-  color: #92A3B5; }
-.project-type .card-header:first-child {
-  padding: 8px 20px 8px 20px;
-  line-height: 8px;
-  font-size: 0.75em;
-  background-color: #E1E2E5; }
-.project-type .card-header ~ .card-header {
-  font-weight: 500;
-  background-color: #F3F4F4;
-  border: 0; }
-.project-type .card-footer {
-  height: 24.5 px;
-  background-color: #F3F4F4; }
-.project-type .option-title {
-  font-weight: 500; }
-.project-type .shrink {
-  font-size: 0.75em; }
+.rstudio-new-project {
+  /* modified bootstrap classes */
+  /* icons */
+  /* misc */
+  /* font-awesome adjustments */ }
+  .rstudio-new-project .list-group-item {
+    cursor: pointer; }
+    .rstudio-new-project .list-group-item ~ .list-group-item {
+      border-bottom-width: 0; }
+    .rstudio-new-project .list-group-item.active {
+      color: inherit;
+      background-color: #DCE6F5;
+      border-color: #DCE6F5; }
+  .rstudio-new-project .list-group-item-action:hover {
+    background-color: #DCE6F5; }
+  .rstudio-new-project .card-header:first-child {
+    padding: 8px 20px 8px 20px;
+    line-height: 8px;
+    font-size: 0.75em;
+    background-color: #E1E2E5; }
+  .rstudio-new-project .card-header ~ .card-header {
+    font-weight: 500;
+    background-color: #F3F4F4;
+    border: 0; }
+  .rstudio-new-project .card-footer {
+    height: 24.5 px;
+    background-color: #F3F4F4; }
+  .rstudio-new-project .new-directory-icon {
+    color: #E9F5FB; }
+  .rstudio-new-project .existing-directory-icon {
+    color: #F1D791; }
+  .rstudio-new-project .version-control-icon {
+    color: #B98D5A; }
+  .rstudio-new-project .r-package-icon {
+    color: #92A3B5; }
+  .rstudio-new-project .option-title {
+    font-weight: 500; }
+  .rstudio-new-project .project-type {
+    font-size: 0.75em; }
+  .rstudio-new-project .fake-input {
+    cursor: pointer;
+    height: 24px; }
+  .rstudio-new-project .shrink {
+    font-size: 0.75em; }
+  .rstudio-new-project .fa-check-square::before {
+    cursor: pointer;
+    background-color: white; }
+  .rstudio-new-project .fa-square::before {
+    background-color: white; }
 
 .example p:last-child {
   margin-bottom: 0; }
