@@ -1,0 +1,8 @@
+<script>
+ $(document).ready(function() {
+     $(".dropdown-select").on("click", "a", function(el) {
+	 var $this = $(this);
+	 $this.closest(".dropdown-select").find("button").first().text($this.text());
+     });
+ });    
+</script>
