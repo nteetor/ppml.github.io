@@ -76,6 +76,15 @@ nav {
   .rstudio-new-project .card-footer {
     height: 24.5 px;
     background-color: #F3F4F4; }
+  .rstudio-new-project .form-group input, .rstudio-new-project .form-group select, .rstudio-new-project .form-group option,
+  .rstudio-new-project .form-row input,
+  .rstudio-new-project .form-row select,
+  .rstudio-new-project .form-row option {
+    cursor: pointer; }
+  .rstudio-new-project .form-group textarea,
+  .rstudio-new-project .form-row textarea {
+    cursor: pointer;
+    resize: none; }
   .rstudio-new-project .new-directory-icon {
     color: #E9F5FB; }
   .rstudio-new-project .existing-directory-icon {
@@ -93,10 +102,13 @@ nav {
     height: 24px; }
   .rstudio-new-project .shrink {
     font-size: 0.75em; }
-  .rstudio-new-project .fa-check-square::before {
-    cursor: pointer;
+  .rstudio-new-project *[data-toggle="tab"] {
+    cursor: pointer; }
+  .rstudio-new-project .dropdown-select button, .rstudio-new-project .dropdown-select a {
+    cursor: pointer; }
+  .rstudio-new-project .dropdown-select .active {
     background-color: white; }
-  .rstudio-new-project .fa-square::before {
+  .rstudio-new-project .fa-check-square::before, .rstudio-new-project .fa-square::before {
     background-color: white; }
 
 .example p:last-child {
