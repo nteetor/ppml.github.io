@@ -40,6 +40,18 @@
 	background-color: #F3F4F4;
     }
 
+    .form-group,
+    .form-row {
+	input, select, option {
+	    cursor: pointer;
+	}
+
+	textarea {
+	    cursor: pointer;
+	    resize: none;
+	}
+    }
+
     /* icons */
     .new-directory-icon {
 	color: #E9F5FB;
@@ -75,15 +87,22 @@
 	font-size: 0.75em;
     }
 
-    /* font-awesome adjustments */
-    .fa-check-square {
-	&::before {
+    *[data-toggle="tab"] {
+	cursor: pointer;
+    }
+
+    .dropdown-select {
+	button, a {
 	    cursor: pointer;
+	}
+	
+	.active {
 	    background-color: white;
 	}
     }
-    
-    .fa-square {
+
+    /* font-awesome adjustments */
+    .fa-check-square, .fa-square {
 	&::before {
 	    background-color: white;
 	}
