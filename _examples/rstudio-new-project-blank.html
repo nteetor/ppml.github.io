@@ -23,6 +23,7 @@ description:
   <div class="card-header">
     New Project
   </div>
+  
   <div class="card-header">
     <div class="row no-gutters">
       <div class="col-1 justify-content-center">
@@ -35,37 +36,51 @@ description:
       </div>
     </div>
   </div>
-  <div class="card-body row pl-0 pt-0 pr-0 pt-1 pb-5 m-0 bg-light nav">
-    <div class="col col-2 d-flex justify-content-center">
-      <span class="new-directory-icon mt-3">
-	<span class="fas fa-hexagon fa-5x fa-rotate-90"></span>
+  
+  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
+    <!-- logo -->
+    <div class="col col-3 d-flex justify-content-center">
+      <span class="new-directory-icon mt-5">
+	<span class="fas fa-hexagon fa-6x fa-rotate-90"></span>
       </span>
     </div>
-    <div class="col col-10 pl-0" role="tab-list">
-      <div class="mt-1 mb-0">
-	Directory name:
-      </div>
-      <div class="m-0">
-	<div class="fake-input w-75 border border-dark bg-white" data-target="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+
+    <!-- body -->
+    <div class="col col-9 pl-0" role="tab-list">
+      
+      <div class="form-row"">
+	<div class="form-group col col-10 pl-0">
+	  <label>Directory name:</label>
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-2" data-toggle="tab" role="tab" readonly>
 	</div>
       </div>
-      <div class="mt-1 mb-0">
-	Create project as a subdirectory of:
-      </div>
-      <div class="m-0">
-	<div class="fake-input w-75 border border-dark bg-white" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+
+      <div class="form-row">
+	<label>Create project as a subdirectory of:</label>
+	<div class="form-group col col-10 pl-0">
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="target">
+	</div>
+	<div class="form-group col col-2 pr-0">
+	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">Browse</button>
 	</div>
       </div>
-      <div class="mt-1 mb-1">
-	<span class="far fa-check-square fa-fw" data-target="#{{ page.id | basename }}-4" data-toggle="tab" role="tab"></span>
-	Create a git repository
+
+      <div class="form-row">
+	<div class="col col-auto pl-0">
+	  <div class="mt-1 mb-1" data-target="#{{ page.id | basename }}-4" data-toggle="tab" role="tab">
+	    <span class="far fa-check-square fa-fw"></span>
+	    Create a git repository
+	  </div>
+	  <div>
+	    <span class="far fa-square fa-fw"></span>
+	    Use packrat with this project
+	  </div>
+	</div>
       </div>
-      <div>
-	<span class="far fa-square fa-fw"></span>
-	Use packrat with this project
-      </div>
+
     </div>
   </div>
+  
   <div class="card-footer">
   </div>
 </div>

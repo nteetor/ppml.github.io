@@ -8,10 +8,10 @@ description:
     easily share our methods and data in a standardized format. Installations
     are possible from GitHub with `devtools` and packages will be made available
     on CRAN as possible.
-  - The default option is often enough. If you are going to use C++ and Rcpp you
-    might considering the second option here. If you do not immediately need to
-    work with Rcpp, but might in the future, you can always add Rcpp
-    infrastructure later with the `devtools` package.
+  - The default option to create an R package (no C++) is often enough. If you
+    are going to use C++ and Rcpp you might consider the second option here. If
+    you do not immediately need to work with Rcpp, but might in the future, you
+    can always add Rcpp infrastructure later with the `devtools` package.
   - When you know you are immediately working with C++ and Rcpp considering
     choosing the second option. Remember, you can always add the necessary Rcpp
     infrastructure to your project at a later time.
@@ -94,7 +94,7 @@ description:
 	  </textarea>
 	</div>
 	<div class="form-group col col-2 pr-0">
-	  <button class="btn btn-sm btn-block bg-light border border-secondary">Add...</button>
+	  <button class="btn btn-sm btn-block bg-light border border-secondary">Add</button>
 	  <button class="btn btn-sm btn-block bg-light border border-secondary">Remove</button>
 	</div>
       </div>
@@ -104,8 +104,8 @@ description:
 	<div class="form-group col col-10 pl-0">
 	  <input type="text" class="form-control bg-white" data-target="#{{ page.id | basename }}-5" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-2">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">Browse...</button>
+	<div class="form-group col col-2 pr-0">
+	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">Browse</button>
 	</div>
       </div>
 
