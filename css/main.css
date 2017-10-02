@@ -97,9 +97,6 @@ nav {
     font-weight: 500; }
   .rstudio-new-project .project-type {
     font-size: 0.75em; }
-  .rstudio-new-project .fake-input {
-    cursor: pointer;
-    height: 24px; }
   .rstudio-new-project .shrink {
     font-size: 0.75em; }
   .rstudio-new-project *[data-toggle="tab"] {
