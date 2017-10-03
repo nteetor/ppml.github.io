@@ -54,16 +54,14 @@ nav {
   /* icons */
   /* misc */
   /* font-awesome adjustments */ }
-  .rstudio-new-project .list-group-item {
-    cursor: pointer; }
-    .rstudio-new-project .list-group-item ~ .list-group-item {
-      border-bottom-width: 0; }
-    .rstudio-new-project .list-group-item.active {
-      color: inherit;
-      background-color: #DCE6F5;
-      border-color: #DCE6F5; }
+  .rstudio-new-project .list-group-item ~ .list-group-item {
+    border-bottom-width: 0; }
   .rstudio-new-project .list-group-item-action:hover {
-    background-color: #DCE6F5; }
+    background-color: transparent; }
+  .rstudio-new-project .list-group-item-action.active {
+    color: inherit;
+    background-color: #DCE6F5;
+    border-color: #DCE6F5; }
   .rstudio-new-project .card-header:first-child {
     padding: 8px 20px 8px 20px;
     line-height: 8px;
