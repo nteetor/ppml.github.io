@@ -39,6 +39,8 @@ nav {
     margin-bottom: 5px; }
     .terminal-card p::before {
       content: "$ "; }
+  .terminal-card .card-body {
+    padding: 5px 10px 10px 10px; }
   .terminal-card .card-title span {
     font-size: 1rem; }
     .terminal-card .card-title span ~ span {
@@ -62,6 +64,8 @@ nav {
     color: inherit;
     background-color: #DCE6F5;
     border-color: #DCE6F5; }
+  .rstudio-new-project .dropdown-item:hover {
+    background-color: transparent; }
   .rstudio-new-project .card-header:first-child {
     padding: 8px 20px 8px 20px;
     line-height: 8px;
