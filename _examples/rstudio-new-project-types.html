@@ -17,7 +17,11 @@ description:
     NAMESPACE file, R/ and man/ folders, and assorted other files. If you know
     your scripts and data will eventually be converted into an R package this
     option is for you. If you believe others will want to use your work or build
-    upon your work the R package option is also for.  
+    upon your work the R package option is also for.
+  - The third option is to generate a new project with files relevant to Shiny
+    application development. These files, `server.R` and `ui.R`, usefully
+    include a small example for those getting started with Shiny or refreshing
+    their understanding of Shiny file structure.
 ---
 <div class="rstudio-new-project project-type card">
   <div class="card-header">
@@ -70,7 +74,7 @@ description:
       </div>
     </a>
     
-    <div class="list-group-item px-0">
+    <a class="list-group-item list-group-item-action px-0" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
       <div class="row align-items-center mx-0">
 	<div class="col col-1">
 	  <div class="new-directory-icon">
@@ -84,7 +88,7 @@ description:
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
-    </div>
+    </a>
     
     <div class="list-group-item px-0">
       <div class="row align-items-center mx-0">

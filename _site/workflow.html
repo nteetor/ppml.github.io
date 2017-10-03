@@ -127,7 +127,7 @@
 
     <div class="tab-content">
       
-      <p>Once you are satisfied with changes you need to add them. Adding changes is like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
+      <p>Once you are satisfied with changes, you need to add them. Adding changes is like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
 
       
       
@@ -393,7 +393,7 @@ specific subcommand or concept.
       
       
       
-      <div class="tab-pane fade show active" id="rstudio-create-project-1" role="tabpanel">
+      <div class="tab-pane fade show active" id="rstudio-setup-project-1" role="tabpanel">
 
 	
 	<p>The first option is to create a brand new project and folder. This is handy when starting from scratch. However, in some cases you may want to create a new folder and project for your existing work. If you have a lot of excess or obsolete files starting a new project may help clean up your file structure</p>
@@ -404,7 +404,7 @@ specific subcommand or concept.
     
      
       
-      <div class="tab-pane fade" id="rstudio-create-project-2" role="tabpanel">
+      <div class="tab-pane fade" id="rstudio-setup-project-2" role="tabpanel">
 
 	
 	<p>The second option is to convert an existing folder of files into a project. This is the go-to option for existing PPML work.</p>
@@ -415,7 +415,7 @@ specific subcommand or concept.
     
      
       
-      <div class="tab-pane fade" id="rstudio-create-project-3" role="tabpanel">
+      <div class="tab-pane fade" id="rstudio-setup-project-3" role="tabpanel">
 
 	
 	<p>The final option is to checkout a project from GitHub. If you work on multiple computers this will allow you to pull down all your project files to a new machine. If new persons will be collaborating this is how they will go about getting your files. Be sure any new persons have been added as repository collaborators, click <a href="https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/" target="_blank">here</a> for steps on adding a new collaborator.</p>
@@ -437,8 +437,9 @@ specific subcommand or concept.
   <div class="card-header">
     Create Project
   </div>
+  
   <div class="list-group list-group-flush" role="tab-list">
-    <a class="list-group-item list-group-item-action px-0 active" href="#rstudio-create-project-1" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-0 active" href="#rstudio-setup-project-1" data-toggle="tab" role="tab">
       <div class="row align-items-center m-0">
 	<div class="col col-2 d-flex justify-content-center px-0">
 	  <div class="new-directory-icon">
@@ -458,7 +459,8 @@ specific subcommand or concept.
 	</div>
       </div>
     </a>
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-create-project-2" data-toggle="tab" role="tab">
+    
+    <a class="list-group-item list-group-item-action px-0" href="#rstudio-setup-project-2" data-toggle="tab" role="tab">
       <div class="row align-items-center m-0">
 	<div class="col col-2 d-flex justify-content-center px-0">
 	  <div class="existing-directory-icon">
@@ -478,7 +480,8 @@ specific subcommand or concept.
 	</div>
       </div>
     </a>
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-create-project-3" data-toggle="tab" role="tab">
+    
+    <a class="list-group-item list-group-item-action px-0" href="#rstudio-setup-project-3" data-toggle="tab" role="tab">
       <div class="row align-items-center m-0">
 	<div class="col col-2 d-flex justify-content-center px-0">
 	  <div class="version-control-icon">
@@ -546,6 +549,17 @@ specific subcommand or concept.
       </div>
     
      
+      
+      <div class="tab-pane fade" id="rstudio-new-project-types-3" role="tabpanel">
+
+	
+	<p>The third option is to generate a new project with files relevant to Shiny application development. These files, <code class="highlighter-rouge">server.R</code> and <code class="highlighter-rouge">ui.R</code>, usefully include a small example for those getting started with Shiny or refreshing their understanding of Shiny file structure.</p>
+
+	
+	
+      </div>
+    
+     
     </div>
     
   </div>
@@ -602,7 +616,7 @@ specific subcommand or concept.
       </div>
     </a>
     
-    <div class="list-group-item px-0">
+    <a class="list-group-item list-group-item-action px-0" href="#rstudio-new-project-types-3" data-toggle="tab" role="tab">
       <div class="row align-items-center mx-0">
 	<div class="col col-1">
 	  <div class="new-directory-icon">
@@ -616,7 +630,7 @@ specific subcommand or concept.
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
-    </div>
+    </a>
     
     <div class="list-group-item px-0">
       <div class="row align-items-center mx-0">
@@ -924,7 +938,7 @@ specific subcommand or concept.
     <!-- R package logo -->
     <div class="col col-3 d-flex justify-content-center">
       <div class="new-directory-icon mt-5">
-	<span class="fas fa-hexagon fa-6x fa-rotate-90"></span>
+	<span class="fas fa-hexagon fa-6x fa-rotate-90 fa-fw"></span>
       </div>
     </div>
 
@@ -962,7 +976,7 @@ specific subcommand or concept.
       
       <div class="form-row">
 	<label>Create package based on source files:</label>
-	<div class="form-group col col-9">
+	<div class="form-group col col-9 pl-0">
 	  <textarea rows="3" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-4" role="tab" readonly>
 	  </textarea>
 	</div>
@@ -981,7 +995,7 @@ specific subcommand or concept.
 	<div class="form-group col col-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-package-5" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-3 pr-0">
+	<div class="form-group col col-3">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
@@ -1004,6 +1018,90 @@ specific subcommand or concept.
     </div>
   </div>
   
+  <div class="card-footer">
+  </div>
+</div>
+
+    
+  </div>
+  
+</div>
+
+    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
+    
+    <div class="example row">
+  
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
+
+    
+    <h3 class="mb-3">New project, existing files</h3>
+    
+
+    <div class="tab-content">
+      
+      <p>Convert an existing folder of files into an RStudio project.</p>
+
+      
+      
+      
+      <div class="tab-pane fade show active" id="rstudio-create-project-directory-1" role="tabpanel">
+
+	
+	
+      </div>
+    
+     
+    </div>
+    
+  </div>
+  <div class="col col-12 col-md-8 col-lg-7">
+
+    <div class="rstudio-new-project card">
+  <div class="card-header">
+    New Project
+  </div>
+
+  <div class="card-header">
+    <div class="row no-gutters">
+      <div class="col-1 justify-content-center">
+	<span class="shrink">
+	  Back
+	</span>
+      </div>
+      <div class="col-10">
+	Project Type
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
+    <!-- folder icon -->
+    <div class="col col-3 d-flex justify-content-center">
+      <div class="existing-directory-icon">
+	<span class="fas fa-folder fa-6x fa-fw"></span>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="col col-9 pl-0" role="tab-list">
+      <div class="form-row">
+	<label>Project working directory:</label>
+	<div class="form-group col col-9 pl-0">
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-create-project-directory-1" data-toggle="tab" role="tab" readonly>
+	</div>
+	<div class="form-group col col-3">
+	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
+	    <small>Browse</small>
+	  </button>
+	</div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="h-75">
+  </div>
+
   <div class="card-footer">
   </div>
 </div>
