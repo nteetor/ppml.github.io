@@ -67,12 +67,16 @@ description:
 	  <label>Type:</label>
 	  <div class="form-group">
 	    <div class="btn-group btn-block dropdown-select border border-secondary rounded">
-	      <button type="button" class="btn btn-block bg-white text-left">
-		Package
+	      <button type="button" class="btn btn-block bg-white d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+		<span class="dropdown-select-label mr-auto">Package</span>
+		<span></span>
 	      </button>
-	      <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-		<span class="sr-only">Toggle dropdown</span>
-	      </button>
+	      <!-- <button type="button" class="btn btn-block bg-white text-left">
+		   Package
+		   </button>
+		   <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+		   <span class="sr-only">Toggle dropdown</span>
+		   </button> -->
 	      <div class="dropdown-menu dropdown-menu-right w-100">
 		<a class="dropdown-item" data-toggle="tab" data-target="#{{ page.id | basename }}-1">Package</a>
 		<a class="dropdown-item" data-toggle="tab" data-target="#{{ page.id | basename }}-2">Package w/ Rcpp</a>
@@ -83,29 +87,35 @@ description:
       
 	<div class="form-group col">
 	  <label>Package name:</label>
-	  <input type="text" class="form-control bg-white" data-toggle="tab" data-target="#{{ page.id | basename }}-3" role="tab" readonly>
+	  <input type="text" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#{{ page.id | basename }}-3" role="tab" readonly>
 	</div>
       </div>
       
       <div class="form-row">
 	<label>Create package based on source files:</label>
-	<div class="form-group col col-10 pl-0">
-	  <textarea rows="3" class="form-control bg-white" data-toggle="tab" data-target="#{{ page.id | basename }}-4" role="tab" readonly>
+	<div class="form-group col col-9">
+	  <textarea rows="3" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#{{ page.id | basename }}-4" role="tab" readonly>
 	  </textarea>
 	</div>
-	<div class="form-group col col-2 pr-0">
-	  <button class="btn btn-sm btn-block bg-light border border-secondary">Add</button>
-	  <button class="btn btn-sm btn-block bg-light border border-secondary">Remove</button>
+	<div class="form-group col col-3">
+	  <button class="btn btn-sm btn-block bg-light border border-secondary">
+	    <small>Add</small>
+	  </button>
+	  <button class="btn btn-sm btn-block bg-light border border-secondary">
+	    <small>Remove</small>
+	  </button>
 	</div>
       </div>
 
       <div class="form-row">
 	<label>Create project as a subdirectory of:</label>
-	<div class="form-group col col-10 pl-0">
-	  <input type="text" class="form-control bg-white" data-target="#{{ page.id | basename }}-5" data-toggle="tab" role="tab" readonly>
+	<div class="form-group col col-9 pl-0">
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-5" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-2 pr-0">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">Browse</button>
+	<div class="form-group col col-3 pr-0">
+	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
+	    <small>Browse</small>
+	  </button>
 	</div>
       </div>
 

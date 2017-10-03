@@ -1,7 +1,6 @@
 .rstudio-new-project {
     /* modified bootstrap classes */
     .list-group-item {
-	
 	& ~ .list-group-item {
 	    border-bottom-width: 0;
 	}
@@ -16,6 +15,12 @@
 	    color: inherit;
 	    background-color: #DCE6F5;
 	    border-color: #DCE6F5;
+	}
+    }
+
+    .dropdown-item {
+	&:hover {
+	    background-color: transparent;
 	}
     }
 

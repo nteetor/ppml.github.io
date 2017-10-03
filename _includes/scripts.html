@@ -2,7 +2,7 @@
  $(document).ready(function() {
      $(".dropdown-select").on("click", "a", function(el) {
 	 var $this = $(this);
-	 $this.closest(".dropdown-select").find("button").first().text($this.text());
+	 $this.closest(".dropdown-select").find(".dropdown-select-label").first().text($this.text());
      });
  });    
 </script>

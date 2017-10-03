@@ -49,7 +49,7 @@ description:
     <div class="col col-9 pl-0" role="tab-list">
       
       <div class="form-row"">
-	<div class="form-group col col-10 pl-0">
+	<div class="form-group col col-9 pl-0">
 	  <label>Directory name:</label>
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-2" data-toggle="tab" role="tab" readonly>
 	</div>
@@ -57,11 +57,13 @@ description:
 
       <div class="form-row">
 	<label>Create project as a subdirectory of:</label>
-	<div class="form-group col col-10 pl-0">
+	<div class="form-group col col-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="target">
 	</div>
-	<div class="form-group col col-2 pr-0">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">Browse</button>
+	<div class="form-group col col-3 pr-0">
+	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
+	    <small>Browse</small>
+	  </button>
 	</div>
       </div>
 
