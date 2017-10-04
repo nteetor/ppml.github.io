@@ -12,7 +12,6 @@ h5 {
 }
 
 nav {
-    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 
@@ -32,6 +31,10 @@ nav {
 	    .nav-link {
 		min-width: 50px;
 	    }
+	}
+
+	.dropdown-menu {
+	    z-index: 2;
 	}
     }
 }

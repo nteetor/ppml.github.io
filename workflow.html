@@ -2,12 +2,13 @@
 layout: default
 ---
 <div class="row">
-  <div class="col col-11 col-lg-10 mx-auto">
-    
+
+  <div class="col col-11 col-lg-10 mx-auto pt-4">
+
     {% title %}
     Working with GitHub, git, and the command line
     {% endtitle %}
-    
+
     {% assign git_examples = site.examples | where: "type", "git"  %}
     {% for example in git_examples %}
     {{ example }}
