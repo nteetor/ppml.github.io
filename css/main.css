@@ -56,36 +56,13 @@ nav {
   /* icons */
   /* misc */
   /* font-awesome adjustments */ }
-  .rstudio-new-project .list-group-item ~ .list-group-item {
-    border-bottom-width: 0; }
-  .rstudio-new-project .list-group-item-action:hover {
-    background-color: transparent; }
   .rstudio-new-project .list-group-item-action.active {
     color: inherit;
     background-color: #DCE6F5;
     border-color: #DCE6F5; }
-  .rstudio-new-project .dropdown-item:hover {
-    background-color: transparent; }
-  .rstudio-new-project .card-header:first-child {
-    padding: 8px 20px 8px 20px;
-    line-height: 8px;
-    font-size: 0.75em;
-    background-color: #E1E2E5; }
-  .rstudio-new-project .card-header ~ .card-header {
-    font-weight: 500;
-    background-color: #F3F4F4;
-    border: 0; }
   .rstudio-new-project .card-footer {
-    height: 24.5 px;
-    background-color: #F3F4F4; }
-  .rstudio-new-project .form-group input, .rstudio-new-project .form-group select, .rstudio-new-project .form-group option,
-  .rstudio-new-project .form-row input,
-  .rstudio-new-project .form-row select,
-  .rstudio-new-project .form-row option {
-    cursor: pointer; }
-  .rstudio-new-project .form-group textarea,
-  .rstudio-new-project .form-row textarea {
-    cursor: pointer;
+    height: 24.5 px; }
+  .rstudio-new-project textarea {
     resize: none; }
   .rstudio-new-project .new-directory-icon {
     color: #E9F5FB; }
@@ -99,8 +76,6 @@ nav {
     font-weight: 500; }
   .rstudio-new-project .project-type {
     font-size: 0.75em; }
-  .rstudio-new-project .shrink {
-    font-size: 0.75em; }
   .rstudio-new-project *[data-toggle="tab"] {
     cursor: pointer; }
   .rstudio-new-project .dropdown-select button, .rstudio-new-project .dropdown-select a {
@@ -112,3 +87,198 @@ nav {
 
 .example p:last-child {
   margin-bottom: 0; }
+
+@media only screen and (min-width: 360px) {
+  .flow-text {
+    font-size: 1rem; } }
+@media only screen and (min-width: 390px) {
+  .flow-text {
+    font-size: 1.01rem; } }
+@media only screen and (min-width: 420px) {
+  .flow-text {
+    font-size: 1.02rem; } }
+@media only screen and (min-width: 450px) {
+  .flow-text {
+    font-size: 1.03rem; } }
+@media only screen and (min-width: 480px) {
+  .flow-text {
+    font-size: 1.04rem; } }
+@media only screen and (min-width: 510px) {
+  .flow-text {
+    font-size: 1.05rem; } }
+@media only screen and (min-width: 540px) {
+  .flow-text {
+    font-size: 1.06rem; } }
+@media only screen and (min-width: 570px) {
+  .flow-text {
+    font-size: 1.07rem; } }
+@media only screen and (min-width: 600px) {
+  .flow-text {
+    font-size: 1.08rem; } }
+@media only screen and (min-width: 630px) {
+  .flow-text {
+    font-size: 1.09rem; } }
+@media only screen and (min-width: 660px) {
+  .flow-text {
+    font-size: 1.1rem; } }
+@media only screen and (min-width: 690px) {
+  .flow-text {
+    font-size: 1.11rem; } }
+@media only screen and (min-width: 720px) {
+  .flow-text {
+    font-size: 1.12rem; } }
+@media only screen and (min-width: 750px) {
+  .flow-text {
+    font-size: 1.13rem; } }
+@media only screen and (min-width: 780px) {
+  .flow-text {
+    font-size: 1.14rem; } }
+@media only screen and (min-width: 810px) {
+  .flow-text {
+    font-size: 1.15rem; } }
+@media only screen and (min-width: 840px) {
+  .flow-text {
+    font-size: 1.16rem; } }
+@media only screen and (min-width: 870px) {
+  .flow-text {
+    font-size: 1.17rem; } }
+@media only screen and (min-width: 900px) {
+  .flow-text {
+    font-size: 1.18rem; } }
+@media only screen and (min-width: 930px) {
+  .flow-text {
+    font-size: 1.19rem; } }
+@media only screen and (min-width: 960px) {
+  .flow-text {
+    font-size: 1.2rem; } }
+@media only screen and (max-width: 360px) {
+  .flow-text {
+    font-size: 1.0rem; } }
+
+@media only screen and (min-width: 360px) {
+  .flow-text-large {
+    font-size: 2.4rem; } }
+@media only screen and (min-width: 390px) {
+  .flow-text-large {
+    font-size: 2.43rem; } }
+@media only screen and (min-width: 420px) {
+  .flow-text-large {
+    font-size: 2.46rem; } }
+@media only screen and (min-width: 450px) {
+  .flow-text-large {
+    font-size: 2.49rem; } }
+@media only screen and (min-width: 480px) {
+  .flow-text-large {
+    font-size: 2.52rem; } }
+@media only screen and (min-width: 510px) {
+  .flow-text-large {
+    font-size: 2.55rem; } }
+@media only screen and (min-width: 540px) {
+  .flow-text-large {
+    font-size: 2.58rem; } }
+@media only screen and (min-width: 570px) {
+  .flow-text-large {
+    font-size: 2.61rem; } }
+@media only screen and (min-width: 600px) {
+  .flow-text-large {
+    font-size: 2.64rem; } }
+@media only screen and (min-width: 630px) {
+  .flow-text-large {
+    font-size: 2.67rem; } }
+@media only screen and (min-width: 660px) {
+  .flow-text-large {
+    font-size: 2.7rem; } }
+@media only screen and (min-width: 690px) {
+  .flow-text-large {
+    font-size: 2.73rem; } }
+@media only screen and (min-width: 720px) {
+  .flow-text-large {
+    font-size: 2.76rem; } }
+@media only screen and (min-width: 750px) {
+  .flow-text-large {
+    font-size: 2.79rem; } }
+@media only screen and (min-width: 780px) {
+  .flow-text-large {
+    font-size: 2.82rem; } }
+@media only screen and (min-width: 810px) {
+  .flow-text-large {
+    font-size: 2.85rem; } }
+@media only screen and (min-width: 840px) {
+  .flow-text-large {
+    font-size: 2.88rem; } }
+@media only screen and (min-width: 870px) {
+  .flow-text-large {
+    font-size: 2.91rem; } }
+@media only screen and (min-width: 900px) {
+  .flow-text-large {
+    font-size: 2.94rem; } }
+@media only screen and (min-width: 930px) {
+  .flow-text-large {
+    font-size: 2.97rem; } }
+@media only screen and (min-width: 960px) {
+  .flow-text-large {
+    font-size: 3rem; } }
+
+@media only screen and (min-width: 360px) {
+  .flow-text-xl {
+    font-size: 4.25rem; } }
+@media only screen and (min-width: 405px) {
+  .flow-text-xl {
+    font-size: 4.31375rem; } }
+@media only screen and (min-width: 450px) {
+  .flow-text-xl {
+    font-size: 4.3775rem; } }
+@media only screen and (min-width: 495px) {
+  .flow-text-xl {
+    font-size: 4.44125rem; } }
+@media only screen and (min-width: 540px) {
+  .flow-text-xl {
+    font-size: 4.505rem; } }
+@media only screen and (min-width: 585px) {
+  .flow-text-xl {
+    font-size: 4.56875rem; } }
+@media only screen and (min-width: 630px) {
+  .flow-text-xl {
+    font-size: 4.6325rem; } }
+@media only screen and (min-width: 675px) {
+  .flow-text-xl {
+    font-size: 4.69625rem; } }
+@media only screen and (min-width: 720px) {
+  .flow-text-xl {
+    font-size: 4.76rem; } }
+@media only screen and (min-width: 765px) {
+  .flow-text-xl {
+    font-size: 4.82375rem; } }
+@media only screen and (min-width: 810px) {
+  .flow-text-xl {
+    font-size: 4.8875rem; } }
+@media only screen and (min-width: 855px) {
+  .flow-text-xl {
+    font-size: 4.95125rem; } }
+@media only screen and (min-width: 900px) {
+  .flow-text-xl {
+    font-size: 5.015rem; } }
+@media only screen and (min-width: 945px) {
+  .flow-text-xl {
+    font-size: 5.07875rem; } }
+@media only screen and (min-width: 990px) {
+  .flow-text-xl {
+    font-size: 5.1425rem; } }
+@media only screen and (min-width: 1035px) {
+  .flow-text-xl {
+    font-size: 5.20625rem; } }
+@media only screen and (min-width: 1080px) {
+  .flow-text-xl {
+    font-size: 5.27rem; } }
+@media only screen and (min-width: 1125px) {
+  .flow-text-xl {
+    font-size: 5.33375rem; } }
+@media only screen and (min-width: 1170px) {
+  .flow-text-xl {
+    font-size: 5.3975rem; } }
+@media only screen and (min-width: 1215px) {
+  .flow-text-xl {
+    font-size: 5.46125rem; } }
+@media only screen and (min-width: 1260px) {
+  .flow-text-xl {
+    font-size: 5.525rem; } }

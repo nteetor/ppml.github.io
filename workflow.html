@@ -55,10 +55,13 @@
     <div class="mb-0">Prevention Policy</div>
     <div class="text-uppercase">Modeling Lab</div>
   </a>
+  
   <a class="navbar-brand d-inline d-sm-none" href="/">
     PPML
   </a>
+  
   <div class="collapse navbar-collapse d-flex justify-content-start" id="navbarSupportedContent">
+    
     <ul class="navbar-nav">
       <li class="nav-item ">
         <a class="nav-link" href="/">
@@ -69,6 +72,7 @@
 	  </span>
 	</a>
       </li>
+      
       <li class="nav-item ">
 	<a class="nav-link" href="/projects">
 	  <span class="d-none d-sm-inline">
@@ -79,6 +83,7 @@
 	</a>
       </li>
     </ul>
+    
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link" href="/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -106,10 +111,10 @@
     
     <div class="container-fluid">
       <div class="row">
-	<div class="col col-12 col-lg-10 mx-auto">
+	<div class="col">
 	  
 	  <div class="row">
-  <div class="col">
+  <div class="col col-11 col-lg-10 mx-auto">
     
     <div class="row"><div class="col"><h4 class="display-4 text-center mb-0">
     Working with GitHub, <small class="text-muted d-sm-block">git, and the command line</small>
@@ -125,8 +130,8 @@
     <h3 class="mb-3">git add; indicating files to commit</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>Once you are satisfied with changes, you need to add them. Adding changes is like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
 
       
@@ -189,8 +194,8 @@ Changes to be committed:
     <h3 class="mb-3">git commit; readying files for a push</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>At this point you have added all your file changes or, in our analogy, written down all your updates in the letter.</p>
 
       
@@ -241,8 +246,8 @@ Changes to be committed:
     <h3 class="mb-3">git config; housekeeping</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       
 
       
@@ -294,8 +299,8 @@ Changes to be committed:
     <h3 class="mb-3">git help; common subcommands</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>There are many git subcommands, they are the “add”, “push”, or “pull” you find after the initial “git”. While memorizing much-used subcommands like “add” or “pull” is useful, you can always refer the git help summary for a list of common subcommands.</p>
 
       
@@ -386,8 +391,8 @@ specific subcommand or concept.
     <h3 class="mb-3">New projects, files old and new</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>When creating a new RStudio project you are presented with three options.</p>
 
       
@@ -431,78 +436,78 @@ specific subcommand or concept.
   <div class="col col-12 col-md-8 col-lg-7">
 
     <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+  <div class="card-header bg-light py-0 px-2">
+    <small>
+      New Project
+    </small>
   </div>
-  <div class="card-header">
+  
+  <div class="card-header bg-light border-bottom-0">
     Create Project
   </div>
   
-  <div class="list-group list-group-flush" role="tab-list">
-    <a class="list-group-item list-group-item-action px-0 active" href="#rstudio-setup-project-1" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	  </div>
+  <div class="list-group list-group-flush bg-white" role="tab-list">
+    
+    <a class="list-group-item list-group-item-action px-2 active" href="#rstudio-setup-project-1" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-1">
+	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    New Directory
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Start a new project in a brand new working directory</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Start a new project in a brand new working directory
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-setup-project-2" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="existing-directory-icon">
-	    <span class="fa fa-folder fa-3x fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#rstudio-setup-project-2" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="existing-directory-icon px-1">
+	  <span class="flow-text-large fa fa-folder fa-3x fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    Existing Directory
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Associate a project with an existing working directory</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Associate a project with an existing working directory
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-setup-project-3" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="version-control-icon">
-	    <span class="fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#rstudio-setup-project-3" data-toggle="tab" role="tab">
+      <div class="d-flex flew-row justify-content-start align-items-center">
+	<div class="version-control-icon px-1">
+	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    Version Control
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Checkout a project from a version control repository</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Checkout a project from a version control repository
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
+    
   </div>
-  <div class="card-footer">
+  
+  <div class="card-footer bg-light border-top-0">
   </div>
 </div>
 
@@ -521,8 +526,8 @@ specific subcommand or concept.
     <h3 class="mb-3">New project, new files</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>There are a handful of options for a new project from scratch. We will focus on the first two options as they are satisfactory for the majority of our work.</p>
 
       
@@ -565,127 +570,127 @@ specific subcommand or concept.
   </div>
   <div class="col col-12 col-md-8 col-lg-7">
 
-    <div class="rstudio-new-project project-type card">
-  <div class="card-header">
-    New Project
+    <div class="rstudio-new-project card">
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
   
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+  <div class="card-header bg-light border-bottom-0">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
+      <div class="px-3">
 	Project Type
       </div>
     </div>
   </div>
   
-  <div class="list-group list-group-flush" role="tab-list">
-    <a class="list-group-item list-group-item-action px-0 active" href="#rstudio-new-project-types-1" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+  <div class="list-group list-group-flush bg-white" role="tab-list">
+    
+    <a class="list-group-item list-group-item-action px-2 active" href="#rstudio-new-project-types-1" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  New Project
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-new-project-types-2" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="r-package-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#rstudio-new-project-types-2" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="r-package-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#rstudio-new-project-types-3" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#rstudio-new-project-types-3" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  Shiny Web Application
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto"">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using Rcpp
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using RcppArmadillo
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using RcppEigen
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using devtools
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
+
   </div>
   
-  <div class="card-footer">
+  <div class="card-footer bg-light border-top-0">
   </div>
 </div>
 
@@ -704,8 +709,8 @@ specific subcommand or concept.
     <h3 class="mb-3">New blank project</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>This is the final step when creating a new blank project. Most of the controls on this screen are self-explanatory. However, click around to learn more about recommended naming conventions or why that checkbox is supposed to be selected.</p>
 
       
@@ -757,34 +762,32 @@ specific subcommand or concept.
   <div class="col col-12 col-md-8 col-lg-7">
 
     <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
-  
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+
+  <div class="card-header bg-light">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
-	Create New Project
+      <div class="px-3">
+	Project Type
       </div>
     </div>
   </div>
   
-  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
+  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
+    
     <!-- logo -->
-    <div class="col col-3 d-flex justify-content-center">
-      <span class="new-directory-icon mt-5">
-	<span class="fas fa-hexagon fa-6x fa-rotate-90"></span>
-      </span>
+    <div class="px-2 pt-3 flow-text-xl new-directory-icon">
+      <span class="fas fa-hexagon fa-lg fa-rotate-90 fa-fw"></span>
     </div>
 
     <!-- body -->
-    <div class="col col-9 pl-0" role="tab-list">
-      
+    <div class="px-2">
       <div class="form-row"">
 	<div class="form-group col col-9 pl-0">
 	  <label>Directory name:</label>
@@ -793,11 +796,11 @@ specific subcommand or concept.
       </div>
 
       <div class="form-row">
-	<label>Create project as a subdirectory of:</label>
-	<div class="form-group col col-9 pl-0">
+	<label class="w-100">Create project as a subdirectory of:</label>
+	<div class="form-group col col-sm-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-blank-3" data-toggle="tab" role="target">
 	</div>
-	<div class="form-group col col-3 pr-0">
+	<div class="form-group col col-3 pr-0 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
@@ -808,11 +811,11 @@ specific subcommand or concept.
 	<div class="col col-auto pl-0">
 	  <div class="mt-1 mb-1" data-target="#rstudio-new-project-blank-4" data-toggle="tab" role="tab">
 	    <span class="far fa-check-square fa-fw"></span>
-	    Create a git repository
+	    <small>Create a git repository</small>
 	  </div>
 	  <div>
 	    <span class="far fa-square fa-fw"></span>
-	    Use packrat with this project
+	    <small>Use packrat with this project</small>
 	  </div>
 	</div>
       </div>
@@ -820,7 +823,7 @@ specific subcommand or concept.
     </div>
   </div>
   
-  <div class="card-footer">
+  <div class="card-footer bg-light">
   </div>
 </div>
 
@@ -839,8 +842,8 @@ specific subcommand or concept.
     <h3 class="mb-3">New R package project</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>Many of our projects will be bundled into an R package. This allows us to easily share our methods and data in a standardized format. Installations are possible from GitHub with <code class="highlighter-rouge">devtools</code> and packages will be made available on CRAN as possible.</p>
 
       
@@ -917,70 +920,58 @@ specific subcommand or concept.
   <div class="col col-12 col-md-8 col-lg-7">
 
     <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
   
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
-	  Back
-	</span>
+  <div class="card-header bg-light">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>Back</small>
       </div>
-      <div class="col-10">
+      <div class="px-3">
 	Create R Package
       </div>
     </div>
   </div>
   
-  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
-    <!-- R package logo -->
-    <div class="col col-3 d-flex justify-content-center">
-      <div class="new-directory-icon mt-5">
-	<span class="fas fa-hexagon fa-6x fa-rotate-90 fa-fw"></span>
-      </div>
+  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
+
+    <!-- icon -->
+    <div class="px-2 pt-3 new-directory-icon flow-text-xl">
+      <span class="fas fa-hexagon fa-lg fa-rotate-90 fa-fw"></span>
     </div>
 
-    <!-- prompt body -->
-    <div class="col col-9 pl-0" role="tab-list">
-      
+    <!-- body -->
+    <div class="px-2">
       <div class="form-row">
 	<div class="form-group col pl-0">
 	  <label>Type:</label>
-	  <div class="form-group">
-	    <div class="btn-group btn-block dropdown-select border border-secondary rounded">
-	      <button type="button" class="btn btn-block bg-white d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-		<span class="dropdown-select-label mr-auto">Package</span>
-		<span></span>
-	      </button>
-	      <!-- <button type="button" class="btn btn-block bg-white text-left">
-		   Package
-		   </button>
-		   <button type="button" class="btn bg-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-		   <span class="sr-only">Toggle dropdown</span>
-		   </button> -->
-	      <div class="dropdown-menu dropdown-menu-right w-100">
-		<a class="dropdown-item" data-toggle="tab" data-target="#rstudio-new-project-package-1">Package</a>
-		<a class="dropdown-item" data-toggle="tab" data-target="#rstudio-new-project-package-2">Package w/ Rcpp</a>
-	      </div>
+	  <div class="btn-group btn-block dropdown-select border border-secondary rounded">
+	    <button type="button" class="btn btn-block bg-white d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
+	      <span class="dropdown-select-label mr-auto">Package</span>
+	      <span></span>
+	    </button>
+	    <div class="dropdown-menu dropdown-menu-right w-100">
+	      <a class="dropdown-item px-2" data-toggle="tab" data-target="#rstudio-new-project-package-1">Package</a>
+	      <a class="dropdown-item px-2" data-toggle="tab" data-target="#rstudio-new-project-package-2">Package w/ Rcpp</a>
 	    </div>
 	  </div>
 	</div>
       
-	<div class="form-group col">
-	  <label>Package name:</label>
-	  <input type="text" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-3" role="tab" readonly>
+	<div class="form-group col pl-0">
+	  <label class="text-nowrap">Package name:</label>
+	    <input type="text" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-3" role="tab" readonly>
 	</div>
       </div>
       
       <div class="form-row">
 	<label>Create package based on source files:</label>
-	<div class="form-group col col-9 pl-0">
+	<div class="form-group col col-sm-9 pl-0">
 	  <textarea rows="3" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-4" role="tab" readonly>
 	  </textarea>
 	</div>
-	<div class="form-group col col-3">
+	<div class="form-group col col-3 d-none d-sm-block">
 	  <button class="btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Add</small>
 	  </button>
@@ -991,11 +982,11 @@ specific subcommand or concept.
       </div>
 
       <div class="form-row">
-	<label>Create project as a subdirectory of:</label>
-	<div class="form-group col col-9 pl-0">
+	<label class="w-100">Create project as a subdirectory of:</label>
+	<div class="form-group col col-sm-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-package-5" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-3">
+	<div class="form-group col col-3 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
@@ -1003,22 +994,28 @@ specific subcommand or concept.
       </div>
 
       <div class="form-row">
-	<div class="col col-auto">
-	  <div data-target="#rstudio-new-project-package-6" data-toggle="tab" role="tab">
-	    <span class="far fa-check-square fa-fw"></span>
-	    Create a git repository
+	<div class="col col-auto d-flex flex-row align-items-center px-0" data-target="#rstudio-new-project-package-6" data-toggle="tab" role="tab">
+	  <div>
+	    <span class="far fa-check-square fa-fw text-dark"></span>
+	  </div>
+	  <div class="px-1">
+	    <small>Create a git repository</small>
 	  </div>
 	</div>
-	<div class="col col-auto">
-	  <span class="far fa-square fa-fw"></span>
-	  Use packrat with this project
+	<div class="col col-auto d-flex flex-row align-items-center px-0">
+	  <div>
+	    <span class="far fa-square fa-fw"></span>
+	  </div>
+	  <div class="px-1">
+	    <small>Use packrat with this project</small>
+	  </div>
 	</div>
       </div>
       
     </div>
   </div>
   
-  <div class="card-footer">
+  <div class="card-footer bg-light">
   </div>
 </div>
 
@@ -1037,14 +1034,17 @@ specific subcommand or concept.
     <h3 class="mb-3">New project, existing files</h3>
     
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       <p>Convert an existing folder of files into an RStudio project.</p>
 
       
       
       
       <div class="tab-pane fade show active" id="rstudio-create-project-directory-1" role="tabpanel">
+
+	
+	<p>When organizing folders and projects, remember you may want to create a top-level <code class="highlighter-rouge">git/</code> folder.</p>
 
 	
 	
@@ -1056,53 +1056,49 @@ specific subcommand or concept.
   </div>
   <div class="col col-12 col-md-8 col-lg-7">
 
-    <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+    <div class="rstudio-new-project card border border-light">
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
 
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+  <div class="card-header bg-light">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
+      <div class="px-3">
 	Project Type
       </div>
     </div>
   </div>
 
-  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
-    <!-- folder icon -->
-    <div class="col col-3 d-flex justify-content-center">
-      <div class="existing-directory-icon">
-	<span class="fas fa-folder fa-6x fa-fw"></span>
-      </div>
+  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
+    
+    <!-- logo icon -->
+    <div class="px-2 pt-3 flow-text-xl existing-directory-icon">
+      <span class="fas fa-folder fa-lg fa-fw"></span>
     </div>
 
     <!-- body -->
-    <div class="col col-9 pl-0" role="tab-list">
+    <div class="px-2 w-100">
       <div class="form-row">
-	<label>Project working directory:</label>
-	<div class="form-group col col-9 pl-0">
+	<label class="w-100">Project working directory:</label>
+	<div class="form-group col col-sm-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-create-project-directory-1" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-3">
+	<div class="form-group col col-3 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
 	</div>
       </div>
     </div>
-    
-  </div>
   
-  <div class="h-75">
   </div>
 
-  <div class="card-footer">
+  <div class="card-footer bg-light">
   </div>
 </div>
 
