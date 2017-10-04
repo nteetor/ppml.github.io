@@ -21,77 +21,77 @@ description:
     for steps on adding a new collaborator.
 ---
 <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+  <div class="card-header bg-light py-0 px-2">
+    <small>
+      New Project
+    </small>
   </div>
-  <div class="card-header">
+  
+  <div class="card-header bg-light border-bottom-0">
     Create Project
   </div>
   
-  <div class="list-group list-group-flush" role="tab-list">
-    <a class="list-group-item list-group-item-action px-0 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	  </div>
+  <div class="list-group list-group-flush bg-white" role="tab-list">
+    
+    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-1">
+	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    New Directory
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Start a new project in a brand new working directory</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Start a new project in a brand new working directory
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="existing-directory-icon">
-	    <span class="fa fa-folder fa-3x fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="existing-directory-icon px-1">
+	  <span class="flow-text-large fa fa-folder fa-3x fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    Existing Directory
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Associate a project with an existing working directory</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Associate a project with an existing working directory
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
-      <div class="row align-items-center m-0">
-	<div class="col col-2 d-flex justify-content-center px-0">
-	  <div class="version-control-icon">
-	    <span class="fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+      <div class="d-flex flew-row justify-content-start align-items-center">
+	<div class="version-control-icon px-1">
+	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-9 px-0">
-	  <div class="option-title">
+	<div class="px-2">
+	  <h6 class="mb-0">
 	    Version Control
-	  </div>
-	  <div class="text-truncate">
-	    <small class="text-secondary">Checkout a project from a version control repository</small>
-	  </div>
+	  </h6>
+	  <small class="text-secondary">
+	    Checkout a project from a version control repository
+	  </small>
 	</div>
-	<div class="col col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
+    
   </div>
-  <div class="card-footer">
+  
+  <div class="card-footer bg-light border-top-0">
   </div>
 </div>

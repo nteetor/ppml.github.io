@@ -5,54 +5,51 @@ index: 5
 heading: New project, existing files
 description:
   - Convert an existing folder of files into an RStudio project.
-  - 
+  - When organizing folders and projects, remember you may want to create a
+    top-level `git/` folder.
 ---
-<div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+<div class="rstudio-new-project card border border-light">
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
 
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+  <div class="card-header bg-light">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
+      <div class="px-3">
 	Project Type
       </div>
     </div>
   </div>
 
-  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
-    <!-- folder icon -->
-    <div class="col col-3 d-flex justify-content-center">
-      <div class="existing-directory-icon">
-	<span class="fas fa-folder fa-6x fa-fw"></span>
-      </div>
+  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
+    
+    <!-- logo icon -->
+    <div class="px-2 pt-3 flow-text-xl existing-directory-icon">
+      <span class="fas fa-folder fa-lg fa-fw"></span>
     </div>
 
     <!-- body -->
-    <div class="col col-9 pl-0" role="tab-list">
+    <div class="px-2 w-100">
       <div class="form-row">
-	<label>Project working directory:</label>
-	<div class="form-group col col-9 pl-0">
+	<label class="w-100">Project working directory:</label>
+	<div class="form-group col col-sm-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-1" data-toggle="tab" role="tab" readonly>
 	</div>
-	<div class="form-group col col-3">
+	<div class="form-group col col-3 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
 	</div>
       </div>
     </div>
-    
-  </div>
   
-  <div class="h-75">
   </div>
 
-  <div class="card-footer">
+  <div class="card-footer bg-light">
   </div>
 </div>

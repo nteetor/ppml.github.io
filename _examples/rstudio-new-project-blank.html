@@ -20,34 +20,32 @@ description:
     for git.
 ---
 <div class="rstudio-new-project card">
-  <div class="card-header">
-    New Project
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
-  
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+
+  <div class="card-header bg-light">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
-	Create New Project
+      <div class="px-3">
+	Project Type
       </div>
     </div>
   </div>
   
-  <div class="card-body row px-0 pt-1 pb-5 m-0 bg-light nav">
+  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
+    
     <!-- logo -->
-    <div class="col col-3 d-flex justify-content-center">
-      <span class="new-directory-icon mt-5">
-	<span class="fas fa-hexagon fa-6x fa-rotate-90"></span>
-      </span>
+    <div class="px-2 pt-3 flow-text-xl new-directory-icon">
+      <span class="fas fa-hexagon fa-lg fa-rotate-90 fa-fw"></span>
     </div>
 
     <!-- body -->
-    <div class="col col-9 pl-0" role="tab-list">
-      
+    <div class="px-2">
       <div class="form-row"">
 	<div class="form-group col col-9 pl-0">
 	  <label>Directory name:</label>
@@ -56,11 +54,11 @@ description:
       </div>
 
       <div class="form-row">
-	<label>Create project as a subdirectory of:</label>
-	<div class="form-group col col-9 pl-0">
+	<label class="w-100">Create project as a subdirectory of:</label>
+	<div class="form-group col col-sm-9 pl-0">
 	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="target">
 	</div>
-	<div class="form-group col col-3 pr-0">
+	<div class="form-group col col-3 pr-0 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
 	    <small>Browse</small>
 	  </button>
@@ -71,11 +69,11 @@ description:
 	<div class="col col-auto pl-0">
 	  <div class="mt-1 mb-1" data-target="#{{ page.id | basename }}-4" data-toggle="tab" role="tab">
 	    <span class="far fa-check-square fa-fw"></span>
-	    Create a git repository
+	    <small>Create a git repository</small>
 	  </div>
 	  <div>
 	    <span class="far fa-square fa-fw"></span>
-	    Use packrat with this project
+	    <small>Use packrat with this project</small>
 	  </div>
 	</div>
       </div>
@@ -83,6 +81,6 @@ description:
     </div>
   </div>
   
-  <div class="card-footer">
+  <div class="card-footer bg-light">
   </div>
 </div>

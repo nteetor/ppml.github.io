@@ -8,8 +8,8 @@
     <h3 class="mb-3">{{ page.heading }}</h3>
     {% endif %}
 
-    <div class="tab-content">
-      
+    <div class="tab-content flow-text">
+
       {{ page.description[0] | markdownify }}
       
       {% for desc in page.description offset:1 %}

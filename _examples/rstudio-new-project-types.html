@@ -23,126 +23,126 @@ description:
     include a small example for those getting started with Shiny or refreshing
     their understanding of Shiny file structure.
 ---
-<div class="rstudio-new-project project-type card">
-  <div class="card-header">
-    New Project
+<div class="rstudio-new-project card">
+  <div class="card-header bg-light py-0 px-2">
+    <small>New Project</small>
   </div>
   
-  <div class="card-header">
-    <div class="row no-gutters">
-      <div class="col-1 justify-content-center">
-	<span class="shrink">
+  <div class="card-header bg-light border-bottom-0">
+    <div class="d-flex justify-content-start align-items-center">
+      <div class="px-2">
+	<small>
 	  Back
-	</span>
+	</small>
       </div>
-      <div class="col-10">
+      <div class="px-3">
 	Project Type
       </div>
     </div>
   </div>
   
-  <div class="list-group list-group-flush" role="tab-list">
-    <a class="list-group-item list-group-item-action px-0 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+  <div class="list-group list-group-flush bg-white" role="tab-list">
+    
+    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  New Project
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="r-package-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="r-package-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-0" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
-	  <div class="new-directory-icon">
-	    <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	  </div>
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="new-directory-icon px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  Shiny Web Application
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto"">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </a>
     
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using Rcpp
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using RcppArmadillo
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using RcppEigen
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
 
-    <div class="list-group-item px-0">
-      <div class="row align-items-center mx-0">
-	<div class="col col-1">
+    <div class="list-group-item px-2">
+      <div class="d-flex flex-row justify-content-start align-items-center">
+	<div class="px-2">
+	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
 	</div>
-	<div class="col col-10 px-0">
+	<div class="px-2">
 	  R Package using devtools
 	</div>
-	<div class="col-1 d-flex flex-row justify-content-end">
+	<div class="ml-auto">
 	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
 	</div>
       </div>
     </div>
+
   </div>
   
-  <div class="card-footer">
+  <div class="card-footer bg-light border-top-0">
   </div>
 </div>

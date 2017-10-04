@@ -1,16 +1,6 @@
 .rstudio-new-project {
     /* modified bootstrap classes */
-    .list-group-item {
-	& ~ .list-group-item {
-	    border-bottom-width: 0;
-	}
-    }
-
     .list-group-item-action {
-	&:hover {
-	    background-color: transparent;
-	}
-
 	&.active {
 	    color: inherit;
 	    background-color: #DCE6F5;
@@ -20,40 +10,16 @@
 
     .dropdown-item {
 	&:hover {
-	    background-color: transparent;
-	}
-    }
-
-    .card-header {
-	&:first-child {
-	    padding: 8px 20px 8px 20px;
-	    line-height: 8px;
-	    font-size: 0.75em;
-	    background-color: #E1E2E5;
-	}
-
-	& ~ .card-header {
-	    font-weight: 500;
-	    background-color: #F3F4F4;
-	    border: 0;
+//	    background-color: transparent;
 	}
     }
     
     .card-footer {
 	height: (49 / 2)px;
-	background-color: #F3F4F4;
     }
 
-    .form-group,
-    .form-row {
-	input, select, option {
-	    cursor: pointer;
-	}
-
-	textarea {
-	    cursor: pointer;
-	    resize: none;
-	}
+    textarea {
+	resize: none;
     }
 
     /* icons */
@@ -79,10 +45,6 @@
     }
     
     .project-type {
-	font-size: 0.75em;
-    }
-
-    .shrink {
 	font-size: 0.75em;
     }
 
