@@ -86,8 +86,11 @@ nav {
   .rstudio-new-project .fa-check-square::before, .rstudio-new-project .fa-square::before {
     background-color: white; }
 
-.example p:last-child {
-  margin-bottom: 0; }
+.fixed-top-right {
+  position: fixed;
+  top: 92;
+  right: 0;
+  z-index: 2; }
 
 @media only screen and (min-width: 360px) {
   .flow-text {

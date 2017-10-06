@@ -5,13 +5,12 @@ module Jekyll
     end
 
     def render(context)
-      divider = Liquid::Template.parse("{% divider %}").render
+#      divider = Liquid::Template.parse("{% divider %}").render
       title = super.sub(/,\s*(.+)$/, ", <small class=\"text-muted d-sm-block\">\\1</small>")
 
-      "<div class=\"row\">" +
-        "<div class=\"col\">" +
+      "<div class=\"d-flex\">" +
+        "<div class=\"mx-auto\">" +
         "<h4 class=\"display-4 text-center mb-0\">#{title}</h4>" +
-        "#{divider}" +
         "</div>" +
         "</div>"
     end

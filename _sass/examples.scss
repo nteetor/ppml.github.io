@@ -1,10 +1,17 @@
 @import "terminal";
 @import "rstudio";
 
+.fixed-top-right {
+    position: fixed;
+    top: 92;
+    right: 0;
+    z-index: 2;
+}
+
 .example {
     p {
-	&:last-child {
-	    margin-bottom: 0;
-	}
+//	&:last-child {
+//	    margin-bottom: 0;
+//	}
     }
 }

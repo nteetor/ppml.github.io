@@ -5,9 +5,9 @@ module Jekyll
     end
 
     def render(context)
-      "<div class=\"row\">" +
-        "<div class=\"col col-12 col-sm-6 mx-sm-auto my-3\">" +
-        "<hr>" +
+      "<div class=\"w-100 p-2 m-2 d-flex align-items-center\">" +
+        "<div class=\"w-100 mx-auto\">" +
+        "<hr class=\"w-50\">" +
         "</div>" +
         "</div>"
     end

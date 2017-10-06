@@ -2,28 +2,102 @@
 layout: default
 ---
 <div class="row">
-
-  <div class="col col-11 col-lg-10 mx-auto pt-4">
-
+  <div class="col-12">
+    {% for flow in site.workflows %}
+    
     {% title %}
-    Working with GitHub, git, and the command line
-    {% endtitle %}
-
-    {% assign git_examples = site.examples | where: "type", "git"  %}
-    {% for example in git_examples %}
-    {{ example }}
-    {% divider %}
-    {% endfor %}
-
-    {% title %}
-    Getting started with RStudio projects, version control, and R packages
+    {{ flow.heading }}
     {% endtitle %}
     
-    {% assign rstudio_examples = site.examples | where: "type", "rstudio" | sort: "index" %}
-    {% for example in rstudio_examples %}
-    {{ example }}
+    {% divider %}
+    
+    {% assign examples = site.examples | where: "type", flow.type %}
+
+    {% for ex in examples %}
+    {{ ex }}
     {% divider %}
     {% endfor %}
     
+    {% endfor %}
   </div>
 </div>
+
+{% comment %}
+{% assign git_examples = site.examples | where: "type", "git" | sort: "index"  %}
+{% assign rstudio_examples = site.examples | where: "type", "rstudio" | sort: "index" %}
+
+<div class="row">
+
+  <div class="col col-10">
+    <div class="tab-content">
+      <div class="tab-pane active" id="github-tab" role="tabpanel">
+	{% title %}
+	Working with GitHub, git, and the command line
+	{% endtitle %}
+
+	{% for example in git_examples %}
+	{{ example }}
+	{% divider %}
+	{% endfor %}
+      </div>
+
+      <div class="tab-pane" id="rstudio-tab" role="tabpanel">
+	{% title %}
+	Getting started with RStudio projects, version control, and R packages
+	{% endtitle %}
+	
+
+	{% for example in rstudio_examples %}
+	{{ example }}
+	{% divider %}
+	{% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col col-2 fixed-top-right">
+    <nav class="nav nav-pills flex-column" id="link-tabs" role="tab-list" data-children=".item">
+      <div class="item">
+	<div class="nav-item">
+	  <span class="collapsed" data-toggle="collapse" data-parent="#link-tabs" href="#github-links">
+	    <a class="nav-link active" data-toggle="tab" href="#github-tab" role="tab">
+	      git
+	    </a>
+	  </span>
+	</div>
+	
+	<div class="collapse show" id="github-links" role="tabpanel">
+	  <ul class="nav flex-column">
+	    {% for example in git_examples %}
+	    <li class="nav-item">
+	      <a class="nav-link ml-2" href="#{{ example.id | basename }}">{{ example.blurb }}</a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+      </div>
+      
+      <div class="item">
+	<div class="nav-item">
+	  <span class="collapsed" data-toggle="collapse" data-parent="#link-tabs" href="#rstudio-links">
+	    <a class="nav-link" data-toggle="tab" href="#rstudio-tab" role="tab">
+	      RStudio projects
+	    </a>
+	  </span>
+	</div>
+	  
+	<div class="collapse" id="rstudio-links" role="tabpanel">
+	  <ul class="nav flex-column">
+	    {% for example in rstudio_examples %}
+	    <li class="nav-item">
+	      <a class="nav-link ml-2" href="#{{ example.id | basename }}">{{ example.blurb }}</a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	</div>
+      </div>
+    </nav>
+  </div>
+  
+</div>
+{% endcomment %}

@@ -1,0 +1,29 @@
+---
+---
+{% if page.type contains "rstudio" %}
+
+{% if page.type contains "project" %}
+<div class="tab-content flow-text">
+  
+  {{ page.excerpt | markdownify }}
+
+  {% assign paragraphs = page.content | remove: page.excerpt | paragraph_split %}
+
+  {% for p in paragraphs %}
+  <div class="tab-pane fade show active" id="{{ page.id | slugify }}-{{ forloop.index }}" role="tabpanel">
+    {{ p | markdownify }}
+  </div>
+  {% endfor %}
+  
+</div>
+{% endif %}
+
+{% elsif page.type contains "git" %}
+
+<div class="flow-text">
+  
+  {{ content | markdownify }}
+  
+</div>
+
+{% endif %}
