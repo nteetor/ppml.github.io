@@ -110,49 +110,50 @@
 
     
     <div class="container-fluid">
+      
       <div class="row">
-	<div class="col">
-	  
-	  <div class="row">
-
-  <div class="col col-11 col-lg-10 mx-auto pt-4">
-
-    <div class="row"><div class="col"><h4 class="display-4 text-center mb-0">
+  <div class="col-12">
+    
+    
+    <div class="d-flex"><div class="mx-auto"><h4 class="display-4 text-center mb-0">
     Working with GitHub, <small class="text-muted d-sm-block">git, and the command line</small>
-    </h4><div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div></div></div>
+    </h4></div></div>
+    
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
 
     
     
-    <div class="example row">
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="descriptions-git-add">
+      git add; indicating files to commit
+    </h3>
+
+    
+
+<div class="flow-text">
   
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
+  <p>Once you are satisfied with changes, you need to add them. Adding changes is
+like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
 
-    
-    <h3 class="mb-3" id="git-add">git add; indicating files to commit</h3>
-    
+<p>Changes may be added per file, per line, or all at once.</p>
 
-    <div class="tab-content flow-text">
+  
+</div>
 
-      <p>Once you are satisfied with changes, you need to add them. Adding changes is like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
 
-      
-      
-      
-      <div class="tab-pane fade show active" id="git-add-1" role="tabpanel">
 
-	
-	<p>Changes may be added per file, per line, or all at once.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
+    
     <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
 <p>git status</p>
 <pre>
@@ -182,93 +183,84 @@ Changes to be committed:
 
     
   </div>
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="descriptions-git-commit">
+      git commit; readying files for a push
+    </h3>
+
+    
+
+<div class="flow-text">
+  
+  <p>At this point you have added all your file changes or, in our analogy, written
+down all your updates in the letter.</p>
+
+<p>When you commit changes it is as though you are stamping and sealing your
+letter’s envelope. You have declared the letter complete (<code class="highlighter-rouge">git add --all</code>) and now
+there is only one additional step to sending the letter on its way.</p>
+
+<p>Adding a message to a commit is important. This will allow others to quickly
+understand or give context to your changes. Always remember that future you is
+one of those others! You may want to find a particular change and commit
+messages will allow you to quickly skim weeks worth of work.</p>
+
   
 </div>
 
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
 
-    
-    <h3 class="mb-3" id="git-commit">git commit; readying files for a push</h3>
-    
 
-    <div class="tab-content flow-text">
-
-      <p>At this point you have added all your file changes or, in our analogy, written down all your updates in the letter.</p>
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="git-commit-1" role="tabpanel">
-
-	
-	<p>When you commit changes it is as though you are stamping and sealing your letter’s envelope. You have declared the letter complete (git add –all) and now there is only one additional step to sending the letter on its way.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="git-commit-2" role="tabpanel">
-
-	
-	<p>Adding a message to a commit is important. This will allow others to quickly understand or give context to your changes. Always remember that future you is one of those others! You may want to find a particular change and commit messages will allow you to quickly skim weeks worth of work.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
+    
     <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
 <p>git commit -m "[your message]" </p>
 <p></p></div></div>
 
     
   </div>
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="descriptions-git-config">
+      git config; housekeeping
+    </h3>
+
+    
+
+<div class="flow-text">
+  
+  <p>Check that your username and email are configured.</p>
+
   
 </div>
 
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
 
-    
-    <h3 class="mb-3" id="git-config">git config; housekeeping</h3>
-    
 
-    <div class="tab-content flow-text">
-
-      
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="git-config-1" role="tabpanel">
-
-	
-	<p>Check that your username and email are configured.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
+    
     <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
 <p>git config --global user.name</p>
 <pre>
@@ -287,41 +279,43 @@ Changes to be committed:
 
     
   </div>
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="descriptions-git-help">
+      git help; common subcommands
+    </h3>
+
+    
+
+<div class="flow-text">
+  
+  <p>There are many git subcommands, they are the “add”, “push”, or “pull” you find
+after the initial “git”. While memorizing much-used subcommands like “add” or
+“pull” is useful, you can always refer the git help summary for a list of common
+subcommands.</p>
+
+<p>Notice at the end of the summary a “help” subcommand is mentioned. This
+subcommand can be used to learn more a particular subcommand.</p>
+
   
 </div>
 
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
 
-    
-    <h3 class="mb-3" id="git-help">git help; common subcommands</h3>
-    
 
-    <div class="tab-content flow-text">
-
-      <p>There are many git subcommands, they are the “add”, “push”, or “pull” you find after the initial “git”. While memorizing much-used subcommands like “add” or “pull” is useful, you can always refer the git help summary for a list of common subcommands.</p>
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="git-help-1" role="tabpanel">
-
-	
-	<p>Notice at the end of the summary a “help” subcommand is mentioned. This subcommand can be used to learn more a particular subcommand.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
+    
     <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
 <p>git --help</p>
 <pre>
@@ -372,70 +366,44 @@ specific subcommand or concept.
 
     
   </div>
-  
 </div>
 
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
-
-    <div class="row"><div class="col"><h4 class="display-4 text-center mb-0">
+    
+    
+    
+    <div class="d-flex"><div class="mx-auto"><h4 class="display-4 text-center mb-0">
     Getting started with RStudio projects, <small class="text-muted d-sm-block">version control, and R packages</small>
-    </h4><div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div></div></div>
+    </h4></div></div>
+    
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
     
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
 
     
-    <h3 class="mb-3" id="rstudio-setup-project">New projects, files old and new</h3>
     
 
-    <div class="tab-content flow-text">
 
-      <p>When creating a new RStudio project you are presented with three options.</p>
 
-      
-      
-      
-      <div class="tab-pane fade show active" id="rstudio-setup-project-1" role="tabpanel">
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-	
-	<p>The first option is to create a brand new project and folder. This is handy when starting from scratch. However, in some cases you may want to create a new folder and project for your existing work. If you have a lot of excess or obsolete files starting a new project may help clean up your file structure</p>
+    <h3 id="descriptions-rstudio-project-create">
+      New projects, files old and new
+    </h3>
 
-	
-	
-      </div>
     
-     
-      
-      <div class="tab-pane fade" id="rstudio-setup-project-2" role="tabpanel">
 
-	
-	<p>The second option is to convert an existing folder of files into a project. This is the go-to option for existing PPML work.</p>
 
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-setup-project-3" role="tabpanel">
 
-	
-	<p>The final option is to checkout a project from GitHub. If you work on multiple computers this will allow you to pull down all your project files to a new machine. If new persons will be collaborating this is how they will go about getting your files. Be sure any new persons have been added as repository collaborators, click <a href="https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/" target="_blank">here</a> for steps on adding a new collaborator.</p>
 
-	
-	
-      </div>
-    
-     
-    </div>
+
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
+    
     <div class="rstudio-new-project card">
   <div class="card-header bg-light py-0 px-2">
     <small>
@@ -449,7 +417,7 @@ specific subcommand or concept.
   
   <div class="list-group list-group-flush bg-white" role="tab-list">
     
-    <a class="list-group-item list-group-item-action px-2 active" href="#rstudio-setup-project-1" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2 active" href="#create-1" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="new-directory-icon px-1">
 	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
@@ -468,7 +436,7 @@ specific subcommand or concept.
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#rstudio-setup-project-2" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#create-2" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="existing-directory-icon px-1">
 	  <span class="flow-text-large fa fa-folder fa-3x fa-fw"></span>
@@ -487,7 +455,7 @@ specific subcommand or concept.
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#rstudio-setup-project-3" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#create-3" data-toggle="tab" role="tab">
       <div class="d-flex flew-row justify-content-start align-items-center">
 	<div class="version-control-icon px-1">
 	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
@@ -514,609 +482,114 @@ specific subcommand or concept.
 
     
   </div>
-  
 </div>
 
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
-
-    
-    <h3 class="mb-3" id="rstudio-new-project-types">New project, new files</h3>
     
 
-    <div class="tab-content flow-text">
 
-      <p>There are a handful of options for a new project from scratch. We will focus on the first two options as they are satisfactory for the majority of our work.</p>
 
-      
-      
-      
-      <div class="tab-pane fade show active" id="rstudio-new-project-types-1" role="tabpanel">
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-	
-	<p>The first option is a blank new project. This is the most generic option and good choice when starting out. Selecting a blank project now does not limit you going forward. RStudio will detect if you add R package infrastructure files to a project folder giving you the additional features talked about <a href="https://http.cat/404">here</a>.</p>
+    <h3 id="">
+      New project, existing files
+    </h3>
 
-	
-	
-      </div>
     
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-types-2" role="tabpanel">
-
-	
-	<p>The second option is to create a new project with included R package infrastructure. If selected your new project will contain a DESCRIPTION and NAMESPACE file, R/ and man/ folders, and assorted other files. If you know your scripts and data will eventually be converted into an R package this option is for you. If you believe others will want to use your work or build upon your work the R package option is also for.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-types-3" role="tabpanel">
-
-	
-	<p>The third option is to generate a new project with files relevant to Shiny application development. These files, <code class="highlighter-rouge">server.R</code> and <code class="highlighter-rouge">ui.R</code>, usefully include a small example for those getting started with Shiny or refreshing their understanding of Shiny file structure.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
     
   </div>
+  
   <div class="col col-12 col-md-8 col-lg-7">
-
-    <div class="rstudio-new-project card">
-  <div class="card-header bg-light py-0 px-2">
-    <small>New Project</small>
-  </div>
-  
-  <div class="card-header bg-light border-bottom-0">
-    <div class="d-flex justify-content-start align-items-center">
-      <div class="px-2">
-	<small>
-	  Back
-	</small>
-      </div>
-      <div class="px-3">
-	Project Type
-      </div>
-    </div>
-  </div>
-  
-  <div class="list-group list-group-flush bg-white" role="tab-list">
     
-    <a class="list-group-item list-group-item-action px-2 active" href="#rstudio-new-project-types-1" data-toggle="tab" role="tab">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="new-directory-icon px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  New Project
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#rstudio-new-project-types-2" data-toggle="tab" role="tab">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="r-package-icon px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  R Package
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#rstudio-new-project-types-3" data-toggle="tab" role="tab">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="new-directory-icon px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  Shiny Web Application
-	</div>
-	<div class="ml-auto"">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
-    
-    <div class="list-group-item px-2">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
-	</div>
-	<div class="px-2">
-	  R Package using Rcpp
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </div>
-
-    <div class="list-group-item px-2">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
-	</div>
-	<div class="px-2">
-	  R Package using RcppArmadillo
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </div>
-
-    <div class="list-group-item px-2">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
-	</div>
-	<div class="px-2">
-	  R Package using RcppEigen
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </div>
-
-    <div class="list-group-item px-2">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="px-2">
-	  <span class="fas fa-hexagon fa-rotate-90 fa-fw text-white"></span>
-	</div>
-	<div class="px-2">
-	  R Package using devtools
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </div>
-
-  </div>
-  
-  <div class="card-footer bg-light border-top-0">
   </div>
 </div>
 
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="">
+      New blank project
+    </h3>
+
+    
     
   </div>
   
-</div>
-
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
-
-    
-    <h3 class="mb-3" id="rstudio-new-project-blank">New blank project</h3>
-    
-
-    <div class="tab-content flow-text">
-
-      <p>This is the final step when creating a new blank project. Most of the controls on this screen are self-explanatory. However, click around to learn more about recommended naming conventions or why that checkbox is supposed to be selected.</p>
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="rstudio-new-project-blank-1" role="tabpanel">
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-blank-2" role="tabpanel">
-
-	
-	<p>Project names follow file name conventions. Please separate words with dashes and avoid using other symbols. Local folders and projects should be named after their corresponding GitHub repository whenever possible.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-blank-3" role="tabpanel">
-
-	
-	<p>Where you store a project on your computer is up to you. You might consider creating a high-level <code class="highlighter-rouge">git/</code> folder to store all your projects which have a corresponding GitHub repository.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-blank-4" role="tabpanel">
-
-	
-	<p>This checkbox ought to be selected by default, but please double-check that it is. Your new project folder will be created with all the files necessary for git.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
-    
-  </div>
   <div class="col col-12 col-md-8 col-lg-7">
-
-    <div class="rstudio-new-project card">
-  <div class="card-header bg-light py-0 px-2">
-    <small>New Project</small>
-  </div>
-
-  <div class="card-header bg-light">
-    <div class="d-flex justify-content-start align-items-center">
-      <div class="px-2">
-	<small>
-	  Back
-	</small>
-      </div>
-      <div class="px-3">
-	Project Type
-      </div>
-    </div>
-  </div>
-  
-  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
     
-    <!-- logo -->
-    <div class="px-2 pt-3 flow-text-xl new-directory-icon">
-      <span class="fas fa-hexagon fa-lg fa-rotate-90 fa-fw"></span>
-    </div>
-
-    <!-- body -->
-    <div class="px-2">
-      <div class="form-row"">
-	<div class="form-group col col-9 pl-0">
-	  <label>Directory name:</label>
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-blank-2" data-toggle="tab" role="tab" readonly>
-	</div>
-      </div>
-
-      <div class="form-row">
-	<label class="w-100">Create project as a subdirectory of:</label>
-	<div class="form-group col col-sm-9 pl-0">
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-blank-3" data-toggle="tab" role="target">
-	</div>
-	<div class="form-group col col-3 pr-0 d-none d-sm-block">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
-	    <small>Browse</small>
-	  </button>
-	</div>
-      </div>
-
-      <div class="form-row">
-	<div class="col col-auto pl-0">
-	  <div class="mt-1 mb-1" data-target="#rstudio-new-project-blank-4" data-toggle="tab" role="tab">
-	    <span class="far fa-check-square fa-fw"></span>
-	    <small>Create a git repository</small>
-	  </div>
-	  <div>
-	    <span class="far fa-square fa-fw"></span>
-	    <small>Use packrat with this project</small>
-	  </div>
-	</div>
-      </div>
-
-    </div>
-  </div>
-  
-  <div class="card-footer bg-light">
+    
+    
   </div>
 </div>
 
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="">
+      New R package project
+    </h3>
+
+    
     
   </div>
   
-</div>
-
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
-
-    
-    <h3 class="mb-3" id="rstudio-new-project-package">New R package project</h3>
-    
-
-    <div class="tab-content flow-text">
-
-      <p>Many of our projects will be bundled into an R package. This allows us to easily share our methods and data in a standardized format. Installations are possible from GitHub with <code class="highlighter-rouge">devtools</code> and packages will be made available on CRAN as possible.</p>
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="rstudio-new-project-package-1" role="tabpanel">
-
-	
-	<p>The default option to create an R package (no C++) is often enough. If you are going to use C++ and Rcpp you might consider the second option here. If you do not immediately need to work with Rcpp, but might in the future, you can always add Rcpp infrastructure later with the <code class="highlighter-rouge">devtools</code> package.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-package-2" role="tabpanel">
-
-	
-	<p>When you know you are immediately working with C++ and Rcpp considering choosing the second option. Remember, you can always add the necessary Rcpp infrastructure to your project at a later time.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-package-3" role="tabpanel">
-
-	
-	<p>While most of the options here are easy to change later, updating a package name is combersome and only gets worse over time. As you might imagine each time a file mentions the package name a revision will have to be made. Package names must only contain lowercase letters and number. While some package authors include “.”s in their package names, please avoid this convention.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-package-4" role="tabpanel">
-
-	
-	<p>If you already have a set of existing scripts you want to build into a package consider adding them here. The files will be copied into the new package’s <code class="highlighter-rouge">R/</code> folder. You might also have data you want to add, in which case you can select <code class="highlighter-rouge">.rData</code> filest to add. These files will be copied over the package’s <code class="highlighter-rouge">data/</code> folder.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-package-5" role="tabpanel">
-
-	
-	<p>You may want to consider creating a high-level <code class="highlighter-rouge">git/</code> folder. Similar to a Dropbox or GoogleDrive folder creating a git folder makes keeping track of all your projects simpler.</p>
-
-	
-	
-      </div>
-    
-     
-      
-      <div class="tab-pane fade" id="rstudio-new-project-package-6" role="tabpanel">
-
-	
-	<p>When creating a new package make sure this opion is seleted. We could use also use <code class="highlighter-rouge">git init</code> to add the necessary files to the package and project folder.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
-    
-  </div>
   <div class="col col-12 col-md-8 col-lg-7">
-
-    <div class="rstudio-new-project card">
-  <div class="card-header bg-light py-0 px-2">
-    <small>New Project</small>
-  </div>
-  
-  <div class="card-header bg-light">
-    <div class="d-flex justify-content-start align-items-center">
-      <div class="px-2">
-	<small>Back</small>
-      </div>
-      <div class="px-3">
-	Create R Package
-      </div>
-    </div>
-  </div>
-  
-  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
-
-    <!-- icon -->
-    <div class="px-2 pt-3 new-directory-icon flow-text-xl">
-      <span class="fas fa-hexagon fa-lg fa-rotate-90 fa-fw"></span>
-    </div>
-
-    <!-- body -->
-    <div class="px-2">
-      <div class="form-row">
-	<div class="form-group col pl-0">
-	  <label>Type:</label>
-	  <div class="btn-group btn-block dropdown-select border border-secondary rounded">
-	    <button type="button" class="btn btn-block bg-white d-flex align-items-center dropdown-toggle" data-toggle="dropdown">
-	      <span class="dropdown-select-label mr-auto">Package</span>
-	      <span></span>
-	    </button>
-	    <div class="dropdown-menu dropdown-menu-right w-100">
-	      <a class="dropdown-item px-2" data-toggle="tab" data-target="#rstudio-new-project-package-1">Package</a>
-	      <a class="dropdown-item px-2" data-toggle="tab" data-target="#rstudio-new-project-package-2">Package w/ Rcpp</a>
-	    </div>
-	  </div>
-	</div>
-      
-	<div class="form-group col pl-0">
-	  <label class="text-nowrap">Package name:</label>
-	    <input type="text" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-3" role="tab" readonly>
-	</div>
-      </div>
-      
-      <div class="form-row">
-	<label>Create package based on source files:</label>
-	<div class="form-group col col-sm-9 pl-0">
-	  <textarea rows="3" class="form-control bg-white border border-secondary" data-toggle="tab" data-target="#rstudio-new-project-package-4" role="tab" readonly>
-	  </textarea>
-	</div>
-	<div class="form-group col col-3 d-none d-sm-block">
-	  <button class="btn btn-sm btn-block bg-light border border-secondary">
-	    <small>Add</small>
-	  </button>
-	  <button class="btn btn-sm btn-block bg-light border border-secondary">
-	    <small>Remove</small>
-	  </button>
-	</div>
-      </div>
-
-      <div class="form-row">
-	<label class="w-100">Create project as a subdirectory of:</label>
-	<div class="form-group col col-sm-9 pl-0">
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-new-project-package-5" data-toggle="tab" role="tab" readonly>
-	</div>
-	<div class="form-group col col-3 d-none d-sm-block">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
-	    <small>Browse</small>
-	  </button>
-	</div>
-      </div>
-
-      <div class="form-row">
-	<div class="col col-auto d-flex flex-row align-items-center px-0" data-target="#rstudio-new-project-package-6" data-toggle="tab" role="tab">
-	  <div>
-	    <span class="far fa-check-square fa-fw text-dark"></span>
-	  </div>
-	  <div class="px-1">
-	    <small>Create a git repository</small>
-	  </div>
-	</div>
-	<div class="col col-auto d-flex flex-row align-items-center px-0">
-	  <div>
-	    <span class="far fa-square fa-fw"></span>
-	  </div>
-	  <div class="px-1">
-	    <small>Use packrat with this project</small>
-	  </div>
-	</div>
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="card-footer bg-light">
+    
+    
+    
   </div>
 </div>
 
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+
+    <h3 id="">
+      New project, new files
+    </h3>
+
+    
     
   </div>
   
-</div>
-
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
-    
-    <div class="example row">
-  
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-3 mb-md-0">
-
-    
-    <h3 class="mb-3" id="rstudio-create-project-directory">New project, existing files</h3>
-    
-
-    <div class="tab-content flow-text">
-
-      <p>Convert an existing folder of files into an RStudio project.</p>
-
-      
-      
-      
-      <div class="tab-pane fade show active" id="rstudio-create-project-directory-1" role="tabpanel">
-
-	
-	<p>When organizing folders and projects, remember you may want to create a top-level <code class="highlighter-rouge">git/</code> folder.</p>
-
-	
-	
-      </div>
-    
-     
-    </div>
-    
-  </div>
   <div class="col col-12 col-md-8 col-lg-7">
-
-    <div class="rstudio-new-project card border border-light">
-  <div class="card-header bg-light py-0 px-2">
-    <small>New Project</small>
-  </div>
-
-  <div class="card-header bg-light">
-    <div class="d-flex justify-content-start align-items-center">
-      <div class="px-2">
-	<small>
-	  Back
-	</small>
-      </div>
-      <div class="px-3">
-	Project Type
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body d-flex flex-row flex-nowrap justify-content-start px-1 bg-light nav">
     
-    <!-- logo icon -->
-    <div class="px-2 pt-3 flow-text-xl existing-directory-icon">
-      <span class="fas fa-folder fa-lg fa-fw"></span>
-    </div>
-
-    <!-- body -->
-    <div class="px-2 w-100">
-      <div class="form-row">
-	<label class="w-100">Project working directory:</label>
-	<div class="form-group col col-sm-9 pl-0">
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#rstudio-create-project-directory-1" data-toggle="tab" role="tab" readonly>
-	</div>
-	<div class="form-group col col-3 d-none d-sm-block">
-	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
-	    <small>Browse</small>
-	  </button>
-	</div>
-      </div>
-    </div>
-  
-  </div>
-
-  <div class="card-footer bg-light">
-  </div>
-</div>
-
-    
-  </div>
-  
-</div>
-
-    <div class="row"><div class="col col-12 col-sm-6 mx-sm-auto my-3"><hr></div></div>
     
     
   </div>
 </div>
 
-	  
-	</div>
-      </div>
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+    
+  </div>
+</div>
+
+
+
+      
     </div>
   </body>
 </html>
