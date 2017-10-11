@@ -6,8 +6,8 @@
   {% include head.html %}
 
   <body>
-    
-    {% capture active %}{{ page.path | basename }}{% endcapture %}
+
+    {% capture active %}{{ page.path | slugify | replace_regex: "(-index)?-html$", "" }}{% endcapture %}
     
     {% include nav.html active=active %}
     

@@ -1,28 +1,4 @@
 ---
-layout: example
-type: rstudio
-index: 2
-blurb: starting from scratch
-heading: New project, new files
-description:
-  - There are a handful of options for a new project from scratch. We will focus
-    on the first two options as they are satisfactory for the majority of our
-    work.
-  - The first option is a blank new project. This is the most generic option and
-    good choice when starting out. Selecting a blank project now does not limit
-    you going forward. RStudio will detect if you add R package infrastructure
-    files to a project folder giving you the additional features talked about
-    [here](https://http.cat/404).
-  - The second option is to create a new project with included R package
-    infrastructure. If selected your new project will contain a DESCRIPTION and
-    NAMESPACE file, R/ and man/ folders, and assorted other files. If you know
-    your scripts and data will eventually be converted into an R package this
-    option is for you. If you believe others will want to use your work or build
-    upon your work the R package option is also for.
-  - The third option is to generate a new project with files relevant to Shiny
-    application development. These files, `server.R` and `ui.R`, usefully
-    include a small example for those getting started with Shiny or refreshing
-    their understanding of Shiny file structure.
 ---
 <div class="rstudio-new-project card">
   <div class="card-header bg-light py-0 px-2">
@@ -44,7 +20,7 @@ description:
   
   <div class="list-group list-group-flush bg-white" role="tab-list">
     
-    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | idify }}-1" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="new-directory-icon px-2">
 	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
@@ -58,7 +34,7 @@ description:
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | idify }}-2" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="r-package-icon px-2">
 	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>
@@ -72,7 +48,7 @@ description:
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | idify }}-3" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="new-directory-icon px-2">
 	  <span class="fas fa-hexagon fa-rotate-90 fa-fw"></span>

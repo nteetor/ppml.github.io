@@ -24,6 +24,11 @@ workflows:
   -
     type: git
     heading: Working with GitHub, git, and the command line
+    order:
+      - config.html
+      - help.html
+      - add.html
+      - commit.html
   -
     type: rstudio
     heading: Getting started with RStudio projects, version control, and R packages
@@ -50,7 +55,7 @@ defaults:
       layout: example
       type:
         - rstudio
-	- project
+        - project
       heading: Getting started with RStudio projects
   -
     scope:
@@ -67,7 +72,7 @@ defaults:
       layout: description
       type:
         - rstudio
-	- project
+        - project
       
 # Build settings
 markdown: kramdown

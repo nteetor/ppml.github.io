@@ -13,7 +13,7 @@
   
   <div class="list-group list-group-flush bg-white" role="tab-list">
     
-    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | basename }}-1" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2 active" href="#{{ page.id | idify }}-1" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="new-directory-icon px-1">
 	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
@@ -32,7 +32,7 @@
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-2" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | idify }}-2" data-toggle="tab" role="tab">
       <div class="d-flex flex-row justify-content-start align-items-center">
 	<div class="existing-directory-icon px-1">
 	  <span class="flow-text-large fa fa-folder fa-3x fa-fw"></span>
@@ -51,7 +51,7 @@
       </div>
     </a>
     
-    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | basename }}-3" data-toggle="tab" role="tab">
+    <a class="list-group-item list-group-item-action px-2" href="#{{ page.id | idify }}-3" data-toggle="tab" role="tab">
       <div class="d-flex flew-row justify-content-start align-items-center">
 	<div class="version-control-icon px-1">
 	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>

@@ -3,14 +3,15 @@
 {% if page.type contains "rstudio" %}
 
 {% if page.type contains "project" %}
-<div class="tab-content flow-text">
-  
-  {{ page.excerpt | markdownify }}
 
+<div class="tab-content flow-text">
+
+  {{ page.excerpt | markdownify }}
+  
   {% assign paragraphs = page.content | remove: page.excerpt | paragraph_split %}
 
   {% for p in paragraphs %}
-  <div class="tab-pane fade show active" id="{{ page.id | slugify }}-{{ forloop.index }}" role="tabpanel">
+  <div class="tab-pane fade{% if forloop.first == true %} show active{% endif %}" id="{{ page.id | idify }}-{{ forloop.index }}" role="tabpanel">
     {{ p | markdownify }}
   </div>
   {% endfor %}
@@ -25,5 +26,7 @@
   {{ content | markdownify }}
   
 </div>
+
+{% else %}
 
 {% endif %}

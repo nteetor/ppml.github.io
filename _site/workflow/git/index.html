@@ -14,12 +14,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|PT+Mono|Raleway:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab|PT+Mono|Raleway:400,500">
+
   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-core.css">
   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-brands.css">
   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-solid.css">
   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-regular.css">
   <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-light.css">
+
+  <link rel="stylesheet" href="/css/blokk/blokkfont.css" type="text/css">
   
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -47,7 +50,7 @@
 
 
   <body>
-    
+
     
     
     <nav class="navbar navbar-expand navbar-light bg-light">
@@ -91,7 +94,15 @@
 	
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item " href="/about">About</a>
-          <a class="dropdown-item active" href="/workflow">Workflow</a>
+	  <a class="dropdown-item" href="/workflow">Workflows</a>
+	  <a class="dropdown-item active" href="/workflow/git">
+	    <span class="mx-2 fal fa-level-up fa-rotate-90 fa-fw"></span>
+	    Git
+	  </a>
+          <a class="dropdown-item" href="/workflow/rstudio">
+	    <span class="mx-2 fal fa-level-up fa-rotate-90 fa-fw"></span>
+	    RStudio
+	  </a>
 	  <div class="dropdown-divider"></div>
           <a class="dropdown-item" target="_blank" href="https://github.com/PPML">
 	    <span class="fab fa-github fa-fw"></span>
@@ -112,7 +123,8 @@
     <div class="container-fluid">
       
       <div class="row">
-  <div class="col-12">
+  <div class="col col-12">
+
     
     
     <div class="d-flex"><div class="mx-auto"><h4 class="display-4 text-center mb-0">
@@ -120,72 +132,9 @@
     </h4></div></div>
     
     <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-
-    
-    
-
-
-
-<div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="descriptions-git-add">
-      git add; indicating files to commit
-    </h3>
 
     
 
-<div class="flow-text">
-  
-  <p>Once you are satisfied with changes, you need to add them. Adding changes is
-like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
-
-<p>Changes may be added per file, per line, or all at once.</p>
-
-  
-</div>
-
-
-
-    
-  </div>
-  
-  <div class="col col-12 col-md-8 col-lg-7">
-    
-    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p>git status</p>
-<pre>
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
-
-  modified:   R/thoughts.R
-</pre>
-<p>git add R/thoughts.R</p>
-<p>git status</p>
-<pre>
-On branch master
-Your branch is up-to-date with 'origin/master'.
-Changes to be committed:
-  (use "git reset HEAD &lt;file&gt;..." to unstage)
-
-  modified:   R/thoughts.R
-</pre>
-<p></p></div></div>
-
-<div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p>git add --all</p>
-<p></p></div></div>
-
-    
-  </div>
-</div>
-
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
     
 
@@ -194,54 +143,7 @@ Changes to be committed:
 <div class="example row">
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-    <h3 id="descriptions-git-commit">
-      git commit; readying files for a push
-    </h3>
-
-    
-
-<div class="flow-text">
-  
-  <p>At this point you have added all your file changes or, in our analogy, written
-down all your updates in the letter.</p>
-
-<p>When you commit changes it is as though you are stamping and sealing your
-letter’s envelope. You have declared the letter complete (<code class="highlighter-rouge">git add --all</code>) and now
-there is only one additional step to sending the letter on its way.</p>
-
-<p>Adding a message to a commit is important. This will allow others to quickly
-understand or give context to your changes. Always remember that future you is
-one of those others! You may want to find a particular change and commit
-messages will allow you to quickly skim weeks worth of work.</p>
-
-  
-</div>
-
-
-
-    
-  </div>
-  
-  <div class="col col-12 col-md-8 col-lg-7">
-    
-    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
-<p>git commit -m "[your message]" </p>
-<p></p></div></div>
-
-    
-  </div>
-</div>
-
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-
-
-
-<div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="descriptions-git-config">
+    <h3 id="git-config">
       git config; housekeeping
     </h3>
 
@@ -290,7 +192,7 @@ messages will allow you to quickly skim weeks worth of work.</p>
 <div class="example row">
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-    <h3 id="descriptions-git-help">
+    <h3 id="git-help">
       git help; common subcommands
     </h3>
 
@@ -371,31 +273,27 @@ specific subcommand or concept.
     <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
     
-    
-    
-    <div class="d-flex"><div class="mx-auto"><h4 class="display-4 text-center mb-0">
-    Getting started with RStudio projects, <small class="text-muted d-sm-block">version control, and R packages</small>
-    </h4></div></div>
-    
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-
-    
-    
 
 
 
 <div class="example row">
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-    <h3 id="descriptions-rstudio-project-create">
-      New projects, files old and new
+    <h3 id="git-add">
+      git add; indicating files to commit
     </h3>
 
     
 
+<div class="flow-text">
+  
+  <p>Once you are satisfied with changes, you need to add them. Adding changes is
+like putting thoughts down onto paper. Sending a blank letter does not do much.</p>
 
+<p>Changes may be added per file, per line, or all at once.</p>
+
+  
+</div>
 
 
 
@@ -404,81 +302,32 @@ specific subcommand or concept.
   
   <div class="col col-12 col-md-8 col-lg-7">
     
-    <div class="rstudio-new-project card">
-  <div class="card-header bg-light py-0 px-2">
-    <small>
-      New Project
-    </small>
-  </div>
-  
-  <div class="card-header bg-light border-bottom-0">
-    Create Project
-  </div>
-  
-  <div class="list-group list-group-flush bg-white" role="tab-list">
-    
-    <a class="list-group-item list-group-item-action px-2 active" href="#create-1" data-toggle="tab" role="tab">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="new-directory-icon px-1">
-	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  <h6 class="mb-0">
-	    New Directory
-	  </h6>
-	  <small class="text-secondary">
-	    Start a new project in a brand new working directory
-	  </small>
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
-    
-    <a class="list-group-item list-group-item-action px-2" href="#create-2" data-toggle="tab" role="tab">
-      <div class="d-flex flex-row justify-content-start align-items-center">
-	<div class="existing-directory-icon px-1">
-	  <span class="flow-text-large fa fa-folder fa-3x fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  <h6 class="mb-0">
-	    Existing Directory
-	  </h6>
-	  <small class="text-secondary">
-	    Associate a project with an existing working directory
-	  </small>
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
-    
-    <a class="list-group-item list-group-item-action px-2" href="#create-3" data-toggle="tab" role="tab">
-      <div class="d-flex flew-row justify-content-start align-items-center">
-	<div class="version-control-icon px-1">
-	  <span class="flow-text-large fas fa-hexagon fa-3x fa-rotate-90 fa-fw"></span>
-	</div>
-	<div class="px-2">
-	  <h6 class="mb-0">
-	    Version Control
-	  </h6>
-	  <small class="text-secondary">
-	    Checkout a project from a version control repository
-	  </small>
-	</div>
-	<div class="ml-auto">
-	  <span class="fa fa-chevron-right fa-fw text-secondary"></span>
-	</div>
-      </div>
-    </a>
-    
-  </div>
-  
-  <div class="card-footer bg-light border-top-0">
-  </div>
-</div>
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p>git status</p>
+<pre>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+  modified:   R/thoughts.R
+</pre>
+<p>git add R/thoughts.R</p>
+<p>git status</p>
+<pre>
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+  modified:   R/thoughts.R
+</pre>
+<p></p></div></div>
+
+<div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p>git add --all</p>
+<p></p></div></div>
 
     
   </div>
@@ -493,101 +342,49 @@ specific subcommand or concept.
 <div class="example row">
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
 
-    <h3 id="">
-      New project, existing files
+    <h3 id="git-commit">
+      git commit; readying files for a push
     </h3>
 
     
+
+<div class="flow-text">
+  
+  <p>At this point you have added all your file changes or, in our analogy, written
+down all your updates in the letter.</p>
+
+<p>When you commit changes it is as though you are stamping and sealing your
+letter’s envelope. You have declared the letter complete (<code class="highlighter-rouge">git add --all</code>) and now
+there is only one additional step to sending the letter on its way.</p>
+
+<p>Adding a message to a commit is important. This will allow others to quickly
+understand or give context to your changes. Always remember that future you is
+one of those others! You may want to find a particular change and commit
+messages will allow you to quickly skim weeks worth of work.</p>
+
+  
+</div>
+
+
+
     
   </div>
   
   <div class="col col-12 col-md-8 col-lg-7">
     
-    
+    <div class="terminal-card card"><div class="card-body flow-text"><div class="card-title"><span class="fas fa-circle"></span><span class="fas fa-circle"></span><span class="fas fa-circle"></span></div>
+<p>git commit -m "[your message]" </p>
+<p></p></div></div>
+
     
   </div>
 </div>
 
     <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
     
-    
 
-
-
-<div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="">
-      New blank project
-    </h3>
-
-    
-    
-  </div>
-  
-  <div class="col col-12 col-md-8 col-lg-7">
-    
-    
-    
   </div>
 </div>
-
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-
-
-
-<div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="">
-      New R package project
-    </h3>
-
-    
-    
-  </div>
-  
-  <div class="col col-12 col-md-8 col-lg-7">
-    
-    
-    
-  </div>
-</div>
-
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-
-
-
-<div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="">
-      New project, new files
-    </h3>
-
-    
-    
-  </div>
-  
-  <div class="col col-12 col-md-8 col-lg-7">
-    
-    
-    
-  </div>
-</div>
-
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
-    
-    
-    
-  </div>
-</div>
-
-
 
       
     </div>

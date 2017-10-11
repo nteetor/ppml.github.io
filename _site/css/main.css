@@ -9,6 +9,9 @@ h4,
 h5 {
   font-family: "Josefin Slab", serif; }
 
+a {
+  cursor: pointer; }
+
 nav {
   font-family: "Raleway", sans-serif;
   font-weight: 500; }
@@ -21,6 +24,10 @@ nav {
     min-width: 50px; }
   nav .navbar-nav .dropdown-menu {
     z-index: 2; }
+
+.no-hover:hover {
+  color: inherit;
+  text-decoration: none; }
 
 .terminal-card {
   margin: 0 0 0 0;
@@ -91,6 +98,18 @@ nav {
   top: 92;
   right: 0;
   z-index: 2; }
+
+.font-large {
+  font-size: 1.25rem; }
+
+.font-larger {
+  font-size: 1.35rem; }
+
+.font-light {
+  font-weight: 300; }
+
+.font-blokk {
+  font-family: "BLOKK"; }
 
 @media only screen and (min-width: 360px) {
   .flow-text {

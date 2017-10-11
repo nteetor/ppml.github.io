@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col col-12">
+
+    {% assign wf = site.workflows | where: "type", "git" | first %}
+    
+    {% title %}
+    {{ wf.heading }}
+    {% endtitle %}
+    
+    {% divider %}
+
+    {% assign examples = site.examples | where: "type", "git" %}
+
+    {% for file in wf.order %}
+    {{ examples | where: "basename", file | first }}
+    {% divider %}
+    {% endfor %}
+
+  </div>
+</div>

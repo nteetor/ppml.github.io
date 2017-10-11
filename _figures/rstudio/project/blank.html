@@ -1,24 +1,4 @@
 ---
-layout: example
-type: rstudio
-index: 3
-blurb: blank projects
-heading: New blank project
-description:
-  - This is the final step when creating a new blank project. Most of the
-    controls on this screen are self-explanatory. However, click around to learn
-    more about recommended naming conventions or why that checkbox is supposed
-    to be selected.
-  - 
-  - Project names follow file name conventions. Please separate words with
-    dashes and avoid using other symbols. Local folders and projects should be
-    named after their corresponding GitHub repository whenever possible.
-  - Where you store a project on your computer is up to you. You might consider
-    creating a high-level `git/` folder to store all your projects which have a
-    corresponding GitHub repository.
-  - This checkbox ought to be selected by default, but please double-check that
-    it is. Your new project folder will be created with all the files necessary
-    for git.
 ---
 <div class="rstudio-new-project card">
   <div class="card-header bg-light py-0 px-2">
@@ -47,17 +27,17 @@ description:
 
     <!-- body -->
     <div class="px-2">
-      <div class="form-row"">
+      <div class="form-row">
 	<div class="form-group col col-9 pl-0">
 	  <label>Directory name:</label>
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-2" data-toggle="tab" role="tab" readonly>
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | idify }}-1" data-toggle="tab" role="tab" readonly>
 	</div>
       </div>
 
       <div class="form-row">
 	<label class="w-100">Create project as a subdirectory of:</label>
 	<div class="form-group col col-sm-9 pl-0">
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-3" data-toggle="tab" role="target">
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | idify }}-2" data-toggle="tab" role="target" readonly>
 	</div>
 	<div class="form-group col col-3 pr-0 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">
@@ -68,7 +48,7 @@ description:
 
       <div class="form-row">
 	<div class="col col-auto pl-0">
-	  <div class="mt-1 mb-1" data-target="#{{ page.id | basename }}-4" data-toggle="tab" role="tab">
+	  <div class="mt-1 mb-1" data-target="#{{ page.id | idify }}-3" data-toggle="tab" role="tab">
 	    <span class="far fa-check-square fa-fw"></span>
 	    <small>Create a git repository</small>
 	  </div>

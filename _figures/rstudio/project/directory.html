@@ -1,13 +1,4 @@
 ---
-layout: example
-type: rstudio
-index: 5
-blurb: convert existing files
-heading: New project, existing files
-description:
-  - Convert an existing folder of files into an RStudio project.
-  - When organizing folders and projects, remember you may want to create a
-    top-level `git/` folder.
 ---
 <div class="rstudio-new-project card border border-light">
   <div class="card-header bg-light py-0 px-2">
@@ -39,7 +30,7 @@ description:
       <div class="form-row">
 	<label class="w-100">Project working directory:</label>
 	<div class="form-group col col-sm-9 pl-0">
-	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | basename }}-1" data-toggle="tab" role="tab" readonly>
+	  <input type="text" class="form-control bg-white border border-secondary" data-target="#{{ page.id | idify }}-1" data-toggle="tab" role="tab" readonly>
 	</div>
 	<div class="form-group col col-3 d-none d-sm-block">
 	  <button class="h-100 btn btn-sm btn-block bg-light border border-secondary">

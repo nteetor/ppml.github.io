@@ -1,3 +1,20 @@
+.font-large {
+    font-size: 1.25rem;
+}
+
+.font-larger {
+    font-size: 1.35rem;
+}
+
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-blokk {
+    font-family: "BLOKK";
+}
+
 // borrowed from materialize, https://github.com/Dogfalo/materialize
 
 $small-screen-up: 601px !default;

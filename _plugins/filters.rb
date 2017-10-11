@@ -1,7 +1,14 @@
 module Jekyll
+  module IdifyFilter
+    def idify(input)
+      input = Utils.slugify(input)
+      input.gsub(/^[a-zA-Z]+[-]/, "")
+    end
+  end
+  
   module BasenameFilter
     def basename(input)
-      File.basename(input, ".*")
+      File.basename(input)
     end
   end
 
@@ -13,7 +20,7 @@ module Jekyll
 
   module RegexFilter
     def replace_regex(input, reg_str, repl_str)
-      re = Regexp.new(reg_str, Regxp::MULTILINE)
+      re = Regexp.new(reg_str, Regexp::MULTILINE)
 
       input.gsub(re, repl_str)
     end
@@ -26,6 +33,7 @@ module Jekyll
   end
 end
 
+Liquid::Template.register_filter(Jekyll::IdifyFilter)
 Liquid::Template.register_filter(Jekyll::BasenameFilter)
 Liquid::Template.register_filter(Jekyll::IndexOfFilter)
 Liquid::Template.register_filter(Jekyll::RegexFilter)

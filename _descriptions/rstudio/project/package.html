@@ -1,0 +1,34 @@
+---
+---
+Many of our projects will be bundled into an R package. This allows us to easily
+share our methods and data in a standardized format. Installations are possible
+from GitHub with `devtools` and packages will be made available on CRAN as
+possible.
+
+The default option to create an R package (no C++) is often enough. If you are
+going to use C++ and Rcpp you might consider the second option here. If you do
+not immediately need to work with Rcpp, but might in the future, you can always
+add Rcpp infrastructure later with the `devtools` package.
+
+When you know you are immediately working with C++ and Rcpp considering choosing
+the second option. Remember, you can always add the necessary Rcpp
+infrastructure to your project at a later time.
+
+While most of the options here are easy to change later, updating a package name
+is combersome and only gets worse over time. As you might imagine each time a
+file mentions the package name a revision will have to be made. Package names
+must only contain lowercase letters and number. While some package authors
+include periods in their package names, please avoid this convention.
+
+If you already have a set of existing scripts you want to build into a package
+consider adding them here. The files will be copied into the new package's `R/`
+folder. You might also have data you want to add, in which case you can select
+`.rData` filest to add. These files will be copied over the package's `data/`
+folder.
+
+You may want to consider creating a high-level `git/` folder. Similar to a
+Dropbox or Google Drive folder creating a git folder makes keeping track of all
+your projects simpler.
+
+When creating a new package make sure this option is selected. We could use also
+use `git init` to add the necessary files to the package and project folder.

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col col-12">
+    
+    {% title %}
+    {{ site.workflows | where: "type", "rstudio" | map: "heading" }}
+    {% endtitle %}
+    
+    {% divider %}
+    
+    {% assign examples = site.examples | where: "type", "rstudio" %}
+
+    {% for e in examples %}
+    {{ e }}
+    {% divider %}
+    {% endfor %}
+    
+  </div>
+</div>
