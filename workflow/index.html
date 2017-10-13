@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="row">
-  <div class="col col-12">
+  <div class="col col-12 mt-4">
     
     {% title %}
     Getting started
@@ -25,61 +25,124 @@ layout: default
     </p>
 
     <div class="w-100 p-2 d-flex align-items-center justify-content-around">
-      <div>
-	<a class="d-flex align-items-start no-hover" href="https://cran.rstudio.com/" target="_blank">
-	  <h4 class="d-inline display-4 text-dark">R</h4>
-	  <span class="text-primary far fa-external-link"></span>
-	</a>
+      <div class="d-flex align-items-start">
+        <h4 class="d-inline display-4">
+          <a class="no-hover text-dark" href="#">R</a>
+        </h4>
+        <a class="no-hover" href="https://cran.rstudio.com/" target="_blank">
+          <span class="text-primary far fa-external-link"></span>
+        </a>
       </div>
 
       <div class="d-flex align-items-start">
-	<h4 class="d-inline display-4">
-	  <a class="no-hover text-dark" href="#">RStudio</a>
-	</h4>
-	<a class="no-hover" href="https://www.rstudio.com/products/rstudio/download#download" target="_blank">
-	  <span class="text-primary far fa-external-link"></span>
-	</a>
+        <h4 class="d-inline display-4">
+          <a class="no-hover text-dark" href="#">RStudio</a>
+        </h4>
+        <a class="no-hover" href="https://www.rstudio.com/products/rstudio/download#download" target="_blank">
+          <span class="text-primary far fa-external-link"></span>
+        </a>
       </div>
 
       <div class="d-flex align-items-start">
-	<h4 class="d-inline display-4">
-	  <a class="no-hover text-dark" href="#">
-	    Git
-	  </a>
-	</h4>
-	<a class="no-hover" data-toggle="modal" data-target="#confirm-git">
-	  <span class="text-primary far fa-external-link"></span>
-	</a>
+        <h4 class="d-inline display-4">
+          <a class="no-hover text-dark" href="#">
+            Git
+          </a>
+        </h4>
+        <a class="no-hover" data-toggle="modal" data-target="#confirm-git">
+          <span class="text-primary far fa-external-link"></span>
+        </a>
 
-	<div class="modal fade" id="confirm-git" tabindex="-1" role="dialog" aria-hidden="true">
-	    <div class="modal-dialog" role="document">
-	      <div class="modal-content">
-		<div class="modal-header">
-		  <span class="font-large">Double-checking if git is already installed</span>
-		  
-		  <a data-dismiss="modal" aria-label="Close">
-		    <span class="fas fa-times" aria-hidden="true"></span>
-		  </a>
-		</div>
-		
-		<div class="modal-body">
-		  <p>
-		    Before installing git double check if your computer already
-		    has git installed. Head over to the <a
-		    href="/workflow/git">git and github section</a> where you
-		    will find instructions on confirming an installation of git.
-		  </p>
-		  
-		  <p>
-		    If you are certain git is not installed or if you would like
-		    to upgrade your current version of git <a
-		    href="https://git-scm.com/downloads" target="_blank" onclick="$('#confirm-git').modal('hide')">click
-		    here</a> to proceed.
-		  </p>
-		</div>
-	      </div>
-	    </div>
-	</div>
+        <div class="modal fade" id="confirm-git" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="font-large">
+                  <span class="fal fa-exclamation-triangle fa-lg fa-fw"></span>
+                  A quick double-check
+                </span>
+                
+                <a data-dismiss="modal" aria-label="Close">
+                  <span class="fas fa-times" aria-hidden="true"></span>
+                </a>
+              </div>
+              
+              <div class="modal-body">
+                <p class="flow-text">
+                  Before diving into the git installation, we can double-check
+                  if git is already installed.
+                </p>
+                
+                <p class="flow-text">
+                  To check if git is already installed on your computer follow
+                  the steps.
+                  <ol>
+                    <li class="flow-text">
+                      Open up your computer's Terminal application.
+                    </li>
+		    
+                    <li class="flow-text">
+                      Once you have the terminal open, type and run the
+                      following command.
+                      <div class="w-75 p-2">
+                        {% terminal %}
+                        $ git --version
+                        {% endterminal %}
+                      </div>
+                    </li>
+		    
+                    <li class="flow-text">
+                      If git <span class="font-weight-bold">is
+                      installed</span> you will see an output similar to the
+                      following.
+		      
+                      <div class="w-75 p-2">
+                        {% terminal %}
+                        $ git --version
+                        git version 2.10.1 (Apple Git-78)
+                        {% endterminal %}
+                      </div>
+                    </li>
+		    
+		    <li class="flow-text">
+		      If git is <span class="font-weight-bold">not
+		      installed</span> you will see an output similar to the
+		      following.
+		      
+		      <div class="w-75 p-2">
+			{% terminal %}
+			$ git --version
+			bash: git: command not found
+			{% endterminal %}
+		      </div>
+		    </li>
+
+		    <li class="flow-text">
+		      At this point, if git is installed you only need to
+		      proceed if you would like to upgrade to the latest
+		      version of git. At the time of writing the latest
+		      version of git was 2.14.2.
+		    </li>
+
+		    <li class="flow-text">
+		      <p>
+			If git is not installed or you would like to upgrade
+			your version of git click below to proceed to the download page.
+		      </p>
+		      
+		      <a class="p-2 my-2 no-hover text-dark" href="https://git-scm.com/downloads" target="_blank"
+ 		         onclick="$('#confirm-git').modal('hide')">
+			<span class="fab fa-git fa-3x align-text-top"></span>
+			<span class="fal fa-external-link align-text-top"></span>
+		      </a>
+
+		    </li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
     </div>
