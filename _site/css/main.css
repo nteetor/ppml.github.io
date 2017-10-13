@@ -25,6 +25,15 @@ nav {
   nav .navbar-nav .dropdown-menu {
     z-index: 2; }
 
+.jumbotron {
+  background-color: transparent; }
+
+.fixed-bottom {
+  max-height: 90px; }
+
+.main {
+  margin-top: 76px; }
+
 .no-hover:hover {
   color: inherit;
   text-decoration: none; }

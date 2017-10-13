@@ -1,4 +1,10 @@
 module Jekyll
+  module ReadFilter
+    def read(input)
+      IO.read(input)
+    end
+  end
+  
   module IdifyFilter
     def idify(input)
       input = Utils.slugify(input)
@@ -33,6 +39,7 @@ module Jekyll
   end
 end
 
+Liquid::Template.register_filter(Jekyll::ReadFilter)
 Liquid::Template.register_filter(Jekyll::IdifyFilter)
 Liquid::Template.register_filter(Jekyll::BasenameFilter)
 Liquid::Template.register_filter(Jekyll::IndexOfFilter)

@@ -43,6 +43,18 @@ nav {
     }
 }
 
+.jumbotron {
+    background-color: transparent;
+}
+
+.fixed-bottom {
+    max-height: 90px;
+}
+
+.main {
+    margin-top: 76px;
+}
+
 .no-hover {
     &:hover {    
 	color: inherit;
