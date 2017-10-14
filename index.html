@@ -31,7 +31,9 @@ layout: default
       </div>
     </div>
 
-    <div class="w-75 mx-auto">
+    {% divider %}
+
+    <div class="w-75 mt-4 mx-auto">
       <p class="flow-text">
 	Important epidemiologic and policy changes that are reshaping national
 	and local health landscapes necessitate a renewed focus on disease
@@ -52,23 +54,7 @@ layout: default
       </p>
     </div>
 
-    <div class="w-75 mx-auto d-flex d-sm-none flex-row justify-content-between align-items-start">
-      <img src="assets/hsph.png" width="50%" height="auto">
-      <address class="pt-1">
-	677 Huntington Avenue<br>
-	Boston, MA 02115<br>
-	+1 (617) 495-1000
-      </address>
-    </div>
-
-    <div class="fixed-bottom w-75 mx-auto d-none d-sm-flex flex-row justify-content-between align-items-start">
-      <img src="assets/hsph.png" width="50%" height="auto">
-      <address class="pt-1">
-	677 Huntington Avenue<br>
-	Boston, MA 02115<br>
-	+1 (617) 495-1000
-      </address>
-    </div>
+    {% include footer.html %}
     
   </div>
 </div>
