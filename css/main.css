@@ -28,9 +28,6 @@ nav {
 .jumbotron {
   background-color: transparent; }
 
-.fixed-bottom {
-  max-height: 90px; }
-
 .main {
   margin-top: 76px; }
 
@@ -107,6 +104,9 @@ nav {
   top: 92;
   right: 0;
   z-index: 2; }
+
+.font-smaller {
+  font-size: 0.75rem; }
 
 .font-large {
   font-size: 1.25rem; }
