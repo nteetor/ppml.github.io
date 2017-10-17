@@ -27,6 +27,18 @@
   
 </div>
 
+{% elsif page.type contains "package" %}
+
+<div class="flow-text">
+  
+  {{ content | markdownify }}
+  
+</div>
+
 {% else %}
+
+<div class="alert alert-warning">
+  No description layout for type {{ page.type }}
+</div>
 
 {% endif %}

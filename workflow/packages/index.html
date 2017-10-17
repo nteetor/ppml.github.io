@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col col-12 mt-4">
+
+    {% assign workflow = site.workflows | where: "type", "package" | first %}
+    
+    {% title %}
+    {{ workflow.heading }}
+    {% endtitle %}
+    
+    {% divider %}
+    
+    {% assign examples = site.examples | where: "type", "package" %}
+
+    {% if workflow.order %}
+    {% for i in workflow.order %}
+    {{ examples | where: "basename", i | first }}
+    {% divider %}
+    {% endfor %}
+
+    {% else %}
+    {% for e in examples %}
+    {{ e }}
+    {% divider %}
+    {% endfor %}
+    {% endif %}
+    
+  </div>
+</div>

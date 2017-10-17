@@ -1,23 +1,39 @@
 ---
 ---
-{% assign paths = site.examples | map: "path" %}
+{% assign name = page.slug | append: ".html" %}
+{% assign type = page.type | join: " " %}
 
-{% assign index = paths | index_of: page.path %}
+{% assign desc = site.descriptions | where2: "type", type | where: "basename", name | first %}
+
+{% assign fig = site.figures | where2: "type", type | where: "basename", name | first %}
 
 <div class="example row">
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
-
-    <h3 id="{{ site.descriptions[index].id | idify }}">
+    
+    <h3>
       {{ page.heading }}
     </h3>
 
-    {{ site.descriptions[index] }}
+    {% if desc %}
+    {{ desc }}
     
+    {% else %}
+    <div class="alert alert-warning d-inline-block">
+      Could not find _descriptions/{{ page.type | join: "/" }}/{{ name }} file.
+    </div>
+    {% endif %}
   </div>
-  
+
   <div class="col col-12 col-md-8 col-lg-7">
+    {% if fig %}
+    {{ fig }}
     
-    {{ site.figures[index] }}
+    {% else %}
+    <div class="alert alert-warning d-inline-block">
+      Could not find _figures/{{ page.type | join: "/" }}/{{ name }} file.
+    </div>
+    {% endif %}
     
   </div>
+    
 </div>

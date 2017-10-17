@@ -32,6 +32,12 @@ workflows:
   -
     type: rstudio
     heading: Getting started with RStudio projects, version control, and R packages
+  -
+    type: package
+    heading: Developing R packages, file structure, and development within RStudio
+    order:
+      - tools.html
+      - check.html
 
 # Collection settings
 collections:
@@ -56,7 +62,13 @@ defaults:
       type:
         - rstudio
         - project
-      heading: Getting started with RStudio projects
+  -
+    scope:
+      path: _examples/packages
+      type: examples
+    values:
+      layout: example
+      type: package
   -
     scope:
       path: _descriptions/git
@@ -73,6 +85,37 @@ defaults:
       type:
         - rstudio
         - project
+  -
+    scope:
+      path: _descriptions/packages
+      type: descriptions
+    values:
+      layout: description
+      type: package
+  -
+    scope:
+      path: _figures/rstudio/project
+      type: figures
+    values:
+      layout: figure
+      type:
+        - rstudio
+        - project
+  -
+    scope:
+      path: _figures/git
+      type: figures
+    values:
+      layout: figure
+      type: git
+  -
+    scope:
+      path: _figures/packages
+      type: figures
+    values:
+      layout: figure
+      type: package
+      
       
 # Build settings
 markdown: kramdown

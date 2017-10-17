@@ -1,4 +1,18 @@
 module Jekyll
+  module Where2Filter
+    def where2(input, key, value)
+      input.select do |item|
+        this = item[key]
+        
+        if this.kind_of?(Array)
+          this = this.join(" ")
+        end
+        
+        this == value
+      end
+    end
+  end
+          
   module ReadFilter
     def read(input)
       IO.read(input)
@@ -39,6 +53,7 @@ module Jekyll
   end
 end
 
+Liquid::Template.register_filter(Jekyll::Where2Filter)
 Liquid::Template.register_filter(Jekyll::ReadFilter)
 Liquid::Template.register_filter(Jekyll::IdifyFilter)
 Liquid::Template.register_filter(Jekyll::BasenameFilter)

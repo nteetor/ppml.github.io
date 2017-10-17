@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+
+  <title>
+    
+    PPML
+    
+  </title>
+
+  <!-- jQuery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab|PT+Mono|Raleway:400,500">
+
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-core.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-brands.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-solid.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-regular.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-light.css">
+
+  <link rel="stylesheet" href="/css/blokk/blokkfont.css" type="text/css">
+  
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Boostrap 4 JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <script>
+ $(document).ready(function() {
+     $(".dropdown-select").on("click", "a", function(el) {
+	 var $this = $(this);
+	 $this.closest(".dropdown-select").find(".dropdown-select-label").first().text($this.text());
+     });
+ });    
+</script>
+
+
+  <meta name="viewport" content="width=device-width">
+</head>
+
+
+  <body>
+
+    
+    
+    <nav class="fixed-top navbar navbar-expand navbar-light bg-light">
+  <a class="navbar-brand d-none d-sm-inline" href="/">
+    <div class="mb-0">Prevention Policy</div>
+    <div class="text-uppercase">Modeling Lab</div>
+  </a>
+  
+  <a class="navbar-brand d-inline d-sm-none" href="/">
+    PPML
+  </a>
+  
+  <div class="collapse navbar-collapse d-flex justify-content-start">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">
+	  <span class="d-none d-sm-inline">
+	    Home
+	  </span>
+	  <span class="d-inline d-sm-none fas fa-home fa-fw fa-lg">
+	  </span>
+	</a>
+      </li>
+      
+      <li class="nav-item ">
+	<a class="nav-link" href="/projects">
+	  <span class="d-none d-sm-inline">
+            Projects
+	  </span>
+	  <span class="d-inline d-sm-none fas fa-folder-open fa-fw fa-lg">
+	  </span>
+	</a>
+      </li>
+    </ul>
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="fas fa-ellipsis-v"></span>
+        </a>
+	
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item " href="/about">About</a>
+	  <a class="dropdown-item" href="/workflow">Workflows</a>
+	  <a class="dropdown-item" href="/workflow/git">
+	    <span class="mx-1 fal fa-level-up fa-xs fa-rotate-90 fa-fw"></span>
+	    Git
+	  </a>
+          <a class="dropdown-item" href="/workflow/rstudio">
+	    <span class="mx-1 fal fa-level-up fa-xs fa-rotate-90 fa-fw"></span>
+	    RStudio
+	  </a>
+	  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" target="_blank" href="https://github.com/PPML">
+	    <span class="fab fa-github fa-fw"></span>
+	    GitHub
+	  </a>
+	  <a class="dropdown-item" target="_blank"
+	     href="https://prevention-policy-modeling-lab.sph.harvard.edu">
+	    <span class="fas fa-university fa-fw"></span>
+	    Harvard
+	  </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+    <div class="main container-fluid">
+      
+      <div class="row">
+  <div class="col col-12 mt-4">
+
+    
+    
+    <div class="d-flex"><div class="mx-auto"><h4 class="display-4 text-center mb-0">
+    Developing R packages, <small class="text-muted d-sm-block">file structure, and development within RStudio</small>
+    </h4></div></div>
+    
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+    
+    <h3>
+      Often used Rstudio shortcuts
+    </h3>
+
+    
+    
+
+<div class="flow-text">
+  
+  <p>When working within RStudio the following shortcuts will greatly speed up your
+package development cycle. You will be able to make changes without fear of
+lingering out-dated functions or variables, quickly test changes against unit
+tests, and build package documentation using Roxygen.</p>
+
+<p>To use these shortcuts double-check that you have the latest version of the
+<span class="font-italic">devtools</span> package installed,
+<code>install.packages("devtools")</code>.</p>
+
+<p>Notice that many of these shortcuts use the first letter of their purpose,
+i.e. the shortcut for <span class="font-weight-bold">d</span>ocumenting your
+package uses the <kbd>D</kbd> key. All the shortcuts start with the
+<kbd>command</kbd>+<kbd>shift</kbd>.</p>
+
+<p>You will most likey run the shortcuts in the presented order.</p>
+
+  
+</div>
+
+
+
+    
+    
+  </div>
+
+  <div class="col col-12 col-md-8 col-lg-7">
+    
+    <dl class="flow-text">
+  <dt class="py-2">
+    <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>T</kbd>
+  </dt>
+  <dd class="py-2">
+    This shortcut <span class="font-weight-bold">t</span>ests your package using
+    the <code>testthat</code> package. If you are not familiar with unit testing
+    or have not setup your package to use <code>testthat</code> you can skip
+    this step, for now.
+  </dd>
+  
+  <dt class="py-2">
+    <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>D</kbd>
+  </dt>
+  <dd class="py-2">
+    <p>
+      This shortcut <span class="font-weight-bold">d</span>ocuments your
+      package. The Roxygen blocks you have written will be built into documentation
+      files. These files may be found in the top-level <code>man/</code> folder.
+    </p>
+
+    <p>
+      When building your package's documentation, any changed files will be
+      listed under the RStudio Build tab. Look for <code>"Writing &lt;name of
+      file&gt;"</code>.
+    </p>
+  </dd>
+
+  <dt class="py-2">
+    <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>
+  </dt>
+  <dd class="py-2">
+    This shortcut <span class="font-weight-bold">l</span>oads your package. To
+    begin with, you may think of loading as comparable to running
+    <code>library(&lt;your package name&gt;)</code>.
+  </dd>  
+</dl>
+
+
+
+    
+    
+    
+  </div>
+    
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+    
+    <h3>
+      Less used RStudio shortcuts
+    </h3>
+
+    
+    
+
+<div class="flow-text">
+  
+  <p>While you do not have to run this shortcut as consistenly as the above
+shorcuts, be sure to occassionally run this check early on in development
+as problems can mount up.</p>
+
+<p>The results of the check will appear in the Build tab of the RStudio
+application.</p>
+
+  
+</div>
+
+
+
+    
+    
+  </div>
+
+  <div class="col col-12 col-md-8 col-lg-7">
+    
+    <dl class="flow-text">
+  <dt class="py-2">
+    <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>E</kbd>
+  </dt>
+  <dd class="py-2">
+    This shortcut checks your package to make sure certain criteria are
+    met. These criteria range from a valid package name to proper S3 method
+    declarations to NAMESPACE format. If you intend to submit your package to
+    CRAN you need to be sure your package meets these criteria prior to
+    submission. Furthermore, even if you do not plan to submit to CRAN,
+    satisfying these criteria is probably a good idea as this will ensure
+    others can successfully install and work with your package.
+  </dd>
+</dl>
+
+
+    
+    
+    
+  </div>
+    
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+
+    
+    
+  </div>
+</div>
+
+      
+    </div>
+  </body>
+</html>

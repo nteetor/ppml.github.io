@@ -12,6 +12,9 @@ h5 {
 a {
   cursor: pointer; }
 
+dt {
+  font-weight: normal; }
+
 nav {
   font-family: "Raleway", sans-serif;
   font-weight: 500; }

@@ -1,12 +1,4 @@
 module Jekyll
-  class NameGenerator < Generator
-    safe true
-
-    def generate(site)
-
-    end
-  end
-
   Jekyll::Hooks.register :site, :post_render do |site|
 
   end
