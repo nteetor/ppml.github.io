@@ -1,19 +1,22 @@
 ---
 ---
-<dt class="col-sm-4 d-flex flex-column align-items-end justify-content-around flow-text">
-  <div class="d-inline-block">
+<dt class="col-sm-5 d-flex flex-column align-items-end justify-content-top flow-text">
+  <div class="text-right">
     {{ page.excerpt }}
-  </div>
-  
-  <div class="d-inline-block">
-    {% if page.URL %}
-    <a href="{{ page.URL }}" target="_blank">{{ page.URL }}</a>
-    {% else %}
-    Whoops, seems the URL is missing.
-    {% endif %}
   </div>
 </dt>
 
-<dd class="col-sm-8 d-flex flex-row align-items-top flow-text">
+<dd class="col-sm-7 flow-text">
   {{ page.content | remove: page.excerpt }}
+
+  <p>
+    {% if page.URL %}
+    <a href="{{ page.URL }}" target="_blank">
+      link
+      <sup class="fas fa-external-link fa-fw"></sup>
+    </a>
+    {% else %}
+    (Whoops, seems the URL is missing.)
+    {% endif %}
+  </p>
 </dd>
