@@ -108,6 +108,13 @@ nav {
   right: 0;
   z-index: 2; }
 
+.package-structure .fa-folder {
+  color: #F1D791; }
+  .package-structure .fa-folder ~ span::after {
+    content: "/"; }
+.package-structure .fa-file {
+  color: #858585; }
+
 .font-smaller {
   font-size: 0.75rem; }
 
