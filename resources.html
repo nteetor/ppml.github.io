@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-12 col-sm-8 mt-4 mx-auto">
+    {% title %}
+    Resources
+    {% endtitle %}
+
+    {% divider %}
+    
+    <p class="flow-text mx-auto">
+      The resources listed below are used in PPML projects or useful when
+      working on PPML projects.
+    </p>
+
+    <dl class="row">
+      {% for resource in site.resources %}
+      {{ resource }}
+      {% endfor %}
+    </dl>
+    
+    {% divider %}
+  </div>
+</div>

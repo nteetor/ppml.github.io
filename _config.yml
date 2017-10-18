@@ -20,6 +20,14 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Collection settings
+collections:
+  - descriptions
+  - figures
+  - examples
+  - resources
+
+# Worflow settings
 workflows:
   -
     type: git
@@ -36,16 +44,18 @@ workflows:
     type: package
     heading: Developing R packages, file structure, and development within RStudio
     order:
-      - tools.html
+      - load.html
       - check.html
+      - structure.html
 
-# Collection settings
-collections:
-  - descriptions
-  - figures
-  - examples
-    
+# Default settings    
 defaults:
+  -
+    scope:
+      path: _resources
+      type: resources
+    values:
+      layout: resource
   -
     scope:
       path: _examples/git

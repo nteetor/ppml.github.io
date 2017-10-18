@@ -1,0 +1,46 @@
+---
+---
+<div class="flow-text">
+  <p>
+    R package structure.
+  </p>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pkg-description">
+      Information about your package. Note that fields are case-sensitive. The
+      following fields are required,
+      <ul>
+	{% assign required = "Package,Version,License,Description,Title,Author,Maintainer" | split: "," %}
+	{% for name in required %}
+	
+	{% endfor %}
+	<li>
+	</li>
+      </ul>
+    </div>
+
+    <div class="tab-pane fade" id="pkg-inst">
+      ... about the package inst folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-man">
+      ... about the package man folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-namespace">
+      ... about the package namespace file.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-r">
+      ... about the package r folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-tests">
+      ... about the package tests folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-vignettes">
+      ... about the package vignettes folder.
+    </div>
+  </div>
+</div>

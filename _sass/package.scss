@@ -1,0 +1,15 @@
+.package-structure {
+    .fa-folder {
+	color: #F1D791;
+	
+	& ~ span {
+	    &::after {
+		content: "/";
+	    }
+	}
+    }
+
+    .fa-file {
+	color: #858585;
+    }
+}

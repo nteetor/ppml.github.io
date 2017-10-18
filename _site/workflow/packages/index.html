@@ -16,11 +16,11 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab|PT+Mono|Raleway:400,500">
 
-  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-core.css">
-  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-brands.css">
-  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-solid.css">
-  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-regular.css">
-  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome-light.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/fontawesome-pro-core.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/fontawesome-pro-brands.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/fontawesome-pro-solid.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/fontawesome-pro-regular.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/fontawesome-pro-light.css">
 
   <link rel="stylesheet" href="/css/blokk/blokkfont.css" type="text/css">
   
@@ -34,6 +34,16 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108248643-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108248643-1');
+    </script>
 
   <script>
  $(document).ready(function() {
@@ -152,7 +162,7 @@
   <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
     
     <h3>
-      Often used Rstudio shortcuts
+      Often used RStudio shortcuts
     </h3>
 
     
@@ -166,13 +176,12 @@ lingering out-dated functions or variables, quickly test changes against unit
 tests, and build package documentation using Roxygen.</p>
 
 <p>To use these shortcuts double-check that you have the latest version of the
-<span class="font-italic">devtools</span> package installed,
-<code>install.packages("devtools")</code>.</p>
+devtools package installed, <code>install.packages("devtools")</code>.</p>
 
 <p>Notice that many of these shortcuts use the first letter of their purpose,
 i.e. the shortcut for <span class="font-weight-bold">d</span>ocumenting your
 package uses the <kbd>D</kbd> key. All the shortcuts start with the
-<kbd>command</kbd>+<kbd>shift</kbd>.</p>
+<kbd>command</kbd> + <kbd>shift</kbd>.</p>
 
 <p>You will most likey run the shortcuts in the presented order.</p>
 
@@ -189,7 +198,7 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
     
     <dl class="flow-text">
   <dt class="py-2">
-    <kbd>command</kbd>+<kbd>shift</kbd>+<kbd>T</kbd>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>T</kbd>
   </dt>
   <dd class="py-2">
     This shortcut <span class="font-weight-bold">t</span>ests your package using
@@ -199,7 +208,7 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
   </dd>
   
   <dt class="py-2">
-    <kbd>command</kbd>+<kbd>shift</kbd>+<kbd>D</kbd>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>
   </dt>
   <dd class="py-2">
     <p>
@@ -216,7 +225,7 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
   </dd>
 
   <dt class="py-2">
-    <kbd>command</kbd>+<kbd>shift</kbd>+<kbd>L</kbd>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>L</kbd>
   </dt>
   <dd class="py-2">
     This shortcut <span class="font-weight-bold">l</span>oads your package. To
@@ -255,12 +264,9 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
 
 <div class="flow-text">
   
-  <p>While you do not have to run this shortcut as consistenly as the above
-shorcuts, be sure to occassionally run this check early on in development
-as problems can mount up.</p>
-
-<p>The results of the check will appear in the Build tab of the RStudio
-application.</p>
+  <p>These shortcuts may not be run as consistenly as the ones above. However,
+both shortcuts are useful and important. Be sure to occassionally run the check
+shortcut as problems have a tendency to build up over time.</p>
 
   
 </div>
@@ -275,18 +281,172 @@ application.</p>
     
     <dl class="flow-text">
   <dt class="py-2">
-    <kbd>command</kbd>+<kbd>shift</kbd>+<kbd>E</kbd>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>E</kbd>
   </dt>
   <dd class="py-2">
-    This shortcut checks your package to make sure certain criteria are
-    met. These criteria range from a valid package name to proper S3 method
-    declarations to NAMESPACE format. If you intend to submit your package to
-    CRAN you need to be sure your package meets these criteria prior to
-    submission. Furthermore, even if you do not plan to submit to CRAN,
-    satisfying these criteria is probably a good idea as this will ensure
-    others can successfully install and work with your package.
+    This shortcut checks your package to make sure certain criteria are met (is
+    <span class="font-weight-bold">e</span>verything okay?). These criteria
+    range from a valid package name to proper S3 method declarations to
+    NAMESPACE format. If you intend to submit your package to CRAN you need to
+    be sure your package meets these criteria prior to submission. Furthermore,
+    even if you do not plan to submit to CRAN, satisfying these criteria is
+    probably a good idea as this will ensure others can successfully install and
+    work with your package.
+  </dd>
+
+  <dt class="py-2">
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>B</kbd>
+  </dt>
+  <dd class="py-2">
+    <p>
+      This shortcut will <span class="font-weight-bold">b</span>uild your package,
+      restart the current R session, and load your newly installed package via
+      <code>library</code>.
+    </p>
+    <p>
+      Building and installing your package allows you to install the development
+      version of your package on your computer. As you update your package you
+      may find yourself simulatenously updating scripts or other packages. These
+      scripts and packages will be searching your R libraries for
+      the package. In order for them to use your updated package be sure to
+      run this shortcut.
+    </p>
   </dd>
 </dl>
+
+
+    
+    
+    
+  </div>
+    
+</div>
+
+    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    
+    
+
+
+
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+    
+    <h3>
+      Package structure
+    </h3>
+
+    
+    
+
+<div class="flow-text">
+  
+  <div class="flow-text">
+  <p>
+    R package structure.
+  </p>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pkg-description">
+      Information about your package. Note that fields are case-sensitive. The
+      following fields are required,
+      <ul>
+	
+	
+	<li>
+	</li>
+      </ul>
+    </div>
+
+    <div class="tab-pane fade" id="pkg-inst">
+      ... about the package inst folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-man">
+      ... about the package man folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-namespace">
+      ... about the package namespace file.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-r">
+      ... about the package r folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-tests">
+      ... about the package tests folder.
+    </div>
+
+    <div class="tab-pane fade" id="pkg-vignettes">
+      ... about the package vignettes folder.
+    </div>
+  </div>
+</div>
+
+  
+</div>
+
+
+
+    
+    
+  </div>
+
+  <div class="col col-12 col-md-8 col-lg-7">
+    
+    <ul class="nav d-block flow-text package-structure" role="tab-list">
+  <li class="mb-1">
+    <a class="active" data-toggle="tab" data-target="#pkg-description" role="tab">
+      <span class="fal fa-file fa-fw"></span>
+      <span class="text-uppercase">description</span>
+    </a>
+  </li>
+  
+  <li class="mb-1">
+    <a data-toggle="tab" data-target="#pkg-inst" role="tab">
+      <span class="fa fa-folder fa-fw"></span>
+      <span>inst</span>
+    </a>
+  </li>
+
+  <li class="mb-1">
+    <a data-toggle="tab" data-target="#pkg-man" role="tab">
+      <span class="fa fa-folder fa-fw"></span>
+      <span>man</span>
+    </a>
+  </li>
+
+  <li class="mb-1">
+    <a data-toggle="tab" data-target="#pkg-namespace" role="tab">
+      <span class="fal fa-file fa-fw"></span>
+      <span class="text-uppercase">namespace</span>
+    </a>
+  </li>
+
+  <li class="mb-1">
+    <a data-toggle="tab" data-target="#pkg-r" role="tab">
+      <span class="fa fa-folder fa-fw"></span>
+      <span class="text-uppercase">r</span>
+    </a>
+  </li>
+
+  <li class="mb-1">
+    <a data-toggle="tab" data-target="#pkg-tests" role="tab">
+      <span class="fa fa-folder fa-fw"></span>
+      <span>tests</span>
+    </a>
+  </li>
+
+  <li>
+    <a data-toggle="tab" data-target="#pkg-vignettes" role="tab">
+      <span class="fa fa-folder fa-fw"></span>
+      <span>vignettes</span>
+    </a>
+  </li>
+</ul>
 
 
     

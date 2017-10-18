@@ -2,15 +2,35 @@
 ---
 <dl class="flow-text">
   <dt class="py-2">
-    <kbd>command</kbd>+<kbd>shift</kbd>+<kbd>E</kbd>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>E</kbd>
   </dt>
   <dd class="py-2">
-    This shortcut checks your package to make sure certain criteria are
-    met. These criteria range from a valid package name to proper S3 method
-    declarations to NAMESPACE format. If you intend to submit your package to
-    CRAN you need to be sure your package meets these criteria prior to
-    submission. Furthermore, even if you do not plan to submit to CRAN,
-    satisfying these criteria is probably a good idea as this will ensure
-    others can successfully install and work with your package.
+    This shortcut checks your package to make sure certain criteria are met (is
+    <span class="font-weight-bold">e</span>verything okay?). These criteria
+    range from a valid package name to proper S3 method declarations to
+    NAMESPACE format. If you intend to submit your package to CRAN you need to
+    be sure your package meets these criteria prior to submission. Furthermore,
+    even if you do not plan to submit to CRAN, satisfying these criteria is
+    probably a good idea as this will ensure others can successfully install and
+    work with your package.
+  </dd>
+
+  <dt class="py-2">
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>B</kbd>
+  </dt>
+  <dd class="py-2">
+    <p>
+      This shortcut will <span class="font-weight-bold">b</span>uild your package,
+      restart the current R session, and load your newly installed package via
+      <code>library</code>.
+    </p>
+    <p>
+      Building and installing your package allows you to install the development
+      version of your package on your computer. As you update your package you
+      may find yourself simulatenously updating scripts or other packages. These
+      scripts and packages will be searching your R libraries for
+      the package. In order for them to use your updated package be sure to
+      run this shortcut.
+    </p>
   </dd>
 </dl>
