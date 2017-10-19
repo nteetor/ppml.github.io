@@ -31,6 +31,12 @@ nav {
 .jumbotron {
   background-color: transparent; }
 
+.table td {
+  border-color: rgba(0, 0, 0, 0.1); }
+
+.table-hover tr {
+  cursor: pointer; }
+
 .main {
   margin-top: 76px; }
 

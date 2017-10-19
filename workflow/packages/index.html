@@ -47,10 +47,13 @@
 
   <script>
  $(document).ready(function() {
-     $(".dropdown-select").on("click", "a", function(el) {
+     $(".dropdown-select").on("click", "a", function(e) {
 	 var $this = $(this);
 	 $this.closest(".dropdown-select").find(".dropdown-select-label").first().text($this.text());
      });
+     $(".table-hover").on("click", "tr[data-url]", function(e) {
+	 window.open($(this).data("url"));
+     })
  });    
 </script>
 
