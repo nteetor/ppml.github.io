@@ -134,6 +134,11 @@
 	
         <div class="dropdown-menu dropdown-menu-right">
           <!-- <a class="dropdown-item " href="/about">About</a> -->
+	  <a class="dropdown-item active" href="/resources">
+	    Resources
+	  </a>
+
+	  <div class="dropdown-divider"></div>
 	  
           <a class="dropdown-item" target="_blank" href="https://github.com/PPML">
 	    <span class="fab fa-github fa-fw"></span>
@@ -160,18 +165,33 @@
     Resources
     </h4></div></div>
 
-    <div class="w-100 p-2 m-2 d-flex align-items-center"><div class="w-100 mx-auto"><hr class="w-50"></div></div>
+    <hr class="w-50 mx-auto">
 
-    <div class="w-100 d-flex justify-content-center">
-      <p class="flow-text">
-	The resources listed below are used in PPML projects or useful when
-	working on PPML projects.
-      </p>
-    </div>
+    <p class="w-75 mx-auto flow-text">
+      The resources listed below are used in PPML projects or useful when
+      working on PPML projects. Clicking on a resource will take you to
+      a corresponding web page.
+    </p>
 
     <div class="m-sm-4 p-4">
-      <table class="table table-hover">
+      <table class="table table-hover mx-auto">
 	<tbody>
+	  
+	  <tr data-url="https://github.com/cran">
+  <td class="text-right">
+    <h2 class="mb-0">cran mirror</h2>
+
+
+  </td>
+  <td class="align-middle">
+    A GitHub organization which is a read-only mirror of CRAN. This GitHub
+organization, also named cran, has a repository for each package on CRAN. This
+is a helpful resource when package authors have not linked to or have not at all
+put their source code online.
+
+  </td>
+</tr>
+
 	  
 	  <tr data-url="http://statnet.github.io/hsph/#day_3:_from_base_models_to_research_extensions_in_epimodel">
   <td class="text-right">
@@ -181,6 +201,19 @@
   </td>
   <td class="align-middle">
     Harvard workshop materials on EpiModel.
+
+  </td>
+</tr>
+
+	  
+	  <tr data-url="https://github.com/jimhester/lookup">
+  <td class="text-right">
+    <h2 class="mb-0">lookup</h2>
+
+
+  </td>
+  <td class="align-middle">
+    An R package for better exploration of R, C, and C++ source code.
 
   </td>
 </tr>
@@ -202,6 +235,8 @@
 	</tbody>
       </table>
     </div>
+
+    <hr class="w-50 mx-auto">
     
   </div>
 </div>
