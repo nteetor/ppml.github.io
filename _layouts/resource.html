@@ -1,22 +1,10 @@
 ---
 ---
-<dt class="col-sm-5 d-flex flex-column align-items-end justify-content-top flow-text">
-  <div class="text-right">
-    {{ page.excerpt }}
-  </div>
-</dt>
-
-<dd class="col-sm-7 flow-text">
-  {{ page.content | remove: page.excerpt }}
-
-  <p>
-    {% if page.URL %}
-    <a href="{{ page.URL }}" target="_blank">
-      link
-      <sup class="fas fa-external-link fa-fw"></sup>
-    </a>
-    {% else %}
-    (Whoops, seems the URL is missing.)
-    {% endif %}
-  </p>
-</dd>
+<tr data-url="{{ page.URL }}">
+  <td class="text-right">
+    {{ page.excerpt | replace_regex: "<h2.*?>", '<h2 class="mb-0">' }}
+  </td>
+  <td class="align-middle">
+    {{ page.content | remove: page.excerpt | remove: "<p>" | remove: "</p>" }}
+  </td>
+</tr>

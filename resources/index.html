@@ -2,24 +2,29 @@
 layout: default
 ---
 <div class="row">
-  <div class="col-12 col-sm-10 mt-4 mx-auto">
+  <div class="col col-12 mt-4">
     {% title %}
     Resources
     {% endtitle %}
 
     {% divider %}
-    
-    <p class="flow-text mx-auto">
-      The resources listed below are used in PPML projects or useful when
-      working on PPML projects.
-    </p>
 
-    <dl class="row">
-      {% for resource in site.resources %}
-      {{ resource }}
-      {% endfor %}
-    </dl>
+    <div class="w-100 d-flex justify-content-center">
+      <p class="flow-text">
+	The resources listed below are used in PPML projects or useful when
+	working on PPML projects.
+      </p>
+    </div>
+
+    <div class="m-sm-4 p-4">
+      <table class="table table-hover">
+	<tbody>
+	  {% for resource in site.resources %}
+	  {{ resource }}
+	  {% endfor %}
+	</tbody>
+      </table>
+    </div>
     
-    {% divider %}
   </div>
 </div>
