@@ -7,17 +7,16 @@ layout: default
     Resources
     {% endtitle %}
 
-    {% divider %}
+    <hr class="w-50 mx-auto">
 
-    <div class="w-100 d-flex justify-content-center">
-      <p class="flow-text">
-	The resources listed below are used in PPML projects or useful when
-	working on PPML projects.
-      </p>
-    </div>
+    <p class="w-75 mx-auto flow-text">
+      The resources listed below are used in PPML projects or useful when
+      working on PPML projects. Clicking on a resource will take you to
+      a corresponding web page.
+    </p>
 
     <div class="m-sm-4 p-4">
-      <table class="table table-hover">
+      <table class="table table-hover mx-auto">
 	<tbody>
 	  {% for resource in site.resources %}
 	  {{ resource }}
@@ -25,6 +24,8 @@ layout: default
 	</tbody>
       </table>
     </div>
+
+    <hr class="w-50 mx-auto">
     
   </div>
 </div>

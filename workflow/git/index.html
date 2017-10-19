@@ -1,23 +1,33 @@
 ---
 layout: default
 ---
+{% assign workflow = site.workflows | where: "type", "git" | first %}
+{% assign examples = site.examples | where: "type", "git" %}
+
 <div class="row">
   <div class="col col-12 mt-4">
-
-    {% assign wf = site.workflows | where: "type", "git" | first %}
     
     {% title %}
-    {{ wf.heading }}
+    {{ workflow.heading }}
     {% endtitle %}
     
-    {% divider %}
+    <hr class="w-50 mx-auto">
 
-    {% assign examples = site.examples | where: "type", "git" %}
+    {% if workflow.order %}
 
-    {% for file in wf.order %}
+    {% for file in workflow.order %}
     {{ examples | where: "basename", file | first }}
-    {% divider %}
+    <hr class="w-50 mx-auto">
     {% endfor %}
+
+    {% else %}
+
+    {% for example in examples %}
+    {{ example }}
+    <hr class="w-50 mx-auto">
+    {% endfor %}
+
+    {% endif %}
 
   </div>
 </div>

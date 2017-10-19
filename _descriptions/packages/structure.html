@@ -7,20 +7,26 @@
 
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pkg-description">
-      Information about your package. Note that fields are case-sensitive. The
-      following fields are required,
-      <ul>
-	{% assign required = "Package,Version,License,Description,Title,Author,Maintainer" | split: "," %}
-	{% for name in required %}
-	
-	{% endfor %}
-	<li>
-	</li>
-      </ul>
+      The <code>DESCRIPTION</code> file contains information about your
+      package. This includes information about you the author, links to any
+      vignettes you might write, a list of other packages required to use your
+      packge, and more.
     </div>
 
     <div class="tab-pane fade" id="pkg-inst">
-      ... about the package inst folder.
+      <p>
+	The <code>inst/</code> directory holds miscellaneous files. Your package
+	may need static files, scripts or libraries written in other programming
+	languages, or other meta data not understood by the package structure.
+      </p>
+      <p>
+	The folders and files in the <code>inst/</code> folder are installed in
+	the top-level of the package. Thus, to access these files within your
+	package functions you can use,
+	<div>
+	  <code>system.file("&lt;file name&gt;", package = "&lt;package name&gt;")</code>
+	</div>
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-man">

@@ -1,21 +1,33 @@
 ---
 layout: default
 ---
+{% assign workflow = site.workflows | where: "type", "rstudio" | first %}
+{% assign examples = site.examples | where: "type", "rstudio" %}
+
 <div class="row">
   <div class="col col-12 mt-4">
     
     {% title %}
-    {{ site.workflows | where: "type", "rstudio" | map: "heading" }}
+    {{ workflow.heading }}
     {% endtitle %}
     
-    {% divider %}
+    <hr class="w-50 mx-auto">
     
-    {% assign examples = site.examples | where: "type", "rstudio" %}
+    {% if workflow.order %}
 
+    {% for name in workflow.order %}
+    {{ examples | where: "basename", name | first }}
+    <hr class="w-50 mx-auto">
+    {% endfor %}
+
+    {% else %}
+    
     {% for e in examples %}
     {{ e }}
-    {% divider %}
+    <hr class="w-50 mx-auto">
     {% endfor %}
+
+    {% endif %}
     
   </div>
 </div>

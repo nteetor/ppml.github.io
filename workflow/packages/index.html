@@ -1,30 +1,32 @@
 ---
 layout: default
 ---
+{% assign workflow = site.workflows | where: "type", "package" | first %}
+{% assign examples = site.examples | where: "type", "package" %}
+
 <div class="row">
   <div class="col col-12 mt-4">
 
-    {% assign workflow = site.workflows | where: "type", "package" | first %}
-    
     {% title %}
     {{ workflow.heading }}
     {% endtitle %}
     
-    {% divider %}
-    
-    {% assign examples = site.examples | where: "type", "package" %}
+    <hr class="w-50 mx-auto">
 
     {% if workflow.order %}
+    
     {% for i in workflow.order %}
     {{ examples | where: "basename", i | first }}
-    {% divider %}
+    <hr class="w-50 mx-auto">
     {% endfor %}
 
     {% else %}
+    
     {% for e in examples %}
     {{ e }}
-    {% divider %}
+    <hr class="w-50 mx-auto">
     {% endfor %}
+    
     {% endif %}
     
   </div>
