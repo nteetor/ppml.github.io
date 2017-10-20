@@ -617,17 +617,30 @@ shortcut as problems have a tendency to build up over time.</p>
   <p>
   The <code>DESCRIPTION</code> file contains basic information about your package.
   This information is specified by a predefined set of fields. Some of these
-  headers are required and others are only optional.
+  headers are required, marked with a *, and others are only optional.
 </p>
 
 <div class="tab-content">
-  <p class="tab-pane fade show active" id="desc-package">
-    The package description field ...
-  </p>
+  <div class="tab-pane fade show active" id="desc-package">
+    <p>
+      * The <code>Package</code> field specifies the name of your package. The
+      name of a package must be at least two letters long, contain only letters,
+      numbers, and dots, and start with a letter.
+    </p>
+
+    <p>
+      However, as part of PPML, you are asked to not use dots and only lowercase
+      letters. Numbers are still allowed, but use sparingly. 
+    </p>
+  </div>
   
-  <p class="tab-pane fade" id="desc-type">
-    The type description field ...
-  </p>
+  <div class="tab-pane fade" id="desc-type">
+    <p>
+      The <code>Type</code> field specifies the type of the package. You will
+      always specify the package type as <code>Package</code> and if this field
+      is ommited the package type is assumed to be <code>Package</code>.
+    </p>
+  </div>
 
   <p class="tab-pane fade" id="desc-title">
     The title description field ...

@@ -145,14 +145,16 @@ nav {
 .package-structure .fa-file {
   color: #858585; }
 
-.description-file div {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem; }
-  .description-file div .field {
-    cursor: pointer;
-    color: #BD4147; }
-    .description-file div .field::after {
-      content: ":"; }
+.description-file {
+  font-family: "PT Mono", monospace; }
+  .description-file div {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem; }
+    .description-file div .field {
+      cursor: pointer;
+      color: #BD4147; }
+      .description-file div .field::after {
+        content: ":"; }
 
 .font-smaller {
   font-size: 0.75rem; }
