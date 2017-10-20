@@ -19,13 +19,15 @@
 	may need static files, scripts or libraries written in other programming
 	languages, or other meta data not understood by the package structure.
       </p>
+      
       <p>
-	The folders and files in the <code>inst/</code> folder are installed in
-	the top-level of the package. Thus, to access these files within your
+	The folders and files within the <code>inst/</code> folder are installed
+	in the top-level of the package. Thus, to access these files within your
 	package functions you can use,
-	<div>
+	<div class="mb-3">
 	  <code>system.file("&lt;file name&gt;", package = "&lt;package name&gt;")</code>
 	</div>
+	Notice that the <code>inst/</code> directory is excluded.
       </p>
     </div>
 
