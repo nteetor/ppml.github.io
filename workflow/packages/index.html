@@ -52,10 +52,6 @@
 	 .map(function(i, t) {
 	     var $children = $(t).children(".tab-pane");
 
-	     console.log($children);
-	     
-	     console.log(mh);
-	     
 	     var mh = $children
 		 .map((i, e) => $(e).height())
 		 .get()
@@ -180,6 +176,7 @@
       
 
 
+
 <div class="row">
   <div class="col col-12 mt-4">
 
@@ -193,19 +190,22 @@
     
     
     
+    
 
-
+    
+    
 
 
 
 
 <div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+  <div class="col col-12 col-md-6 mb-3 mb-md-0">
     
     <h3>
       Often used RStudio shortcuts
     </h3>
 
+    
     
     
 
@@ -235,7 +235,8 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
     
   </div>
 
-  <div class="col col-12 col-md-8 col-lg-7">
+  <div class="col col-12 col-md-6">
+    
     
     <dl class="flow-text">
   <dt class="py-2">
@@ -284,22 +285,28 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
     
 </div>
 
+    
+
+    
     <hr class="w-50 mx-auto">
     
     
+    
 
-
+    
+    
 
 
 
 
 <div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+  <div class="col col-12 col-md-6 mb-3 mb-md-0">
     
     <h3>
       Less used RStudio shortcuts
     </h3>
 
+    
     
     
 
@@ -318,7 +325,8 @@ shortcut as problems have a tendency to build up over time.</p>
     
   </div>
 
-  <div class="col col-12 col-md-8 col-lg-7">
+  <div class="col col-12 col-md-6">
+    
     
     <dl class="flow-text">
   <dt class="py-2">
@@ -363,17 +371,22 @@ shortcut as problems have a tendency to build up over time.</p>
     
 </div>
 
+    
+
+    
     <hr class="w-50 mx-auto">
     
     
+    
 
-
+    
+    
 
 
 
 
 <div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+  <div class="col col-12 col-md-6 mb-3 mb-md-0">
     
     <h3>
       Package structure
@@ -381,20 +394,24 @@ shortcut as problems have a tendency to build up over time.</p>
 
     
     
+    
 
 <div class="flow-text">
   
   <div class="flow-text">
   <p>
-    R package structure.
+    Explore the folders and files of an R package by clicking on folders and
+    files.
   </p>
 
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pkg-description">
-      The <code>DESCRIPTION</code> file contains information about your
-      package. This includes information about you the author, links to any
-      vignettes you might write, a list of other packages required to use your
-      packge, and more.
+      <p>
+	The <code>DESCRIPTION</code> file contains information about your
+	package. This includes information about you the author, links to any
+	vignettes you might write, a list of other packages required to use your
+	packge, and more.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-inst">
@@ -408,31 +425,91 @@ shortcut as problems have a tendency to build up over time.</p>
 	The folders and files within the <code>inst/</code> folder are installed
 	in the top-level of the package. Thus, to access these files within your
 	package functions you can use,
+	
 	<div class="mb-3">
 	  <code>system.file("&lt;file name&gt;", package = "&lt;package name&gt;")</code>
 	</div>
+	
 	Notice that the <code>inst/</code> directory is excluded.
       </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-man">
-      ... about the package man folder.
+      <p>
+	The <code>man/</code> folders holds the package documentation files. The
+	R documentation files may be written manually using a simple markup
+	language. If you have ever worked with <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> you will find the R
+	documentation markup language quite similar.
+      </p>
+      
+      <p>
+	However, instead of writing documentation files by hand, using Roxygen
+	is highly recommended. From each block of roxygen, with a couple
+	exceptions, a new file is created in the <code>man/</code>
+	folder. Review the document shortcut above.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-namespace">
-      ... about the package namespace file.
+      <p>
+	The <code class="text-uppercase">namespace</code> file specifies which
+	functions or variables are exported, made available to the programmer, and
+	which functions or variables are imported from other packages.
+      </p>
+      
+      <p>
+	Like your documentation files the <code class="text-uppercase">namespace</code> file could be edited by
+	hand. However, again, roxygen is recommended. The <code>@import</code>
+	or <code>@importFrom</code> and <code>@export</code> tags may be
+	included in any roxygen block and, intuitively, import and export
+	variables and functions. While these tags may be placed in any roxygen
+	block, please organize your imports by creating a file, <code>R/&lt;your
+	package name&gt;.R</code>.
+      </p>
+      
+      <p>
+	The file will look something like this. 
+	<div>
+	  <code>#' @import &lt;package name&gt;</code><br />
+	  <code>"_PACKAGE"</code>
+	</div>
+      </p>
+      
+      <p>
+	Place all your import tags in this file. For now, 
+	The <code>@export</code> tag needs to be placed in each corresponding
+	roxygen block.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-r">
-      ... about the package r folder.
+      <p>
+	The <code>R/</code> folder contains all of your R scripts.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-tests">
-      ... about the package tests folder.
+      <p>
+	The <code>tests/</code> folder contains your package unit tests. This
+	folder should be generated with <code>devtools::use_testthat</code>.
+	Once created you will find a <code>testthat.R</code> file and a
+	<code>testthat/</code> sub-directory within the new <code>tests/</code>
+	folder.
+      </p>
+      
+      <p>
+	The tests you write will go into the <code>testthat/</code>
+	sub-directory. Writing tests is touched on in a separate section.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-vignettes">
-      ... about the package vignettes folder.
+      <p>
+	The <code>vignettes/</code> folder contains your package's long-form
+	documentation, vignettes. Vignettes are an excellent way of introducing
+	programmers to your packages. For now, see
+	<code>?devtools::use_vignette</code>, more will come.
+      </p>
     </div>
   </div>
 </div>
@@ -446,58 +523,61 @@ shortcut as problems have a tendency to build up over time.</p>
     
   </div>
 
-  <div class="col col-12 col-md-8 col-lg-7">
+  <div class="col col-12 col-md-6">
     
-    <ul class="nav d-block flow-text package-structure" role="tab-list">
-  <li class="mb-1">
-    <a class="active" data-toggle="tab" data-target="#pkg-description" role="tab">
-      <span class="fal fa-file fa-fw"></span>
-      <span class="text-uppercase">description</span>
-    </a>
-  </li>
-  
-  <li class="mb-1">
-    <a data-toggle="tab" data-target="#pkg-inst" role="tab">
-      <span class="fa fa-folder fa-fw"></span>
-      <span>inst</span>
-    </a>
-  </li>
+    
+    <div class="card w-50 bg-light my-2 p-2">
+  <ul class="nav d-block flow-text package-structure" role="tab-list">
+    <li class="mb-1">
+      <a class="active" data-toggle="tab" data-target="#pkg-description" role="tab">
+	<span class="fal fa-file fa-fw"></span>
+	<span class="text-uppercase">description</span>
+      </a>
+    </li>
+    
+    <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-inst" role="tab">
+	<span class="fa fa-folder fa-fw"></span>
+	<span>inst</span>
+      </a>
+    </li>
 
-  <li class="mb-1">
-    <a data-toggle="tab" data-target="#pkg-man" role="tab">
-      <span class="fa fa-folder fa-fw"></span>
-      <span>man</span>
-    </a>
-  </li>
+    <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-man" role="tab">
+	<span class="fa fa-folder fa-fw"></span>
+	<span>man</span>
+      </a>
+    </li>
 
-  <li class="mb-1">
-    <a data-toggle="tab" data-target="#pkg-namespace" role="tab">
-      <span class="fal fa-file fa-fw"></span>
-      <span class="text-uppercase">namespace</span>
-    </a>
-  </li>
+    <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-namespace" role="tab">
+	<span class="fal fa-file fa-fw"></span>
+	<span class="text-uppercase">namespace</span>
+      </a>
+    </li>
 
-  <li class="mb-1">
-    <a data-toggle="tab" data-target="#pkg-r" role="tab">
-      <span class="fa fa-folder fa-fw"></span>
-      <span class="text-uppercase">r</span>
-    </a>
-  </li>
+    <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-r" role="tab">
+	<span class="fa fa-folder fa-fw"></span>
+	<span class="text-uppercase">r</span>
+      </a>
+    </li>
 
-  <li class="mb-1">
-    <a data-toggle="tab" data-target="#pkg-tests" role="tab">
-      <span class="fa fa-folder fa-fw"></span>
-      <span>tests</span>
-    </a>
-  </li>
+    <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-tests" role="tab">
+	<span class="fa fa-folder fa-fw"></span>
+	<span>tests</span>
+      </a>
+    </li>
 
-  <li>
-    <a data-toggle="tab" data-target="#pkg-vignettes" role="tab">
-      <span class="fa fa-folder fa-fw"></span>
-      <span>vignettes</span>
-    </a>
-  </li>
-</ul>
+    <li>
+      <a data-toggle="tab" data-target="#pkg-vignettes" role="tab">
+	<span class="fa fa-folder fa-fw"></span>
+	<span>vignettes</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 
     
@@ -507,6 +587,166 @@ shortcut as problems have a tendency to build up over time.</p>
     
 </div>
 
+    
+
+    
+    <hr class="w-50 mx-auto">
+    
+    
+    
+
+    
+    
+
+
+
+
+<div class="example row">
+  <div class="col col-12 col-md-6 mb-3 mb-md-0">
+    
+    <h3>
+      The DESCRIPTION file
+    </h3>
+
+    
+    
+    
+
+<div class="flow-text">
+  
+  <p>
+  The <code>DESCRIPTION</code> file contains basic information about your package.
+  This information is specified by a predefined set of fields. Some of these
+  headers are required and others are only optional.
+</p>
+
+<div class="tab-content">
+  <p class="tab-pane fade show active" id="desc-package">
+    The package description field ...
+  </p>
+  
+  <p class="tab-pane fade" id="desc-type">
+    The type description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-title">
+    The title description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-version">
+    The version description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-author">
+    The author description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-maintainer">
+    The maintainer description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-description">
+    The description description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-license">
+    The license description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-encoding">
+    The encoding description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-lazydata">
+    The lazydata description field ...
+  </p>
+
+  <p class="tab-pane fade" id="desc-suggests">
+    The suggests description field ...
+  </p>
+</div>
+
+  
+</div>
+
+
+
+    
+    
+  </div>
+
+  <div class="col col-12 col-md-6">
+    
+    
+    <div class="nav card m-2 p-2 bg-white flow-text description-file">
+  <div>
+    <span class="field active" data-target="#desc-package" data-toggle="tab">Package</span>
+    &lt;package name&gt;
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-type" data-toggle="tab">Type</span>
+    Package
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-title" data-toggle="tab">Title</span>
+    What the Package Does (Title Case)
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-version" data-toggle="tab">Version</span>
+    0.1.0
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-author" data-toggle="tab">Author</span>
+    Who wrote it
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-maintainer" data-toggle="tab">Maintainer</span>
+    The package maintainer &lt;yourself@somewhere.net&gt;
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-description" data-toggle="tab">Description</span>
+    More about what it does (maybe more than one line).<br> Use four spaces when
+    indenting paragraphs within the Description.
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-license" data-toggle="tab">License</span>
+    What license is it under?
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-encoding" data-toggle="tab">Encoding</span>
+    UTF-8
+  </div>
+
+  <div>
+    <span class="field" data-target="#desc-lazydata" data-toggle="tab">LazyData</span>
+    true
+  </div>
+  
+  <div>
+    <span class="field" data-target="#desc-suggests" data-toggle="tab">Suggests</span>
+    testthat
+  </div>
+</div>
+
+
+    
+    
+    
+  </div>
+    
+</div>
+
+    
+
+    
     <hr class="w-50 mx-auto">
     
 
