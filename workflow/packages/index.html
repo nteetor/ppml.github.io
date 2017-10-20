@@ -47,10 +47,28 @@
 
   <script>
  $(document).ready(function() {
+     $(document)
+	 .find(".tab-content")
+	 .map(function(i, t) {
+	     var $children = $(t).children(".tab-pane");
+
+	     console.log($children);
+	     
+	     console.log(mh);
+	     
+	     var mh = $children
+		 .map((i, e) => $(e).height())
+		 .get()
+		 .reduce((max, num) => Math.max(max, num));
+	     
+	     $children.each((i, e) => $(e).height(mh));	     
+	 });
+     
      $(".dropdown-select").on("click", "a", function(e) {
 	 var $this = $(this);
 	 $this.closest(".dropdown-select").find(".dropdown-select-label").first().text($this.text());
      });
+     
      $(".table-hover").on("click", "tr[data-url]", function(e) {
 	 window.open($(this).data("url"));
      })
@@ -385,13 +403,15 @@ shortcut as problems have a tendency to build up over time.</p>
 	may need static files, scripts or libraries written in other programming
 	languages, or other meta data not understood by the package structure.
       </p>
+      
       <p>
-	The folders and files in the <code>inst/</code> folder are installed in
-	the top-level of the package. Thus, to access these files within your
+	The folders and files within the <code>inst/</code> folder are installed
+	in the top-level of the package. Thus, to access these files within your
 	package functions you can use,
-	<div>
+	<div class="mb-3">
 	  <code>system.file("&lt;file name&gt;", package = "&lt;package name&gt;")</code>
 	</div>
+	Notice that the <code>inst/</code> directory is excluded.
       </p>
     </div>
 
