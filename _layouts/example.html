@@ -1,37 +1,41 @@
 ---
 ---
 {% assign name = page.slug | append: ".html" %}
-{% assign type = page.type | join: " " %}
 
-{% assign desc = site.descriptions | where2: "type", type | where: "basename", name | first %}
-
-{% assign fig = site.figures | where2: "type", type | where: "basename", name | first %}
+{% assign desc = site.descriptions | where: "type", page.type | where: "basename", name | first %}
+{% assign fig = site.figures | where2: "type", page.type | where: "basename", name | first %}
 
 <div class="example row">
-  <div class="col col-12 col-md-4 col-lg-5 mb-3 mb-md-0">
+  <div class="col col-12 col-md-6 mb-3 mb-md-0">
     
     <h3>
       {{ page.heading }}
     </h3>
 
     {% if desc %}
+    
     {{ desc }}
     
     {% else %}
+    
     <div class="alert alert-warning d-inline-block">
-      Could not find _descriptions/{{ page.type | join: "/" }}/{{ name }} file.
+      Could not find a {{ name }} description file.
     </div>
+    
     {% endif %}
   </div>
 
-  <div class="col col-12 col-md-8 col-lg-7">
+  <div class="col col-12 col-md-6">
     {% if fig %}
+    
     {{ fig }}
     
     {% else %}
+    
     <div class="alert alert-warning d-inline-block">
-      Could not find _figures/{{ page.type | join: "/" }}/{{ name }} file.
+      Could not find {{ name }} description file.
     </div>
+    
     {% endif %}
     
   </div>

@@ -13,3 +13,19 @@
 	color: #858585;
     }
 }
+
+.description-file {
+    div {
+	padding-left: 1.5rem;
+	text-indent: -1.5rem;
+	
+	.field {
+	    cursor: pointer;
+	    color: #BD4147;
+	    
+	    &::after {
+		content: ":";
+	    }
+	}
+    }
+}

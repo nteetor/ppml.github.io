@@ -1,4 +1,11 @@
 module Jekyll
+  module LogFilter
+    def log(input)
+      puts "\n\r"
+      p input
+    end
+  end
+  
   module Where2Filter
     def where2(input, key, value)
       input.select do |item|
@@ -53,6 +60,7 @@ module Jekyll
   end
 end
 
+Liquid::Template.register_filter(Jekyll::LogFilter)
 Liquid::Template.register_filter(Jekyll::Where2Filter)
 Liquid::Template.register_filter(Jekyll::ReadFilter)
 Liquid::Template.register_filter(Jekyll::IdifyFilter)

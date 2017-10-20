@@ -2,8 +2,6 @@
 ---
 {% if page.type contains "rstudio" %}
 
-{% if page.type contains "project" %}
-
 <div class="tab-content flow-text">
 
   {{ page.excerpt | markdownify }}
@@ -17,7 +15,6 @@
   {% endfor %}
   
 </div>
-{% endif %}
 
 {% elsif page.type contains "git" %}
 

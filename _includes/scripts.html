@@ -5,10 +5,6 @@
 	 .map(function(i, t) {
 	     var $children = $(t).children(".tab-pane");
 
-	     console.log($children);
-	     
-	     console.log(mh);
-	     
 	     var mh = $children
 		 .map((i, e) => $(e).height())
 		 .get()

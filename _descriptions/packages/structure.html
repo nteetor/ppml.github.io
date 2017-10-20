@@ -2,15 +2,18 @@
 ---
 <div class="flow-text">
   <p>
-    R package structure.
+    Explore the folders and files of an R package by clicking on folders and
+    files.
   </p>
 
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pkg-description">
-      The <code>DESCRIPTION</code> file contains information about your
-      package. This includes information about you the author, links to any
-      vignettes you might write, a list of other packages required to use your
-      packge, and more.
+      <p>
+	The <code>DESCRIPTION</code> file contains information about your
+	package. This includes information about you the author, links to any
+	vignettes you might write, a list of other packages required to use your
+	packge, and more.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-inst">
@@ -24,31 +27,93 @@
 	The folders and files within the <code>inst/</code> folder are installed
 	in the top-level of the package. Thus, to access these files within your
 	package functions you can use,
+	
 	<div class="mb-3">
 	  <code>system.file("&lt;file name&gt;", package = "&lt;package name&gt;")</code>
 	</div>
+	
 	Notice that the <code>inst/</code> directory is excluded.
       </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-man">
-      ... about the package man folder.
+      <p>
+	The <code>man/</code> folders holds the package documentation files. The
+	R documentation files may be written manually using a simple markup
+	language. If you have ever worked with <span
+	class="latex">L<sup>a</sup>T<sub>e</sub>X</span> you will find the R
+	documentation markup language quite similar.
+      </p>
+      
+      <p>
+	However, instead of writing documentation files by hand, using Roxygen
+	is highly recommended. From each block of roxygen, with a couple
+	exceptions, a new file is created in the <code>man/</code>
+	folder. Review the document shortcut above.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-namespace">
-      ... about the package namespace file.
+      <p>
+	The <code class="text-uppercase">namespace</code> file specifies which
+	functions or variables are exported, made available to the programmer, and
+	which functions or variables are imported from other packages.
+      </p>
+      
+      <p>
+	Like your documentation files the <code
+	class="text-uppercase">namespace</code> file could be edited by
+	hand. However, again, roxygen is recommended. The <code>@import</code>
+	or <code>@importFrom</code> and <code>@export</code> tags may be
+	included in any roxygen block and, intuitively, import and export
+	variables and functions. While these tags may be placed in any roxygen
+	block, please organize your imports by creating a file, <code>R/&lt;your
+	package name&gt;.R</code>.
+      </p>
+      
+      <p>
+	The file will look something like this. 
+	<div>
+	  <code>#' @import &lt;package name&gt;</code><br>
+	  <code>"_PACKAGE"</code>
+	</div>
+      </p>
+      
+      <p>
+	Place all your import tags in this file. For now, 
+	The <code>@export</code> tag needs to be placed in each corresponding
+	roxygen block.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-r">
-      ... about the package r folder.
+      <p>
+	The <code>R/</code> folder contains all of your R scripts.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-tests">
-      ... about the package tests folder.
+      <p>
+	The <code>tests/</code> folder contains your package unit tests. This
+	folder should be generated with <code>devtools::use_testthat</code>.
+	Once created you will find a <code>testthat.R</code> file and a
+	<code>testthat/</code> sub-directory within the new <code>tests/</code>
+	folder.
+      </p>
+      
+      <p>
+	The tests you write will go into the <code>testthat/</code>
+	sub-directory. Writing tests is touched on in a separate section.
+      </p>
     </div>
 
     <div class="tab-pane fade" id="pkg-vignettes">
-      ... about the package vignettes folder.
+      <p>
+	The <code>vignettes/</code> folder contains your package's long-form
+	documentation, vignettes. Vignettes are an excellent way of introducing
+	programmers to your packages. For now, see
+	<code>?devtools::use_vignette</code>, more will come.
+      </p>
     </div>
   </div>
 </div>

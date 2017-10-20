@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% assign workflow = site.workflows | where: "type", page.type | first %}
+
+{% assign examples = site.examples | where: "type", page.type %}
+
+<div class="row">
+  <div class="col col-12 mt-4">
+
+    {% title %}
+    {{ workflow.heading }}
+    {% endtitle %}
+    
+    <hr class="w-50 mx-auto">
+
+    {% if workflow.order %}
+    
+    {% for i in workflow.order %}
+    
+    {% assign example = examples | where: "basename", i | first %}
+
+    {% if example %}
+    {{ example }}
+    {% else %}
+    <!-- if a file is missing from the workflow -->
+    {{ i }}
+    {{ i | append: " file is missing" | log }}
+    {% endif %}
+
+    
+    <hr class="w-50 mx-auto">
+    {% endfor %}
+
+    {% else %}
+
+    {% for e in examples %}
+    {{ e }}
+    <hr class="w-50 mx-auto">
+    {% endfor %}
+    
+    {% endif %}
+    
+  </div>
+</div>

@@ -47,8 +47,9 @@ workflows:
       - load.html
       - check.html
       - structure.html
+      - description.html
 
-# Default settings    
+# Default settings
 defaults:
   -
     scope:
@@ -69,9 +70,7 @@ defaults:
       type: examples
     values:
       layout: example
-      type:
-        - rstudio
-        - project
+      type: rstudio
   -
     scope:
       path: _examples/packages
@@ -92,9 +91,7 @@ defaults:
       type: descriptions
     values:
       layout: description
-      type:
-        - rstudio
-        - project
+      type: rstudio
   -
     scope:
       path: _descriptions/packages
@@ -108,9 +105,7 @@ defaults:
       type: figures
     values:
       layout: figure
-      type:
-        - rstudio
-        - project
+      type: rstudio
   -
     scope:
       path: _figures/git

@@ -1,0 +1,23 @@
+.latex {
+//    font-family: Times, "Times New Roman", serif;	
+    letter-spacing: 1px;
+
+    sup {
+	position: static;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.85em;
+	vertical-align: 0.15em;
+	margin-left: -0.36em;
+	margin-right: -0.15em;
+    }
+    
+    sub {
+	position: static;
+	text-transform: uppercase;
+	vertical-align: -0.5ex;
+	margin-left: -0.1667em;
+	margin-right: -0.125em;
+	font-size: 1em;
+    }
+}
