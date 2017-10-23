@@ -81,7 +81,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the Authors@R field is specified)
+      * required (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -98,7 +98,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the Authors@R field is specified)
+      * required (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -136,13 +136,27 @@
 
     <p>
       For all possible roles see
-      <a href="https://www.loc.gov/marc/relators/relaterm.html">https://www.loc.gov/marc/relators/relaterm.html</a>.
+      <a href="https://www.loc.gov/marc/relators/relaterm.html">
+	https://www.loc.gov/marc/relators/relaterm.html
+      </a>.
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-description">
     <p>
-      The description description field ...
+      The <code>Description</code> field is a long-form description of the
+      package. You may be tempted to start the description with "&lt;package&gt;
+      is ..." or "This package is ...", but CRAN asks you avoid doing
+      so. Additionally, when writing the description bear in mind that the
+      description is intended for R programmers of all levels and should be a
+      single paragraph. An in-depth explanation or dive into your package may be
+      more suited for a vignette.
+    </p>
+
+    <p>
+      Any URLs specified must be wrapped in angle brackets (<samp>&lt;</samp>
+      and <samp>&gt;</samp>). If you would like to wrap the paragraph's
+      sentences onto new lines make sure each line is indented with 4 spaces.
     </p>
 
     <p class="font-italic text-info">
