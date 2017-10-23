@@ -9,7 +9,7 @@
 <div class="tab-content">
   <div class="tab-pane fade show active" id="desc-package">
     <p>
-      * The <code>Package</code> field specifies the name of your package. The
+      The <code>Package</code> field specifies the name of your package. The
       name of a package must be at least two letters long, contain only letters,
       numbers, and dots, and start with a letter.
     </p>
@@ -18,49 +18,183 @@
       However, you encouraged to not use dots and to only use lowercase
       letters. Numbers are still allowed, but use them sparingly.
     </p>
+
+    <p class="font-italic text-info">
+      * required
+    </p>
   </div>
   
   <div class="tab-pane fade" id="desc-type">
     <p>
       The <code>Type</code> field specifies the type of the package. You will
-      always specify the package type as <code>Package</code> and if this field
-      is ommited the package type is assumed to be <code>Package</code>.
+      always specify the package type as <samp>Package</samp> and if this field
+      is ommited the package type is assumed to be <samp>Package</samp>.
     </p>
   </div>
 
-  <p class="tab-pane fade" id="desc-title">
-    The title description field ...
-  </p>
+  <div class="tab-pane fade" id="desc-title">
+    <p>
+      The <code>Title</code> field gives a short description of the
+      package. Because this short description is often displayed alongside the
+      package name you are advised to exclude repeating the name in the
+      description. The title should be written in title-case, i.e. capitalize
+      principal words, but should not end in a period.
+    </p>
 
-  <p class="tab-pane fade" id="desc-version">
-    The version description field ...
-  </p>
+    <p class="font-italic text-info">
+      * required
+    </p>
+  </div>
 
-  <p class="tab-pane fade" id="desc-author">
-    The author description field ...
-  </p>
+  <div class="tab-pane fade" id="desc-version">
+    <p>
+      The <code>Version</code> field specifies the version of the package. The
+      default version is often <samp>0.1.0</samp>, but you are encouraged to
+      start at version <samp>0.0.1</samp>. When a significant update to the
+      package is made, be sure to bump the version number. Your first bump might
+      be from <samp>0.0.1</samp> to <samp>0.0.2</samp>.
+    </p>
 
-  <p class="tab-pane fade" id="desc-maintainer">
-    The maintainer description field ...
-  </p>
+    <p>
+      Often, versions beyond <samp>0.1.0</samp> are considered stable. Those
+      versions <samp>0.0.9</samp> and below could be considered alpha or beta
+      versions. For finer control over your development versions consider
+      starting with version <samp>0.0.01</samp>.
+    </p>
+    
+    <p>
+      When you release your package, you may consider bumping your
+      package version to <samp>0.1.0</samp>. However, if you are publishing your
+      R package, but still unsure of the toolset provided consider keeping your
+      version below <samp>0.1.0</samp>.
+    </p>
 
-  <p class="tab-pane fade" id="desc-description">
-    The description description field ...
-  </p>
+    <p class="font-italic text-info">
+      * required
+    </p>
+  </div>
 
-  <p class="tab-pane fade" id="desc-license">
-    The license description field ...
-  </p>
+  <div class="tab-pane fade" id="desc-author">
+    <p>
+      The <code>Author</code> field specifies who is the package author, first
+      and last name.
+    </p>
 
-  <p class="tab-pane fade" id="desc-encoding">
-    The encoding description field ...
-  </p>
+    <p class="font-italic text-info">
+      * required (unless the Authors@R field is specified)
+    </p>
+  </div>
 
-  <p class="tab-pane fade" id="desc-lazydata">
-    The lazydata description field ...
-  </p>
+  <div class="tab-pane fade" id="desc-maintainer">
+    <p>
+      The <code>Maintainer</code> field specifies who is maintaining the
+      package. As you can see in the example the field value is a full name
+      followed by an email. Be sure the email is surrounded by angle brackets.
+    </p>
+    
+    <p>
+      The maintainer serves as a point of contact for bug reports. See the
+      <code>BugReports</code> field for more information.
+    </p>
 
-  <p class="tab-pane fade" id="desc-suggests">
-    The suggests description field ...
-  </p>
+    <p class="font-italic text-info">
+      * required (unless the Authors@R field is specified)
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-author-r">
+    <p>
+      The <code>Authors@R</code> field may be specified instead of the
+      <code>Author</code> and <code>Maintainer</code> field.
+    </p>
+
+    <p>
+      The value of this field is R code and is one or more calls to
+      <samp>person()</samp>. See <samp>?person</samp> for more
+      information about the arguments. There are many many possible values for
+      the <samp>role</samp> argument, but the roles you will most often use are,
+    </p>
+    
+    <dl class="row">
+      <dt class="col col-1">"cre"</dt>
+      <dd class="col col-11">
+	indicating a package creator
+      </dd>
+
+      <dt class="col col-1">"aut"</dt>
+      <dd class="col col-11">
+	indicating a package author, someone fundamental to the development of
+	the package
+      </dd>
+
+      <dt class="col col-1">"ctb"</dt>
+      <dd class="col col-11">
+	indicating a package contributor, someone who has made significant
+	contributions to the package
+      </dd>
+    </dl>
+
+    <p>
+      For all possible roles see
+      <a href="https://www.loc.gov/marc/relators/relaterm.html">https://www.loc.gov/marc/relators/relaterm.html</a>.
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-description">
+    <p>
+      The description description field ...
+    </p>
+
+    <p class="font-italic text-info">
+      * required
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-url">
+    <p>
+      The URL description field ...
+    </p>
+
+    <p class="font-italic text-info">
+      * recommended
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-bugreports">
+    <p>
+      The bug reports description field ...
+    </p>
+
+    <p class="font-italic text-info">
+      * recommended
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-license">
+    <p>
+      The license description field ...
+    </p>
+    
+    <p class="font-italic text-info">
+      * required
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-encoding">
+    <p>
+      The encoding description field ...
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-lazydata">
+    <p>
+      The lazydata description field ...
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-suggests">
+    <p>
+      The suggests description field ...
+    </p>
+  </div>
 </div>

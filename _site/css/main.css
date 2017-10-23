@@ -12,6 +12,9 @@ h5 {
 a {
   cursor: pointer; }
 
+samp {
+  font-family: "PT Mono", monospace; }
+
 dt {
   font-weight: normal; }
 
@@ -170,6 +173,9 @@ nav {
 
 .font-blokk {
   font-family: "BLOKK"; }
+
+.text-code {
+  color: #BD4147; }
 
 @media only screen and (min-width: 360px) {
   .flow-text {
