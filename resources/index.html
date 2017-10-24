@@ -56,6 +56,8 @@
 		 .map((i, e) => $(e).height())
 		 .get()
 		 .reduce((max, num) => Math.max(max, num));
+
+	     mh = mh + 16;
 	     
 	     $children.each((i, e) => $(e).css("min-height", mh + "px"));
 	 });
