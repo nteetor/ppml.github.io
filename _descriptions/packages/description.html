@@ -3,7 +3,8 @@
 <p>
   The <code>DESCRIPTION</code> file contains basic information about your
   package. This information is specified by predefined fields. Some of these
-  fields are required and others are only optional.
+  fields are required and others are only optional. Explore these fields by
+  clicking on them in the example file.
 </p>
 
 <div class="tab-content">
@@ -166,7 +167,16 @@
 
   <div class="tab-pane fade" id="desc-url">
     <p>
-      The URL description field ...
+      The <code>URL</code> field specifies one or more URLs associated with your
+      package. If multiple URLs are specified they must be separated by a space
+      or comma. If your package code is on GitHub be sure to include the
+      repository URL.
+    </p>
+
+    <p>
+      Be sure to include the scheme prefix, "http://" or "https://", in each
+      of your URLs. Additionally, any spaces in a URL must be replaced with
+      "%20".
     </p>
 
     <p class="font-italic text-info">
@@ -176,7 +186,9 @@
 
   <div class="tab-pane fade" id="desc-bugreports">
     <p>
-      The bug reports description field ...
+      The <code>BugReports</code> field specifies a single URL where bug reports
+      may be submitted. Like the example here, if your project is on GitHub
+      the bug reports URL should be the issues page of the repository.
     </p>
 
     <p class="font-italic text-info">
@@ -186,7 +198,100 @@
 
   <div class="tab-pane fade" id="desc-license">
     <p>
-      The license description field ...
+      The <code>License</code> field specifies the licensing of your
+      package. Specifying a license is important so others know how and when
+      they may use your package.
+    </p>
+
+    <p>
+      The R-project offers the following standard license shorthand
+      specifications. Each shorthand is associated with a document outlining the
+      copyright holder and the terms and conditions.
+    </p>
+	
+    <dl class="row">
+      <dt class="col col-12 col-sm-3">
+	GPL-2
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/GPL-2">https://www.r-project.org<wbr>/Licenses<wbr>/GPL-2</a>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	GPL-3
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/GPL-3">https://www.r-project.org<wbr>/Licenses<wbr>/GPL-3</a>
+      </dd>
+      
+      <dt class="col col-12 col-sm-3">
+	LGPL-2
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/LGPL-2">https://www.r-project.org<wbr>/Licenses<wbr>/LGPL-2</a>
+      </dd>
+      
+      <dt class="col col-12 col-sm-3">
+	LGPL-2.1
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/LGPL-2.1">https://www.r-project.org<wbr>/Licenses<wbr>/LGPL-2.1</a>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	LGPL-3
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/LGPL-3">https://www.r-project.org<wbr>/Licenses<wbr>/LGPL-3</a>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	AGPL-3
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/AGPL-3">https://www.r-project.org<wbr>/Licenses<wbr>/AGPL-3</a>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	Artistic-2.0
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/Artistic-2.0">https://www.r-project.org<wbr>/Licenses<wbr>/Artistic-2.0</a>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	BSD_2_clause
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/BSD_2_clause">https://www.r-project.org<wbr>/Licenses<wbr>/BSD_2_clause</a>
+	<span class="font-italic text-info">* template</span>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	BSD_3_clause
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/BSD_3_clause">https://www.r-project.org<wbr>/Licenses<wbr>/BSD_3_clause</a>
+	<span class="font-italic text-info">* template</span>
+      </dd>
+
+      <dt class="col col-12 col-sm-3">
+	MIT
+      </dt>
+      <dd class="col col-12 col-sm-9">
+	<a href="https://www.r-project.org/Licenses/MIT">https://www.r-project.org<wbr>/Licenses<wbr>/MIT</a>
+	<span class="font-italic text-info">* template</span>
+      </dd>
+    </dl>
+
+    <p>
+      The last 3 licenses are templates and allow you to specify a copyright
+      holder and year of copyright. When using a license template you must
+      include a <samp>LICENSE</samp> file in your package's top-level directory
+      (where the <samp>DESCRIPTION</samp> file is) and append "<samp>+ file
+      LICENSE</samp>" to the <code>License</code> field value. Each template
+      outlines what information must be included in the <samp>LICENSE</samp>
+      file.
     </p>
     
     <p class="font-italic text-info">

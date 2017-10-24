@@ -10,7 +10,7 @@
 		 .get()
 		 .reduce((max, num) => Math.max(max, num));
 	     
-	     $children.each((i, e) => $(e).height(mh));	     
+	     $children.each((i, e) => $(e).css("min-height", mh + "px"));
 	 });
      
      $(".dropdown-select").on("click", "a", function(e) {
