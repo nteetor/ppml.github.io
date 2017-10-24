@@ -21,7 +21,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
   
@@ -43,7 +43,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -71,7 +71,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -82,7 +82,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the <samp>Authors@R</samp> field is specified)
+      * required field (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -99,7 +99,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the <samp>Authors@R</samp> field is specified)
+      * required field (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -161,7 +161,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -180,7 +180,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * recommended
+      * recommended field
     </p>
   </div>
 
@@ -192,7 +192,7 @@
     </p>
 
     <p class="font-italic text-info">
-      * recommended
+      * recommended field
     </p>
   </div>
 
@@ -289,31 +289,35 @@
       holder and year of copyright. When using a license template you must
       include a <samp>LICENSE</samp> file in your package's top-level directory
       (where the <samp>DESCRIPTION</samp> file is) and append "<samp>+ file
-      LICENSE</samp>" to the <code>License</code> field value. Each template
+      LICENSE</samp>" to the field's value. Each template
       outlines what information must be included in the <samp>LICENSE</samp>
       file.
     </p>
     
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-encoding">
     <p>
-      The encoding description field ...
+      The <code>Encoding</code> field is necessary if your
+      <samp>DESCRIPTION</samp> file uses non-ASCII characters. Put another way,
+      if you are writing your <samp>DESCRIPTION</samp> file using only the
+      standard characters on an English computer keyboard you do not need to
+      include this field.
     </p>
   </div>
 
-  <div class="tab-pane fade" id="desc-lazydata">
+  <div class="tab-pane fade" id="desc-imports">
     <p>
-      The lazydata description field ...
+      The <code>Imports</code> field ...
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-suggests">
     <p>
-      The suggests description field ...
+      The <code>Suggests</code> field ...
     </p>
   </div>
 </div>

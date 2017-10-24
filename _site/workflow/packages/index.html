@@ -56,6 +56,8 @@
 		 .map((i, e) => $(e).height())
 		 .get()
 		 .reduce((max, num) => Math.max(max, num));
+
+	     mh = mh + 16;
 	     
 	     $children.each((i, e) => $(e).css("min-height", mh + "px"));
 	 });
@@ -434,6 +436,14 @@ shortcut as problems have a tendency to build up over time.</p>
       </p>
     </div>
 
+    <div class="tab-pane fade" id="pkg-license">
+      <p>
+	The <code>LICENSE</code> file is necessary if you use one of the license
+	templates or when restricting one of the base licenses. For more
+	information about package licenses see below.
+      </p>
+    </div>
+
     <div class="tab-pane fade" id="pkg-man">
       <p>
 	The <code>man/</code> folders holds the package documentation files. The
@@ -544,6 +554,13 @@ shortcut as problems have a tendency to build up over time.</p>
     </li>
 
     <li class="mb-1">
+      <a data-toggle="tab" data-target="#pkg-license" role="tab">
+	<span class="fal fa-file fa-fw"></span>
+	<span class="text-uppercase">license</span>
+      </a>
+    </li>
+
+    <li class="mb-1">
       <a data-toggle="tab" data-target="#pkg-man" role="tab">
 	<span class="fa fa-folder fa-fw"></span>
 	<span>man</span>
@@ -636,7 +653,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
   
@@ -658,7 +675,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -686,7 +703,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -697,7 +714,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the <samp>Authors@R</samp> field is specified)
+      * required field (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -714,7 +731,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required (unless the <samp>Authors@R</samp> field is specified)
+      * required field (unless the <samp>Authors@R</samp> field is specified)
     </p>
   </div>
 
@@ -776,7 +793,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
@@ -795,7 +812,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * recommended
+      * recommended field
     </p>
   </div>
 
@@ -807,7 +824,7 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
 
     <p class="font-italic text-info">
-      * recommended
+      * recommended field
     </p>
   </div>
 
@@ -904,25 +921,23 @@ shortcut as problems have a tendency to build up over time.</p>
       holder and year of copyright. When using a license template you must
       include a <samp>LICENSE</samp> file in your package's top-level directory
       (where the <samp>DESCRIPTION</samp> file is) and append "<samp>+ file
-      LICENSE</samp>" to the <code>License</code> field value. Each template
+      LICENSE</samp>" to the field's value. Each template
       outlines what information must be included in the <samp>LICENSE</samp>
       file.
     </p>
     
     <p class="font-italic text-info">
-      * required
+      * required field
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-encoding">
     <p>
-      The encoding description field ...
-    </p>
-  </div>
-
-  <div class="tab-pane fade" id="desc-lazydata">
-    <p>
-      The lazydata description field ...
+      The <code>Encoding</code> field is necessary if your
+      <samp>DESCRIPTION</samp> file uses non-ASCII characters. Put another way,
+      if you are writing your <samp>DESCRIPTION</samp> file using only the
+      standard characters on an English computer keyboard you do not need to
+      include this field.
     </p>
   </div>
 
@@ -1008,13 +1023,15 @@ shortcut as problems have a tendency to build up over time.</p>
   </div>
 
   <div>
-    <span class="field" data-target="#desc-lazydata" data-toggle="tab">LazyData</span>
-    true
+    <span class="field" data-target="#desc-imports" data-toggle="tab">Imports</span>
+    <br>&lt;package&gt;
+    <br>&lt;package&gt;
   </div>
   
   <div>
     <span class="field" data-target="#desc-suggests" data-toggle="tab">Suggests</span>
-    testthat
+    <br>testthat
+    <br>&lt;package&gt;
   </div>
 </div>
 
