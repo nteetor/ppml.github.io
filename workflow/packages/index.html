@@ -941,9 +941,57 @@ shortcut as problems have a tendency to build up over time.</p>
     </p>
   </div>
 
+  <div class="tab-pane fade" id="desc-imports">
+    <p>
+      The <code>Imports</code> field specifies which packages are used by your
+      package. Any package from which you use a function must be included in
+      this field. The only package which you do not have to list is the
+      <code>base</code> package. The listed packages must be separated by commas,
+      appear on distinct line below the field name, and must be indented by 4
+      spaces.
+    </p>
+  </div>
+
   <div class="tab-pane fade" id="desc-suggests">
     <p>
-      The suggests description field ...
+      The <code>Suggests</code> field specifies 0 or more packages are used in your
+      package's examples, tests, or vignettes. Remember, a package must only be
+      listed once, so there is no need to repeat package names here if already
+      listed in the <code>Imports</code> or <code>Depends</code> fields.
+    </p>
+
+    <p>
+      The value of this field is the same structure as the <code>Imports</code>
+      field.
+    </p>
+  </div>
+
+  <div class="tab-pane fade" id="desc-depends">
+    <p>
+      The <code>Depends</code> field specifies 0 or morepackages to attach
+      prior to attaching your package (via <code>library</code> or
+      <code>require</code>). If your package's use case heavily incorporates
+      functions from another package (think, only works in conjunction with these
+      functions), then consider including the package in this field. 
+    </p>
+
+    <p>
+      If your package overwrites some functionality of another package and
+      simultaneously uses functions from that same package you must include this
+      package in this field. By including said package you ensure your
+      rewritten, overwriting, functions are available to the user, i.e. the
+      naming conflict works out in your favor.
+    </p>
+
+    <p>
+      A package may be listed twice to limit a package version within a range of
+      versions. When using the <samp>devtools</samp> or <samp>roxygen2</samp>
+      packages you may see a a version of R automically added to this field.
+    </p>
+
+    <p>
+      The value of this field is the same structure as the <code>Imports&gt;</code>
+      field.
     </p>
   </div>
 </div>
@@ -1023,15 +1071,15 @@ shortcut as problems have a tendency to build up over time.</p>
   </div>
 
   <div>
+    <span class="field" data-target="#desc-depends" data-toggle="tab">Depends</span>
+  </div>
+
+  <div>
     <span class="field" data-target="#desc-imports" data-toggle="tab">Imports</span>
-    <br>&lt;package&gt;
-    <br>&lt;package&gt;
   </div>
   
   <div>
     <span class="field" data-target="#desc-suggests" data-toggle="tab">Suggests</span>
-    <br>testthat
-    <br>&lt;package&gt;
   </div>
 </div>
 
