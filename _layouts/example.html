@@ -5,6 +5,8 @@
 {% assign desc = site.descriptions | where: "type", page.type | where: "basename", name | first %}
 {% assign fig = site.figures | where2: "type", page.type | where: "basename", name | first %}
 
+{% if fig %}
+
 <div class="example row">
   <div class="col col-12 col-md-6 mb-3 mb-md-0">
     
@@ -41,3 +43,11 @@
   </div>
     
 </div>
+
+{% else %}
+
+<div class="col col-12 col-sm-10 mx-auto">
+  {{ content }}
+</div>
+
+{% endif %}

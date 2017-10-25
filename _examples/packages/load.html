@@ -1,3 +1,57 @@
 ---
 heading: Often used RStudio shortcuts
 ---
+<div class="flow-text">
+  <h3 class="ruled">
+    Often used RStudio keyboard shortcuts
+  </h4>
+  
+  <p>
+    When working within RStudio the following shortcuts will greatly speed up your
+    package development cycle. You will be able to make changes without fear of
+    lingering out-dated functions or variables, quickly test changes against unit
+    tests, and build package documentation using Roxygen.
+  </p>
+  
+  <p>
+    To use these shortcuts double-check that you have the latest version of the
+    devtools package installed, <code>install.packages("devtools")</code>.
+  </p>
+
+  <h5>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>T</kbd>
+  </h5>
+  
+  <p>
+    This shortcut <span class="font-weight-bold">t</span>ests your package using
+    the <code>testthat</code> package. If you are not familiar with unit testing
+    or have not setup your package to use <code>testthat</code> you can skip
+    this step, for now.
+  </p>
+    
+  <h5 class="ruled">
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>
+  </h5>
+  
+  <p>
+    This shortcut <span class="font-weight-bold">d</span>ocuments your
+    package. The Roxygen blocks you have written will be built into documentation
+    files. These files may be found in the top-level <code>man/</code> folder.
+  </p>
+  
+  <p>
+    When building your package's documentation, any changed files will be
+    listed under the RStudio Build tab. Look for <code>"Writing &lt;name of
+    file&gt;"</code>.
+  </p>
+
+  <h5>
+    <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>L</kbd>
+  </h5>
+  
+  <p>
+    This shortcut <span class="font-weight-bold">l</span>oads your package. To
+    begin with, you may think of loading as comparable to running
+    <code>library(&lt;your package name&gt;)</code>.
+  </p>
+</div>

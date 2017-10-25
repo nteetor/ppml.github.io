@@ -200,92 +200,67 @@
 
 
 
-<div class="example row">
-  <div class="col col-12 col-md-6 mb-3 mb-md-0">
-    
-    <h3>
-      Often used RStudio shortcuts
-    </h3>
 
-    
-    
-    
 
-<div class="flow-text">
+<div class="col col-12 col-sm-10 mx-auto">
+  <div class="flow-text">
+  <h3 class="ruled">
+    Often used RStudio keyboard shortcuts
+  </h4>
   
-  <p>When working within RStudio the following shortcuts will greatly speed up your
-package development cycle. You will be able to make changes without fear of
-lingering out-dated functions or variables, quickly test changes against unit
-tests, and build package documentation using Roxygen.</p>
-
-<p>To use these shortcuts double-check that you have the latest version of the
-devtools package installed, <code>install.packages("devtools")</code>.</p>
-
-<p>Notice that many of these shortcuts use the first letter of their purpose,
-i.e. the shortcut for <span class="font-weight-bold">d</span>ocumenting your
-package uses the <kbd>D</kbd> key. All the shortcuts start with the
-<kbd>command</kbd> + <kbd>shift</kbd>.</p>
-
-<p>You will most likey run the shortcuts in the presented order.</p>
-
+  <p>
+    When working within RStudio the following shortcuts will greatly speed up your
+    package development cycle. You will be able to make changes without fear of
+    lingering out-dated functions or variables, quickly test changes against unit
+    tests, and build package documentation using Roxygen.
+  </p>
   
-</div>
+  <p>
+    To use these shortcuts double-check that you have the latest version of the
+    devtools package installed, <code>install.packages("devtools")</code>.
+  </p>
 
-
-
-    
-    
-  </div>
-
-  <div class="col col-12 col-md-6">
-    
-    
-    <dl class="flow-text">
-  <dt class="py-2">
+  <h5>
     <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>T</kbd>
-  </dt>
-  <dd class="py-2">
+  </h5>
+  
+  <p>
     This shortcut <span class="font-weight-bold">t</span>ests your package using
     the <code>testthat</code> package. If you are not familiar with unit testing
     or have not setup your package to use <code>testthat</code> you can skip
     this step, for now.
-  </dd>
-  
-  <dt class="py-2">
+  </p>
+    
+  <h5 class="ruled">
     <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>D</kbd>
-  </dt>
-  <dd class="py-2">
-    <p>
-      This shortcut <span class="font-weight-bold">d</span>ocuments your
-      package. The Roxygen blocks you have written will be built into documentation
-      files. These files may be found in the top-level <code>man/</code> folder.
-    </p>
+  </h5>
+  
+  <p>
+    This shortcut <span class="font-weight-bold">d</span>ocuments your
+    package. The Roxygen blocks you have written will be built into documentation
+    files. These files may be found in the top-level <code>man/</code> folder.
+  </p>
+  
+  <p>
+    When building your package's documentation, any changed files will be
+    listed under the RStudio Build tab. Look for <code>"Writing &lt;name of
+    file&gt;"</code>.
+  </p>
 
-    <p>
-      When building your package's documentation, any changed files will be
-      listed under the RStudio Build tab. Look for <code>"Writing &lt;name of
-      file&gt;"</code>.
-    </p>
-  </dd>
-
-  <dt class="py-2">
+  <h5>
     <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>L</kbd>
-  </dt>
-  <dd class="py-2">
+  </h5>
+  
+  <p>
     This shortcut <span class="font-weight-bold">l</span>oads your package. To
     begin with, you may think of loading as comparable to running
     <code>library(&lt;your package name&gt;)</code>.
-  </dd>  
-</dl>
-
-
-
-    
-    
-    
-  </div>
-    
+  </p>
 </div>
+
+</div>
+
+
 
     
 
@@ -297,6 +272,8 @@ package uses the <kbd>D</kbd> key. All the shortcuts start with the
 
     
     
+
+
 
 
 
@@ -373,6 +350,8 @@ shortcut as problems have a tendency to build up over time.</p>
     
 </div>
 
+
+
     
 
     
@@ -383,6 +362,8 @@ shortcut as problems have a tendency to build up over time.</p>
 
     
     
+
+
 
 
 
@@ -605,6 +586,8 @@ shortcut as problems have a tendency to build up over time.</p>
     
 </div>
 
+
+
     
 
     
@@ -615,6 +598,8 @@ shortcut as problems have a tendency to build up over time.</p>
 
     
     
+
+
 
 
 
@@ -946,51 +931,47 @@ shortcut as problems have a tendency to build up over time.</p>
       The <code>Imports</code> field specifies which packages are used by your
       package. Any package from which you use a function must be included in
       this field. The only package which you do not have to list is the
-      <code>base</code> package. The listed packages must be separated by commas,
-      appear on distinct line below the field name, and must be indented by 4
-      spaces.
+      <code>base</code> package.
+    </p>
+
+    <p>
+      The listed packages must be separated by commas, appear on separate lines
+      starting below the field name, and must be indented by 4 spaces.
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-suggests">
     <p>
-      The <code>Suggests</code> field specifies 0 or more packages are used in your
-      package's examples, tests, or vignettes. Remember, a package must only be
-      listed once, so there is no need to repeat package names here if already
-      listed in the <code>Imports</code> or <code>Depends</code> fields.
+      The <code>Suggests</code> field specifies 0 or more packages used in your
+      package's examples, tests, or vignettes. Remember, a package should only
+      be listed in one of <code>Imports</code>, <code>Depends</code>, or
+      <code>Suggests</code>.
     </p>
 
     <p>
-      The value of this field is the same structure as the <code>Imports</code>
+      The value of this field follows the same structure as the <code>Imports</code>
       field.
     </p>
   </div>
 
   <div class="tab-pane fade" id="desc-depends">
     <p>
-      The <code>Depends</code> field specifies 0 or morepackages to attach
+      The <code>Depends</code> field specifies 0 or more packages to attach
       prior to attaching your package (via <code>library</code> or
       <code>require</code>). If your package's use case heavily incorporates
-      functions from another package (think, only works in conjunction with these
-      functions), then consider including the package in this field. 
+      functions from another package (think, only works in conjunction with
+      these functions), then consider including the package in this field.
     </p>
 
     <p>
-      If your package overwrites some functionality of another package and
-      simultaneously uses functions from that same package you must include this
-      package in this field. By including said package you ensure your
-      rewritten, overwriting, functions are available to the user, i.e. the
-      naming conflict works out in your favor.
+      A package may be listed twice in <samp>Depends</samp> to limit a package
+      within a range of versions. When using the <samp>devtools</samp> or
+      <samp>roxygen2</samp> packages you may see a a version of R automically
+      added to this field.
     </p>
 
     <p>
-      A package may be listed twice to limit a package version within a range of
-      versions. When using the <samp>devtools</samp> or <samp>roxygen2</samp>
-      packages you may see a a version of R automically added to this field.
-    </p>
-
-    <p>
-      The value of this field is the same structure as the <code>Imports&gt;</code>
+      The value of this field follows the same structure as the <code>Imports</code>
       field.
     </p>
   </div>
@@ -1090,6 +1071,8 @@ shortcut as problems have a tendency to build up over time.</p>
   </div>
     
 </div>
+
+
 
     
 

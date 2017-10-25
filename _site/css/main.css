@@ -53,6 +53,22 @@ nav {
   color: inherit;
   text-decoration: none; }
 
+.ruled {
+  padding: 5px;
+  text-align: center; }
+  .ruled::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 10px; }
+  .ruled::first-letter {
+    color: red; }
+  .ruled::before {
+    display: inline-block;
+    content: "\f054";
+    font-family: "Font Awesome 5 Regular";
+    opacity: 0.1; }
+
 .latex {
   letter-spacing: 1px; }
   .latex sup {

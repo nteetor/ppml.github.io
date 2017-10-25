@@ -1,0 +1,40 @@
+$rule-spacing: 5px;
+$rule-color: rgb(0, 0, 0); 
+$rule-alpha: 0.1;
+
+.ruled {
+    padding: $rule-spacing;
+    text-align: center;
+//    border-top: 1px solid rgba($rule-color, $rule-alpha);
+//    border-bottom: 1px solid rgba($rule-color, $rule-alpha);
+
+    &::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 10px;
+    }
+
+    &::first-letter {
+	color: red;
+    }
+    
+    &::before {
+	display: inline-block;
+	content: "\f054";
+	font-family: "Font Awesome 5 Regular";
+	opacity: 0.1;
+	
+	// margin: -$rule-spacing;
+	// vertical-align: top;
+	// border-top: 10px solid rgba($rule-color, $rule-alpha);
+	// border-left: 10px solid transparent;
+    }
+
+    // &::before {
+    // 	margin: -$rule-spacing;
+    // 	vertical-align: bottom;
+    // 	border-bottom: 10px solid rgba($rule-color, $rule-alpha);
+    // 	border-right: 10px solid transparent;
+    // }
+}
