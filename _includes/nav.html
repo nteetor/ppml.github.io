@@ -20,69 +20,14 @@
 	</a>
       </li>
       
-      <li class="nav-item {% if include.active == 'projects' %}active{% endif %}">
-	<a class="nav-link" href="/projects">
+      <li class="nav-item {% if include.active == 'tools' %}active{% endif %}">
+	<a class="nav-link" href="/tools">
 	  <span class="d-none d-sm-inline">
-            Projects
+        Tools
 	  </span>
 	  <span class="d-inline d-sm-none fas fa-folder-open fa-fw fa-lg">
 	  </span>
 	</a>
-      </li>
-
-      <li class="nav-item{% if include.active contains 'workflow' %} active{% endif %} dropdown">
-	<a class="nav-link" href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	  <span class="d-none d-sm-inline">
-	    Workflows
-	  </span>
-	  
-	  <span class="d-inline d-sm-none fas fa-cogs fa-fw fa-lg"></span>
-
-	  <span class="d-inline fas fa-caret-down"></span>
-	</a>
-	
-	<div class="dropdown-menu">
-	  <!-- <a class="dropdown-item{% if include.active == 'workflow' %} active{% endif %}" href="/workflow">Workflows</a> -->
-	  <a class="dropdown-item{% if include.active =='workflow-git' %} active{% endif %}" href="/workflow/git">
-	    Git
-	  </a>
-	  
-          <a class="dropdown-item{% if include.active == 'workflow-rstudio' %} active{% endif %}" href="/workflow/rstudio">
-	    RStudio
-	  </a>
-	  
-	  <a class="dropdown-item{% if include.active == 'workflow-packages' %} active{% endif %}" href="/workflow/packages">
-	    R packages
-	  </a>
-	</div>
-      </li>
-    </ul>
-    
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="/" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="fas fa-ellipsis-v"></span>
-        </a>
-	
-        <div class="dropdown-menu dropdown-menu-right">
-          <!-- <a class="dropdown-item {% if include.active == 'about' %}active{% endif %}" href="/about">About</a> -->
-	  <a class="dropdown-item{% if include.active == 'resources' %} active{% endif %}" href="/resources">
-	    Resources
-	  </a>
-
-	  <div class="dropdown-divider"></div>
-	  
-          <a class="dropdown-item" target="_blank" href="https://github.com/PPML">
-	    <span class="fab fa-github fa-fw"></span>
-	    GitHub
-	  </a>
-	  
-	  <a class="dropdown-item" target="_blank"
-	     href="https://prevention-policy-modeling-lab.sph.harvard.edu">
-	    <span class="fas fa-university fa-fw"></span>
-	    Harvard
-	  </a>
-        </div>
       </li>
     </ul>
   </div>
